@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dmitry Bagrash – Dokumentation eines Justizskandals. Deutsch, Русский, English.">
+  <link rel="alternate" hreflang="de" href="de/index.html">
+  <link rel="alternate" hreflang="ru" href="ru/index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+  <title>Dmitry Bagrash | DE · RU · EN</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container { text-align: center; padding: 40px 20px; max-width: 600px; }
+    h1 { font-size: 2.2em; margin-bottom: 8px; letter-spacing: 1px; }
+    .subtitle { color: #aac4e8; margin-bottom: 50px; font-size: 14px; line-height: 1.6; }
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .lang-btn {
+      display: block;
+      background: rgba(255,255,255,0.07);
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 10px;
+      padding: 30px 16px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s;
+    }
+    .lang-btn:hover { background: #e63946; border-color: #e63946; transform: translateY(-3px); }
+    .lang-btn .flag { font-size: 2.5em; display: block; margin-bottom: 12px; }
+    .lang-btn .lang-name { font-size: 1.1em; font-weight: bold; display: block; margin-bottom: 4px; }
+    .lang-btn .lang-sub { font-size: 12px; color: #aac4e8; }
+    .lang-btn:hover .lang-sub { color: #fff; }
+    .info { color: #555; font-size: 12px; }
+    @media (max-width: 400px) {
+      .lang-grid { grid-template-columns: 1fr; max-width: 200px; margin: 0 auto 40px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Dmitry Bagrash</h1>
+  <p class="subtitle">Dokumentation eines Justizskandals · Berlin, Deutschland<br>
+  Документация судебного скандала · Берлин, Германия</p>
+
+  <div class="lang-grid">
+    <a href="de/index.html" class="lang-btn">
+      <span class="flag">🇩🇪</span>
+      <span class="lang-name">Deutsch</span>
+      <span class="lang-sub">Vollständige Version</span>
+    </a>
+    <a href="ru/index.html" class="lang-btn">
+      <span class="flag">🇷🇺</span>
+      <span class="lang-name">Русский</span>
+      <span class="lang-sub">Полная версия</span>
+    </a>
+    <a href="en/index.html" class="lang-btn">
+      <span class="flag">🇬🇧</span>
+      <span class="lang-name">English</span>
+      <span class="lang-sub">Full version</span>
+    </a>
+  </div>
+  <p class="info">bagrash.presse@gmail.com · Presse-ID: 2135610</p>
+</div>
+</body>
+</html>
