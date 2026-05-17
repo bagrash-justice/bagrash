@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дело 1: Уголовное дело «Покушение на убийство» — Дмитрий Баграш. Приговор ЗС Берлин 22.07.2024, ревизия, решения BGH, конституционная жалоба.">
+  <link rel="alternate" hreflang="de" href="../../de/fall1/fall1.html">
+  <link rel="alternate" hreflang="ru" href="fall1.html">
+  <link rel="alternate" hreflang="en" href="../../en/fall1/fall1.html">
+  <title>Дело 1 – Уголовное дело | Дмитрий Баграш</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; font-size: 16px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #ccc; text-decoration: none; padding: 14px 12px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    nav ul li a.aktiv { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
+    .page-header { background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 60%, #1e3a5f 100%); color: #fff; padding: 50px 20px 40px; text-align: center; }
+    .page-header .badge { display: inline-block; background: #e63946; color: #fff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 2px; padding: 5px 14px; border-radius: 20px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-header h1 { font-size: 2em; font-weight: bold; margin-bottom: 12px; }
+    .page-header p { font-size: 1em; color: #aac4e8; max-width: 700px; margin: 0 auto 16px; }
+    .az-box { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 10px 20px; font-family: monospace; font-size: 13px; color: #aac4e8; }
+    .breadcrumb { background: #eee; padding: 10px 20px; font-family: Arial, sans-serif; font-size: 13px; color: #666; }
+    .breadcrumb a { color: #0f3460; text-decoration: none; }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+    .warnung { background: #fff3cd; border: 2px solid #e63946; border-radius: 6px; padding: 20px 24px; margin-bottom: 30px; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; }
+    .warnung .w-titel { font-weight: bold; color: #c0392b; font-size: 15px; margin-bottom: 8px; text-transform: uppercase; }
+    .fakten { background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 22px 26px; margin-bottom: 30px; }
+    .fakten table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .fakten table tr { border-bottom: 1px solid #eee; }
+    .fakten table td { padding: 8px 6px; vertical-align: top; }
+    .fakten table td:first-child { color: #666; font-family: Arial, sans-serif; font-size: 13px; width: 160px; }
+    .section { margin-bottom: 40px; }
+    .section h2 { font-size: 1.4em; color: #0d1b2a; border-bottom: 2px solid #e63946; padding-bottom: 8px; margin-bottom: 18px; }
+    .section p { margin-bottom: 14px; font-size: 15px; }
+    .hinweis-rot { background: #fde8e8; border-left: 4px solid #e63946; border-radius: 4px; padding: 14px 18px; margin: 16px 0; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; }
+    .hinweis-rot strong { color: #c0392b; }
+    .timeline { margin: 20px 0; }
+    .tl-item { display: flex; gap: 14px; margin-bottom: 12px; }
+    .tl-datum { flex-shrink: 0; width: 110px; background: #0d1b2a; color: #aac4e8; font-family: monospace; font-size: 11px; padding: 6px 8px; border-radius: 3px; text-align: center; line-height: 1.4; }
+    .tl-inhalt { flex: 1; background: #fff; border: 1px solid #eee; border-left: 3px solid #888; border-radius: 3px; padding: 10px 14px; font-size: 14px; }
+    .tl-inhalt.rot { border-left-color: #e63946; }
+    .tl-inhalt.gruen { border-left-color: #27ae60; }
+    .download-bereich { background: #1a1a2e; color: #fff; border-radius: 6px; padding: 24px 28px; margin: 30px 0; }
+    .download-bereich h3 { font-family: Arial, sans-serif; font-size: 14px; margin-bottom: 14px; color: #aac4e8; text-transform: uppercase; }
+    .download-btn { display: inline-block; background: #e63946; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 13px; margin: 4px 6px 4px 0; }
+    .download-btn.sekundaer { background: transparent; border: 1px solid #aac4e8; color: #aac4e8; }
+    .fall-navigation { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 24px; border-top: 2px solid #eee; flex-wrap: wrap; }
+    .fall-nav-btn { flex: 1 1 200px; padding: 14px 18px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; color: #333; background: #fff; }
+    .fall-nav-btn:hover { border-color: #e63946; }
+    .fall-nav-btn .richtung { font-size: 11px; color: #999; margin-bottom: 4px; }
+    .fall-nav-btn .titel { font-weight: bold; color: #c0392b; }
+    .fall-nav-btn.rechts { text-align: right; }
+    footer { background: #1a1a2e; color: #888; text-align: center; padding: 24px 20px; font-family: Arial, sans-serif; font-size: 13px; }
+    footer a { color: #aac4e8; text-decoration: none; margin: 0 10px; }
+    footer .verantwortlich { color: #aaa; margin-bottom: 10px; font-size: 12px; }
+    @media (max-width: 600px) { .page-header h1 { font-size: 1.5em; } .tl-item { flex-direction: column; } }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Дмитрий <span>Баграш</span></a>
+    <ul>
+      <li><a href="../fall0/fall0.html">Дело 0</a></li>
+      <li><a href="fall1.html" class="aktiv">Дело 1</a></li>
+      <li><a href="../fall2/fall2.html">Дело 2</a></li>
+      <li><a href="../fall3/fall3.html">Дело 3</a></li>
+      <li><a href="../analyse/analyse.html">Анализ</a></li>
+      <li><a href="../verfahren/verfahren.html">Текущие дела</a></li>
+      <li><a href="../presse/presse.html">Пресса</a></li>
+      <li><a href="../ueber-mich/ueber-mich.html">Обо мне</a></li>
+      <li><a href="../appell/appell.html">Обращение</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="../../de/fall1/fall1.html">🇩🇪 DE</a>
+      <a href="fall1.html" class="aktiv">🇷🇺 RU</a>
+      <a href="../../en/fall1/fall1.html">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="../index.html">Главная</a> › Дело 1 – Уголовное дело «Покушение на убийство»</div>
+<div class="page-header">
+  <div class="badge">Дело 1</div>
+  <h1>Уголовное дело «Покушение на убийство»</h1>
+  <p>Приговор Земельного суда Берлина — Ревизия — Решения BGH — Конституционная жалоба</p>
+  <div class="az-box">Az. 522 Ks 5/23 &nbsp;|&nbsp; StA: 176 Js 4/22 &nbsp;|&nbsp; BGH: 5 StR 72/25</div>
+</div>
+<div class="container">
+  <div class="warnung">
+    <div class="w-titel">⚠ Важное замечание</div>
+    Приговор Земельного суда Берлина от 22.07.2024 не является окончательным в конституционно-правовом смысле — 30.07.2025 суд <strong>задним числом</strong> внёс в уже вступивший в законную силу приговор список применённых норм, хотя ревизионное производство было уже завершено без этого списка. Баграш подал конституционную жалобу.
+  </div>
+  <div class="fakten">
+    <table>
+      <tr><td>Обвиняемый</td><td>Дмитрий Баграш, род. в Москве, в Берлине с 1992 г.</td></tr>
+      <tr><td>Обвинение</td><td>Покушение на убийство, покушение на поджог, мошенничество с субсидиями (COVID), хищение электроэнергии</td></tr>
+      <tr><td>Приговор</td><td>22 июля 2024 — 5 лет и 4 месяца лишения свободы</td></tr>
+      <tr><td>Суд</td><td>Земельный суд Берлин I, 22-я большая уголовная палата</td></tr>
+      <tr><td>Председатель</td><td>VRiLG Groß</td></tr>
+      <tr><td>Прокуратура</td><td>OStA Wachs, Генеральная прокуратура Берлина</td></tr>
+      <tr><td>Решение BGH</td><td>07.05.2025 — ревизия отклонена (5-й уголовный сенат)</td></tr>
+      <tr><td>Конституционная жалоба</td><td>Подана в BVerfG (Az. 2 BvR 964/25)</td></tr>
+      <tr><td>Текущее место заключения</td><td>JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Хронология производства</h2>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-datum">23.04.2022</div><div class="tl-inhalt rot"><strong>Предполагаемое деяние:</strong> размещение самодельного зажигательного устройства (канистра с бензином) под окном виллы на Лепсиусштрассе 103. Пролежало 13 дней незамеченным — без следов воспламенения.</div></div>
+      <div class="tl-item"><div class="tl-datum">14.12.2022</div><div class="tl-inhalt rot"><strong>Арест</strong> — через 222 дня после обнаружения устройства. OStA Wachs в зале суда: «Ну что, поймали тебя?»</div></div>
+      <div class="tl-item"><div class="tl-datum">22.07.2024</div><div class="tl-inhalt rot"><strong>Приговор:</strong> 5 лет 4 месяца лишения свободы. В тексте приговора <strong>отсутствует список применённых норм</strong> согласно § 260 Abs. 5 Satz 1 StPO.</div></div>
+      <div class="tl-item"><div class="tl-datum">28.11.2024</div><div class="tl-inhalt"><strong>Ревизионное обоснование</strong> адвоката RA Römer подано в BGH. Баграш параллельно подаёт 8 собственных дополнений — их приём систематически блокируется (→ Дело 2).</div></div>
+      <div class="tl-item"><div class="tl-datum">07.05.2025</div><div class="tl-inhalt rot"><strong>Решение BGH:</strong> ревизия отклонена — формальным решением, без содержательного рассмотрения доводов. Нарушение ст. 103 абз. 1 GG (право быть выслушанным).</div></div>
+      <div class="tl-item"><div class="tl-datum">30.07.2025</div><div class="tl-inhalt rot"><strong>Ретроактивное изменение приговора:</strong> ЗС Берлина посредством «исправительного решения» вносит в уже вступивший в законную силу приговор обширный список норм (§§ 211, 306a, 306c, 22, 23 StGB и др.) — более чем через год после вынесения.</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Ключевые противоречия: факты против приговора</h2>
+    <div class="hinweis-rot"><strong>ДНК:</strong> На устройстве обнаружена ДНК трёх человек: Баграша, неизвестного мужчины и неизвестной женщины. Эти лица не были установлены и не расследовались.</div>
+    <div class="hinweis-rot"><strong>Свидетель Басиров:</strong> Снял предполагаемого преступника на видео — Баграша <strong>не опознал</strong>. Суд постановил, что на видео «Баграш» — без какой-либо экспертизы.</div>
+    <div class="hinweis-rot"><strong>Заключение эксперта:</strong> По месту обнаружения (подвальная шахта, без доступа воздуха) устройство физически <strong>не могло воспламениться</strong>. Спичками пролежали 13 дней под дождём.</div>
+    <div class="hinweis-rot"><strong>Телефон:</strong> Зарегистрирован на Баграша, однако им никогда не пользовался. Данные геолокации использованы как доказательство нахождения на месте преступления.</div>
+    <div class="hinweis-rot"><strong>ОБСЕ:</strong> На заседаниях ОБСЕ 2021 и 2022 годов российская делегация прямо назвала Unkremlin e.V. политически опасной организацией — суд же характеризует деятельность Баграша как «незначительную».</div>
+  </div>
+
+  <div class="section">
+    <h2>Конституционная жалоба</h2>
+    <p>Баграш подал конституционную жалобу против решений BGH от 07.05.2025 и 19.06.2025. Обжалуемые нарушения: ст. 103 абз. 1 GG, ст. 19 абз. 4 GG, ст. 20 абз. 3 GG, ст. 3 абз. 1 GG, ст. 6 ЕКПЧ.</p>
+    <p>BVerfG 01.09.2025 отказал в принятии жалобы к рассмотрению (Az. 2 BvR 964/25). Новая конституционная жалоба на «исправительный» приговор подана 24.11.2025.</p>
+  </div>
+
+  <div class="download-bereich">
+    <h3>📁 Google Drive — Дело 1</h3>
+    <a href="https://drive.google.com/drive/folders/1yunZUZIwHaXoRi3Clu8jtBH34byI6PwL" target="_blank" class="download-btn">Дело 1 (Google Drive)</a>
+    <a href="https://drive.google.com/file/d/11zbn0BScwQp_qGife3_XzgaF6tE0R5bW/view?usp=drivesdk" target="_blank" class="download-btn sekundaer">Приговор ЗС Берлин (PDF)</a>
+    <a href="https://drive.google.com/file/d/16JS-uYgHN5GUbTTEKTTBksbhk6FBPD5t/view?usp=drivesdk" target="_blank" class="download-btn sekundaer">Решение BGH 07.05.2025</a>
+  </div>
+
+  <div class="fall-navigation">
+    <a href="../fall0/fall0.html" class="fall-nav-btn"><div class="richtung">← Назад</div><div class="titel">Дело 0 — Предыстория</div></a>
+    <a href="../fall2/fall2.html" class="fall-nav-btn rechts"><div class="richtung">Далее →</div><div class="titel">Дело 2 — Подавление ревизии</div></a>
+  </div>
+</div>
+<footer>
+  <div class="verantwortlich">Ответственный: <strong style="color:#fff;">Дмитрий Баграш</strong>, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren · <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a></div>
+  <a href="../../de/impressum.html">Impressum</a><a href="../../de/datenschutz.html">Datenschutz</a><a href="../index.html">Главная</a>
+</footer>
+</body>
+</html>

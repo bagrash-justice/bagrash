@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дмитрий Баграш – документация судебного скандала в Берлине. Антипутинский активист, председатель Unkremlin e.V. Приговорён к 5 годам 4 месяцам. Приговор не вступил в законную силу.">
+  <meta name="keywords" content="Дмитрий Баграш, Unkremlin, политическое преследование, Берлин, судебный скандал, ФСБ, Германия, права человека, ЕСПЧ">
+  <link rel="alternate" hreflang="de" href="../de/index.html">
+  <link rel="alternate" hreflang="ru" href="index.html">
+  <link rel="alternate" hreflang="en" href="../en/index.html">
+  <title>Дмитрий Баграш – Документация судебного скандала</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; font-size: 17px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #bbb; text-decoration: none; padding: 14px 13px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
+
+    .hero { background: linear-gradient(160deg, #0a0a1a 0%, #1a1a2e 40%, #0d2040 80%, #0a3060 100%); color: #fff; padding: 70px 20px 60px; text-align: center; }
+    .hero-eyebrow { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #e63946; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.4em; font-weight: bold; line-height: 1.2; margin-bottom: 16px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .hero h1 em { font-style: normal; color: #e63946; }
+    .hero-sub { font-size: 1.05em; color: #aac4e8; max-width: 640px; margin: 0 auto 36px; line-height: 1.7; }
+
+    .hero-fakten { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 36px; }
+    .hero-fakt { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 14px 20px; text-align: center; min-width: 130px; }
+    .hero-fakt .hf-zahl { font-size: 1.8em; font-weight: bold; color: #e63946; font-family: Arial, sans-serif; line-height: 1; }
+    .hero-fakt .hf-label { font-family: Arial, sans-serif; font-size: 11px; color: #aac4e8; margin-top: 4px; line-height: 1.4; }
+
+    .hero-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .btn-primary { display: inline-block; background: #e63946; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+    .btn-primary:hover { background: #c0392b; }
+    .btn-secondary { display: inline-block; background: transparent; color: #aac4e8; text-decoration: none; padding: 14px 28px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.3); font-family: Arial, sans-serif; font-size: 14px; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 60px 0; }
+    section + section { border-top: 1px solid #eee; }
+    .section-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #e63946; margin-bottom: 10px; }
+    .section-title { font-size: 1.8em; color: #1a1a1a; margin-bottom: 24px; line-height: 1.3; }
+
+    /* АКТИВНЫЕ ДЕЛА */
+    .verfahren-live { background: #fff; border: 2px solid #e63946; border-radius: 8px; overflow: hidden; margin-bottom: 40px; }
+    .vl-header { background: #e63946; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .vl-header .vl-titel { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+    .live-dot { width: 10px; height: 10px; background: #fff; border-radius: 50%; animation: pulse-dot 1.5s infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    .vl-header a { color: #fff; font-family: Arial, sans-serif; font-size: 12px; text-decoration: none; border: 1px solid rgba(255,255,255,0.5); padding: 4px 12px; border-radius: 3px; }
+    .vl-item { padding: 16px 20px; border-bottom: 1px solid #f0f0f0; display: flex; gap: 14px; align-items: flex-start; }
+    .vl-item:last-child { border-bottom: none; }
+    .vl-status { flex-shrink: 0; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; padding: 3px 8px; border-radius: 10px; text-transform: uppercase; margin-top: 3px; }
+    .vs-offen { background: #fde8e8; color: #c0392b; }
+    .vs-ausstehend { background: #fff3e0; color: #e67e22; }
+    .vs-eingereicht { background: #e8eaf6; color: #3949ab; }
+    .vl-content { flex: 1; }
+    .vl-content .vl-name { font-size: 15px; font-weight: bold; color: #1a1a1a; margin-bottom: 3px; }
+    .vl-content .vl-desc { font-family: Arial, sans-serif; font-size: 13px; color: #555; line-height: 1.5; }
+    .vl-content .vl-datum { font-family: Arial, sans-serif; font-size: 11px; color: #aaa; margin-top: 4px; }
+    .vl-link { flex-shrink: 0; font-family: Arial, sans-serif; font-size: 11px; color: #e63946; text-decoration: none; }
+
+    /* КАРТОЧКИ ДЕЛ */
+    .faelle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 20px; }
+    .fall-card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; text-decoration: none; color: inherit; transition: box-shadow 0.2s, border-color 0.2s; display: block; }
+    .fall-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #e63946; }
+    .fall-card .fc-nummer { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 8px; }
+    .fall-card .fc-titel { font-size: 16px; font-weight: bold; color: #1a1a1a; margin-bottom: 8px; line-height: 1.3; }
+    .fall-card .fc-desc { font-family: Arial, sans-serif; font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+    .fall-card .fc-mehr { font-family: Arial, sans-serif; font-size: 12px; color: #e63946; }
+
+    /* ЧТО НАРУШАЕТСЯ */
+    .was-verweigert { background: #1a1a2e; color: #fff; border-radius: 8px; padding: 32px 36px; margin: 30px 0; }
+    .was-verweigert h3 { font-family: Arial, sans-serif; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 20px; }
+    .verweigert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .verweigert-item { border-left: 3px solid #e63946; padding-left: 14px; font-family: Arial, sans-serif; font-size: 14px; color: #ccc; line-height: 1.5; }
+    .verweigert-item strong { color: #fff; display: block; margin-bottom: 2px; }
+
+    /* ЦИТАТА */
+    .zitat-block { background: #fff; border-left: 5px solid #e63946; padding: 24px 28px; margin: 30px 0; font-style: italic; font-size: 1.05em; color: #333; line-height: 1.8; }
+    .zitat-block .zitat-autor { font-style: normal; font-family: Arial, sans-serif; font-size: 13px; color: #888; margin-top: 12px; }
+
+    /* НОВАЯ СТАТЬЯ */
+    .novaya-statya { background: #fff; border: 2px solid #e63946; border-radius: 8px; padding: 24px 28px; margin: 30px 0; }
+    .novaya-statya .ns-badge { display: inline-block; background: #e63946; color: #fff; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; padding: 3px 10px; border-radius: 10px; margin-bottom: 10px; }
+    .novaya-statya h3 { font-size: 1.1em; margin-bottom: 8px; color: #1a1a1a; }
+    .novaya-statya p { font-family: Arial, sans-serif; font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 12px; }
+    .novaya-statya a { color: #e63946; font-weight: bold; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px; }
+
+    /* ДОКУМЕНТЫ */
+    .alle-docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 20px; }
+    .doc-btn { display: block; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 14px 16px; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; color: #333; transition: border-color 0.2s; text-align: center; }
+    .doc-btn:hover { border-color: #e63946; background: #fde8e8; color: #c0392b; }
+    .doc-btn .db-icon { font-size: 20px; display: block; margin-bottom: 6px; }
+
+    /* КОНТАКТ */
+    .presse-kontakt { background: #f0f4ff; border: 1px solid #c5cae9; border-radius: 6px; padding: 24px 28px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .presse-kontakt .pk-icon { font-size: 36px; }
+    .presse-kontakt .pk-text h4 { font-family: Arial, sans-serif; font-size: 15px; color: #1a1a2e; margin-bottom: 4px; }
+    .presse-kontakt .pk-text p { font-family: Arial, sans-serif; font-size: 13px; color: #555; line-height: 1.6; }
+    .presse-kontakt .pk-text a { color: #e63946; font-weight: bold; text-decoration: none; }
+
+    footer { background: #0a0a1a; color: #666; padding: 40px 20px 30px; font-family: Arial, sans-serif; font-size: 13px; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .footer-col h4 { color: #aaa; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .footer-col a { display: block; color: #666; text-decoration: none; margin-bottom: 6px; }
+    .footer-col a:hover { color: #e63946; }
+    .footer-col p { color: #555; line-height: 1.6; font-size: 12px; }
+    .footer-bottom { border-top: 1px solid #222; padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #444; font-size: 12px; }
+    .footer-bottom a { color: #555; text-decoration: none; margin-left: 16px; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8em; }
+      .was-verweigert { padding: 20px; }
+      .nav-inner { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Дмитрий <span>Баграш</span></a>
+    <ul>
+      <li><a href="fall0/fall0.html">Дело 0</a></li>
+      <li><a href="fall1/fall1.html">Дело 1</a></li>
+      <li><a href="fall2/fall2.html">Дело 2</a></li>
+      <li><a href="fall3/fall3.html">Дело 3</a></li>
+      <li><a href="analyse/analyse.html">Анализ</a></li>
+      <li><a href="verfahren/verfahren.html" style="color:#e63946;">🔴 Текущие дела</a></li>
+      <li><a href="presse/presse.html">Пресса</a></li>
+      <li><a href="ueber-mich/ueber-mich.html">Обо мне</a></li>
+      <li><a href="appell/appell.html">Обращение</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="../de/index.html">🇩🇪 DE</a>
+      <a href="index.html" class="aktiv">🇷🇺 RU</a>
+      <a href="../en/index.html">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">Документация судебного скандала · Берлин, Германия</div>
+  <h1>Дмитрий Баграш —<br>антипутинский активист в <em>политическом заключении</em></h1>
+  <p class="hero-sub">
+    Председатель Unkremlin e.V., задержан 14 декабря 2022 года.
+    Приговорён к 5 годам и 4 месяцам лишения свободы — без норм права в тексте приговора,
+    без доступа к материалам дела, без свободного выбора защитника.
+    Приговор не вступил в законную силу в конституционно-правовом смысле.
+  </p>
+
+  <div class="hero-fakten">
+    <div class="hero-fakt">
+      <div class="hf-zahl">5 л. 4 м.</div>
+      <div class="hf-label">Приговор<br>ЗС Берлина 22.07.2024</div>
+    </div>
+    <div class="hero-fakt">
+      <div class="hf-zahl">116</div>
+      <div class="hf-label">Дней без контакта<br>с еврейской общиной</div>
+    </div>
+    <div class="hero-fakt">
+      <div class="hf-zahl">10</div>
+      <div class="hf-label">Нотариально<br>заверенных заявлений</div>
+    </div>
+    <div class="hero-fakt">
+      <div class="hf-zahl">3</div>
+      <div class="hf-label">Голодовки как<br>последнее средство</div>
+    </div>
+    <div class="hero-fakt">
+      <div class="hf-zahl">313</div>
+      <div class="hf-label">Страниц жалобы<br>в ЕСПЧ, Прав. 39</div>
+    </div>
+  </div>
+
+  <div class="hero-buttons">
+    <a href="verfahren/verfahren.html" class="btn-primary">🔴 Текущие дела</a>
+    <a href="fall1/fall1.html" class="btn-secondary">Приговор и ревизия</a>
+    <a href="https://drive.google.com/drive/folders/1BStA_NPC3vNybGlsDMaWqzxzz6ZhX11u" target="_blank" class="btn-secondary">Все документы (ZIP)</a>
+  </div>
+</div>
+
+<!-- НОВАЯ СТАТЬЯ -->
+<section style="background:#fff; padding:40px 0;">
+  <div class="container">
+    <div class="novaya-statya">
+      <span class="ns-badge">🆕 Новая публикация — 12.05.2026</span>
+      <h3>«Дмитрий Баграш или история о том, как ФСБ нагнуло целый Минюст Германии»</h3>
+      <p>Подробное журналистское расследование Елены Васильевой. Автор анализирует материалы дела, показания свидетелей и экспертов. Ключевые выводы: канистра лежала 13 дней под дождём и физически не могла воспламениться; телефон использовали украинские беженцы; в тексте приговора изначально отсутствовали все нормы закона; систематическая изоляция в одиночной камере.</p>
+      <a href="https://evasiljeva.blogspot.com/2026/05/blog-post_12.html" target="_blank">Читать статью полностью →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ТЕКУЩИЕ ДЕЛА -->
+<section style="background:#fff8f8; padding:50px 0;">
+  <div class="container">
+    <div class="section-label">Live — обновляется</div>
+    <h2 class="section-title">Текущие открытые дела</h2>
+
+    <div class="verfahren-live">
+      <div class="vl-header">
+        <div class="vl-titel">
+          <div class="live-dot"></div>
+          Открытые дела — по состоянию на май 2026
+        </div>
+        <a href="verfahren/verfahren.html">Все дела →</a>
+      </div>
+
+      <div class="vl-item">
+        <span class="vl-status vs-offen">🔴 Открыто</span>
+        <div class="vl-content">
+          <div class="vl-name">Конституционная жалоба на «исправительное решение» ЗС Берлина от 30.07.2025</div>
+          <div class="vl-desc">ЗС Берлин изменил вступивший в силу приговор — добавил список норм спустя год после вынесения и после решения BGH. Кammergericht отклонил жалобу. Конституционная жалоба в BVerfG подана 24.11.2025.</div>
+          <div class="vl-datum">Az. KG: 3 Ws 48/25+49/25 · Подана: 24.11.2025</div>
+        </div>
+        <a href="verfahren/verfahren.html" class="vl-link">→ Подробнее</a>
+      </div>
+
+      <div class="vl-item">
+        <span class="vl-status vs-offen">🔴 Открыто</span>
+        <div class="vl-content">
+          <div class="vl-name">Доступ к секретарю суда — JVA Heidering систематически отказывает</div>
+          <div class="vl-desc">После перевода в JVA Heidering 10.06.2025 Баграшу отказывают в подаче срочных жалоб через секретаря суда. ЗС Берлин 10.12.2025 отклонил ходатайства с формулировкой «злоупотребление правом». Конституционная жалоба готовится.</div>
+          <div class="vl-datum">Az. LG Berlin: 599 StVK 215/25 Vollz · Решение: 10.12.2025</div>
+        </div>
+        <a href="verfahren/verfahren.html" class="vl-link">→ Подробнее</a>
+      </div>
+
+      <div class="vl-item">
+        <span class="vl-status vs-eingereicht">🔵 Подана</span>
+        <div class="vl-content">
+          <div class="vl-name">Индивидуальная жалоба в ЕСПЧ, Правило 39 — 313 страниц</div>
+          <div class="vl-desc">Ст. 6, 9, 13, 34 ЕКПЧ. Сама подача была крайне затруднена — черновики жалобы изымались, DHL-отправления возвращались.</div>
+          <div class="vl-datum">Подана: янв.–март 2025 · ЕСПЧ, Страсбург</div>
+        </div>
+        <a href="fall2/fall2.html" class="vl-link">→ Подробнее</a>
+      </div>
+
+      <div class="vl-item">
+        <span class="vl-status vs-ausstehend">🟡 Ожидает</span>
+        <div class="vl-content">
+          <div class="vl-name">Ходатайство об отстранении защитника RA Römer — не рассмотрено с 17.12.2024</div>
+          <div class="vl-desc">Более 15 месяцев без решения. Баграш не имеет связи с RA Römer и не знает, что тот подал в ревизию. Де-факто без защитника.</div>
+          <div class="vl-datum">Подано: 17.12.2024 · ЗС Берлин</div>
+        </div>
+        <a href="analyse/analyse.html#punkt4" class="vl-link">→ Подробнее</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 ДЕЛА -->
+<section>
+  <div class="container">
+    <div class="section-label">Документация</div>
+    <h2 class="section-title">Четыре дела</h2>
+    <p style="margin-bottom:28px; font-family:Arial,sans-serif; font-size:14px; color:#555;">Все оригинальные документы находятся в Google Drive. Ни один документ не был изменён.</p>
+
+    <div class="faelle-grid">
+      <a href="fall0/fall0.html" class="fall-card">
+        <div class="fc-nummer">Дело 0</div>
+        <div class="fc-titel">Предыстория преследования</div>
+        <div class="fc-desc">Антипутинский активизм с 2020 года. Демонстрация 17.09.2021. Упоминания в ОБСЕ. Полицейское вмешательство под руководством OStA Raupach.</div>
+        <div class="fc-mehr">Читать →</div>
+      </a>
+      <a href="fall1/fall1.html" class="fall-card">
+        <div class="fc-nummer">Дело 1</div>
+        <div class="fc-titel">Уголовное дело «Покушение на убийство»</div>
+        <div class="fc-desc">Приговор ЗС Берлин 22.07.2024 без норм права. Решения BGH. Ретроактивное изменение приговора 30.07.2025. Конституционная жалоба.</div>
+        <div class="fc-mehr">Читать →</div>
+      </a>
+      <a href="fall2/fall2.html" class="fall-card">
+        <div class="fc-nummer">Дело 2</div>
+        <div class="fc-titel">Подавление ревизионного обоснования</div>
+        <div class="fc-desc">57+ задокументированных событий. 10 нотариально заверенных заявлений. Систематический отказ в приёме документов. Голодовка 05.05.2025.</div>
+        <div class="fc-mehr">Читать →</div>
+      </a>
+      <a href="fall3/fall3.html" class="fall-card">
+        <div class="fc-nummer">Дело 3</div>
+        <div class="fc-titel">Еврейская община и поиск адвоката</div>
+        <div class="fc-desc">116 дней без контакта с еврейской общиной. Нарушение ст. 4 GG, ст. 9 ЕКПЧ. Разблокировка именно в последний день срока подачи ревизии.</div>
+        <div class="fc-mehr">Читать →</div>
+      </a>
+    </div>
+
+    <div class="was-verweigert">
+      <h3>Что конкретно отказывают Дмитрию Баграшу</h3>
+      <div class="verweigert-grid">
+        <div class="verweigert-item">
+          <strong>Доступ к материалам дела</strong>
+          Несмотря на многократные ходатайства с декабря 2024 года — доступ к материалам следствия и суда закрыт
+        </div>
+        <div class="verweigert-item">
+          <strong>Свободный выбор защитника</strong>
+          Ходатайство об отстранении от 17.12.2024 не рассмотрено. Де-факто без адвоката уже более 15 месяцев
+        </div>
+        <div class="verweigert-item">
+          <strong>Доступ к секретарю суда</strong>
+          Срочные документы систематически не принимались — доказано 10 нотариальными заявлениями
+        </div>
+        <div class="verweigert-item">
+          <strong>Почтовое сообщение</strong>
+          Письма вскрывались, приходили в подменённых конвертах без марок и штемпеля — нарушение §§ 202, 206 StGB
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЦИТАТА -->
+<section style="background:#fff;">
+  <div class="container">
+    <div class="zitat-block">
+      «Я объявляю голодовку в знак протеста против целенаправленного совместного действия различных органов юстиции — а именно следственного изолятора, секретаря суда, председательствующего судьи Гросс, Сенатской администрации юстиции и Федерального верховного суда — которые лишили меня гарантированной Конституцией и законом возможности своевременно подать дополнения к ревизионному обоснованию.»
+      <div class="zitat-autor">— Дмитрий Баграш, 5 мая 2025 года, СИЗО Моабит</div>
+    </div>
+  </div>
+</section>
+
+<!-- ДОКУМЕНТЫ -->
+<section>
+  <div class="container">
+    <div class="section-label">Google Drive</div>
+    <h2 class="section-title">Все оригинальные документы</h2>
+    <p style="font-family:Arial,sans-serif; font-size:14px; color:#555; margin-bottom:20px;">Все документы общедоступны. Ни один документ не был изменён.</p>
+    <div class="alle-docs">
+      <a href="https://drive.google.com/drive/folders/1Xa0huX8XI53dmcw_s_xCZDR-ccTmE6zv" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Дело 0</a>
+      <a href="https://drive.google.com/drive/folders/1yunZUZIwHaXoRi3Clu8jtBH34byI6PwL" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Дело 1</a>
+      <a href="https://drive.google.com/drive/folders/1p3YlgETNeKZjFS7Pt--6_lc8ZQb0ypkl" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Дело 2</a>
+      <a href="https://drive.google.com/drive/folders/1NmyIN5wdYi_4H88ELTGKC4iEnHv_UPoZ" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Дело 3</a>
+      <a href="https://drive.google.com/drive/folders/1BStA_NPC3vNybGlsDMaWqzxzz6ZhX11u" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Анализ</a>
+      <a href="../de/dokumente.html" class="doc-btn" style="border-color:#e63946; color:#e63946;"><span class="db-icon">📋</span>Индекс документов</a>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТ -->
+<section style="background:#fff;">
+  <div class="container">
+    <div class="section-label">Контакт</div>
+    <h2 class="section-title">Для журналистов, депутатов и правозащитных организаций</h2>
+    <div class="presse-kontakt">
+      <div class="pk-icon">📧</div>
+      <div class="pk-text">
+        <h4>Контакт для прессы и юридических запросов</h4>
+        <p>
+          E-mail: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a><br>
+          Пресс-ID: <strong>2135610</strong><br>
+          Почта: Dmitry Bagrash, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br><br>
+          Все материалы сайта могут свободно использоваться в журналистских и правовых целях.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Документация</h4>
+        <a href="fall0/fall0.html">Дело 0 — Предыстория</a>
+        <a href="fall1/fall1.html">Дело 1 — Уголовное дело</a>
+        <a href="fall2/fall2.html">Дело 2 — Ревизия</a>
+        <a href="fall3/fall3.html">Дело 3 — Еврейская община</a>
+        <a href="analyse/analyse.html">Анализ — 10 пунктов</a>
+        <a href="verfahren/verfahren.html">Текущие дела</a>
+      </div>
+      <div class="footer-col">
+        <h4>Другие страницы</h4>
+        <a href="presse/presse.html">Пресса</a>
+        <a href="ueber-mich/ueber-mich.html">О Дмитрии Баграше</a>
+        <a href="https://www.unkremlin.com" target="_blank">www.unkremlin.com</a>
+        <a href="https://www.youtube.com/@unkremlin" target="_blank">YouTube: Unkremlin</a>
+      </div>
+      <div class="footer-col">
+        <h4>Языки</h4>
+        <a href="../de/index.html">🇩🇪 Deutsch</a>
+        <a href="index.html">🇷🇺 Русский</a>
+        <a href="../en/index.html">🇬🇧 English</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ответственный</h4>
+        <p>Дмитрий Баграш<br>JVA Heidering<br>Ernst-Stargardt-Allee 1<br>14979 Großbeeren<br><br>
+        <a href="mailto:bagrash.presse@gmail.com" style="color:#e63946;">bagrash.presse@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Дмитрий Баграш — Все материалы могут свободно использоваться в журналистских и правовых целях.</span>
+      <div>
+        <a href="../de/impressum.html">Impressum</a>
+        <a href="../de/datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
