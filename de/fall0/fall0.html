@@ -1,596 +1,303 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fall 0: Ereignisse vor der Inhaftierung von Dmitry Bagrash – Anti-Putin-Aktivismus, Unkremlin e.V., Demonstration 17.09.2021, politische Verfolgung in Berlin">
-  <meta name="keywords" content="Dmitry Bagrash, Unkremlin, Putin is a Killer, politische Verfolgung, Berlin, Demonstration, OStA Raupach, Justiz Berlin">
-  <title>Fall 0 – Hintergrund der Verfolgung | Dmitry Bagrash</title>
+  <meta name="description" content="Дело 0: события до заключения под стражу — антипутинский активизм Дмитрия Баграша, Unkremlin e.V., демонстрация 17.09.2021, упоминания ОБСЕ, политическое преследование в Берлине">
+  <meta name="keywords" content="Дмитрий Баграш, Unkremlin, Путин убийца, политическое преследование, Берлин, демонстрация, OStA Raupach, юстиция Берлина">
+  <link rel="alternate" hreflang="de" href="../../de/fall0/fall0.html">
+  <link rel="alternate" hreflang="ru" href="fall0.html">
+  <link rel="alternate" hreflang="en" href="../../en/fall0/fall0.html">
+  <title>Дело 0 – Предыстория преследования | Дмитрий Баграш</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 17px;
-      line-height: 1.8;
-      color: #1a1a1a;
-      background: #f9f7f4;
-    }
-
-    /* NAVIGATION */
-    nav {
-      background: #1a1a2e;
-      padding: 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    nav ul li a {
-      display: block;
-      color: #ccc;
-      text-decoration: none;
-      padding: 14px 16px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      transition: background 0.2s, color 0.2s;
-    }
+    body { font-family: Georgia, serif; font-size: 17px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #ccc; text-decoration: none; padding: 14px 13px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
     nav ul li a:hover { background: #e63946; color: #fff; }
     nav ul li a.aktiv { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
 
-    /* HEADER */
-    .page-header {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
-      color: #fff;
-      padding: 50px 20px 40px;
-      text-align: center;
-    }
-    .page-header .badge {
-      display: inline-block;
-      background: #e63946;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      padding: 5px 14px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-    }
-    .page-header h1 {
-      font-size: 2.2em;
-      font-weight: bold;
-      margin-bottom: 12px;
-      line-height: 1.3;
-    }
-    .page-header p {
-      font-size: 1.1em;
-      color: #aac4e8;
-      max-width: 700px;
-      margin: 0 auto;
-    }
+    .page-header { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 60%, #0f3460 100%); color: #fff; padding: 50px 20px 40px; text-align: center; }
+    .page-header .badge { display: inline-block; background: #e63946; color: #fff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 2px; padding: 5px 14px; border-radius: 20px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-header h1 { font-size: 2em; font-weight: bold; margin-bottom: 12px; line-height: 1.3; }
+    .page-header p { font-size: 1.05em; color: #aac4e8; max-width: 700px; margin: 0 auto; }
 
-    /* BREADCRUMB */
-    .breadcrumb {
-      background: #eee;
-      padding: 10px 20px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: #666;
-    }
+    .breadcrumb { background: #eee; padding: 10px 20px; font-family: Arial, sans-serif; font-size: 13px; color: #666; }
     .breadcrumb a { color: #0f3460; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
 
-    /* HAUPT-LAYOUT */
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
 
-    /* INHALTSVERZEICHNIS */
-    .toc {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-left: 4px solid #0f3460;
-      border-radius: 4px;
-      padding: 24px 28px;
-      margin-bottom: 40px;
-    }
-    .toc h3 {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #666;
-      margin-bottom: 14px;
-    }
-    .toc ol {
-      margin-left: 20px;
-    }
-    .toc ol li {
-      margin-bottom: 6px;
-    }
-    .toc ol li a {
-      color: #0f3460;
-      text-decoration: none;
-      font-size: 15px;
-    }
+    .toc { background: #fff; border: 1px solid #ddd; border-left: 4px solid #0f3460; border-radius: 4px; padding: 24px 28px; margin-bottom: 40px; }
+    .toc h3 { font-family: Arial, sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 14px; }
+    .toc ol { margin-left: 20px; }
+    .toc ol li { margin-bottom: 6px; }
+    .toc ol li a { color: #0f3460; text-decoration: none; font-size: 15px; }
     .toc ol li a:hover { text-decoration: underline; }
 
-    /* ABSCHNITTE */
-    .section {
-      margin-bottom: 50px;
-    }
-    .section h2 {
-      font-size: 1.6em;
-      color: #0f3460;
-      border-bottom: 2px solid #e63946;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-      scroll-margin-top: 60px;
-    }
-    .section h3 {
-      font-size: 1.15em;
-      color: #1a1a2e;
-      margin: 24px 0 10px;
-    }
-    .section p {
-      margin-bottom: 16px;
-      text-align: justify;
-    }
+    .section { margin-bottom: 50px; }
+    .section h2 { font-size: 1.5em; color: #0f3460; border-bottom: 2px solid #e63946; padding-bottom: 8px; margin-bottom: 20px; scroll-margin-top: 65px; }
+    .section h3 { font-size: 1.1em; color: #1a1a2e; margin: 24px 0 10px; }
+    .section p { margin-bottom: 16px; text-align: justify; }
 
-    /* FOTOS */
-    .foto-reihe {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin: 24px 0;
-    }
-    .foto-box {
-      flex: 1 1 260px;
-      max-width: 420px;
-    }
-    .foto-box img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      display: block;
-    }
-    .foto-box .bildunterschrift {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      color: #666;
-      padding: 6px 2px;
-      font-style: italic;
-    }
-    .foto-einzeln {
-      margin: 24px 0;
-    }
-    .foto-einzeln img {
-      width: 100%;
-      max-height: 380px;
-      object-fit: cover;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-    }
-    .foto-einzeln .bildunterschrift {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      color: #666;
-      padding: 6px 2px;
-      font-style: italic;
-      text-align: center;
-    }
+    .foto-reihe { display: flex; flex-wrap: wrap; gap: 14px; margin: 24px 0; }
+    .foto-box { flex: 1 1 260px; max-width: 420px; }
+    .foto-box img { width: 100%; height: 220px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; display: block; }
+    .foto-box .bildunterschrift { font-family: Arial, sans-serif; font-size: 12px; color: #666; padding: 6px 2px; font-style: italic; }
+    .foto-einzeln { margin: 24px 0; }
+    .foto-einzeln img { width: 100%; max-height: 380px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
+    .foto-einzeln .bildunterschrift { font-family: Arial, sans-serif; font-size: 12px; color: #666; padding: 6px 2px; font-style: italic; text-align: center; }
 
-    /* WICHTIGER HINWEIS BOX */
-    .hinweis-box {
-      background: #fff3cd;
-      border: 1px solid #ffc107;
-      border-left: 4px solid #e63946;
-      border-radius: 4px;
-      padding: 18px 22px;
-      margin: 24px 0;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
+    .hinweis-box { background: #fff3cd; border: 1px solid #ffc107; border-left: 4px solid #e63946; border-radius: 4px; padding: 18px 22px; margin: 24px 0; font-family: Arial, sans-serif; font-size: 14px; }
     .hinweis-box strong { color: #c0392b; }
 
-    /* SCHLUSSFOLGERUNGEN */
-    .schluss-box {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 24px 28px;
-      margin: 20px 0;
-    }
-    .schluss-box .frage {
-      font-weight: bold;
-      color: #0f3460;
-      margin-bottom: 8px;
-    }
-    .schluss-box ul {
-      margin-left: 20px;
-      margin-bottom: 8px;
-    }
-    .schluss-box ul li {
-      margin-bottom: 4px;
-      font-size: 15px;
-    }
+    .schluss-box { background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 24px 28px; margin: 20px 0; }
+    .schluss-box .frage { font-weight: bold; color: #0f3460; margin-bottom: 8px; }
+    .schluss-box ul { margin-left: 20px; margin-bottom: 8px; }
+    .schluss-box ul li { margin-bottom: 4px; font-size: 15px; }
 
-    /* DOWNLOAD-BEREICH */
-    .download-bereich {
-      background: #1a1a2e;
-      color: #fff;
-      border-radius: 6px;
-      padding: 28px 32px;
-      margin: 40px 0;
-    }
-    .download-bereich h3 {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      margin-bottom: 16px;
-      color: #aac4e8;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .download-btn {
-      display: inline-block;
-      background: #e63946;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 4px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      margin: 6px 8px 6px 0;
-      transition: background 0.2s;
-    }
+    .download-bereich { background: #1a1a2e; color: #fff; border-radius: 6px; padding: 28px 32px; margin: 40px 0; }
+    .download-bereich h3 { font-family: Arial, sans-serif; font-size: 15px; margin-bottom: 16px; color: #aac4e8; text-transform: uppercase; letter-spacing: 1px; }
+    .download-btn { display: inline-block; background: #e63946; color: #fff; text-decoration: none; padding: 11px 22px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 13px; margin: 5px 6px 5px 0; transition: background 0.2s; }
     .download-btn:hover { background: #c0392b; }
-    .download-btn.sekundaer {
-      background: transparent;
-      border: 1px solid #aac4e8;
-      color: #aac4e8;
-    }
-    .download-btn.sekundaer:hover { background: #0f3460; }
+    .download-btn.sekundaer { background: transparent; border: 1px solid #aac4e8; color: #aac4e8; }
+    .download-btn.sekundaer:hover { background: rgba(255,255,255,0.1); }
 
-    /* QUELLENANGABEN */
-    .quellen {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: #666;
-      border-top: 1px solid #eee;
-      margin-top: 30px;
-      padding-top: 16px;
-    }
-    .quellen a { color: #0f3460; word-break: break-all; }
-
-    /* NAVIGATION ZWISCHEN FÄLLEN */
-    .fall-navigation {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      margin-top: 50px;
-      padding-top: 30px;
-      border-top: 2px solid #eee;
-      flex-wrap: wrap;
-    }
-    .fall-nav-btn {
-      flex: 1 1 200px;
-      padding: 16px 20px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: #333;
-      background: #fff;
-      transition: border-color 0.2s, background 0.2s;
-    }
+    .fall-navigation { display: flex; justify-content: space-between; gap: 16px; margin-top: 50px; padding-top: 30px; border-top: 2px solid #eee; flex-wrap: wrap; }
+    .fall-nav-btn { flex: 1 1 200px; padding: 16px 20px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; color: #333; background: #fff; transition: border-color 0.2s; }
     .fall-nav-btn:hover { border-color: #0f3460; background: #f0f4f8; }
     .fall-nav-btn .richtung { font-size: 11px; color: #999; margin-bottom: 4px; }
     .fall-nav-btn .titel { font-weight: bold; color: #0f3460; }
     .fall-nav-btn.rechts { text-align: right; }
 
-    /* FOOTER */
-    footer {
-      background: #1a1a2e;
-      color: #888;
-      text-align: center;
-      padding: 30px 20px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-    }
+    footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px 20px; font-family: Arial, sans-serif; font-size: 13px; }
     footer a { color: #aac4e8; text-decoration: none; margin: 0 10px; }
-    footer a:hover { text-decoration: underline; }
-    footer .verantwortlich {
-      color: #aaa;
-      margin-bottom: 12px;
-      font-size: 12px;
-    }
-
-    @media (max-width: 600px) {
-      .page-header h1 { font-size: 1.6em; }
-      .foto-box { flex: 1 1 100%; }
-    }
+    footer .verantwortlich { color: #aaa; margin-bottom: 12px; font-size: 12px; }
+    @media (max-width: 600px) { .page-header h1 { font-size: 1.5em; } .foto-box { flex: 1 1 100%; } }
   </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-  <ul>
-    <li><a href="index.html">Startseite</a></li>
-    <li><a href="fall0.html" class="aktiv">Fall 0</a></li>
-    <li><a href="fall1.html">Fall 1</a></li>
-    <li><a href="fall2.html">Fall 2</a></li>
-    <li><a href="fall3.html">Fall 3</a></li>
-    <li><a href="analyse.html">Analyse</a></li>
-    <li><a href="presse.html">Presse</a></li>
-    <li><a href="ueber-mich.html">Über mich</a></li>
-  </ul>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Дмитрий <span>Баграш</span></a>
+    <ul>
+      <li><a href="fall0.html" class="aktiv">Дело 0</a></li>
+      <li><a href="../fall1/fall1.html">Дело 1</a></li>
+      <li><a href="../fall2/fall2.html">Дело 2</a></li>
+      <li><a href="../fall3/fall3.html">Дело 3</a></li>
+      <li><a href="../analyse/analyse.html">Анализ</a></li>
+      <li><a href="../verfahren/verfahren.html">Текущие дела</a></li>
+      <li><a href="../presse/presse.html">Пресса</a></li>
+      <li><a href="../ueber-mich/ueber-mich.html">Обо мне</a></li>
+      <li><a href="../appell/appell.html">Обращение</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="../../de/fall0/fall0.html">🇩🇪 DE</a>
+      <a href="fall0.html" class="aktiv">🇷🇺 RU</a>
+      <a href="../../en/fall0/fall0.html">🇬🇧 EN</a>
+    </div>
+  </div>
 </nav>
 
-<!-- BREADCRUMB -->
 <div class="breadcrumb">
-  <a href="index.html">Startseite</a> › Fall 0 – Hintergrund der Verfolgung
+  <a href="../index.html">Главная</a> › Дело 0 – Предыстория преследования
 </div>
 
-<!-- SEITENKOPF -->
 <div class="page-header">
-  <div class="badge">Fall 0</div>
-  <h1>Wie ich die Berliner Staatsanwaltschaft „beleidigt" habe</h1>
-  <p>Ereignisse vor der Inhaftierung — der vermutliche Hintergrund der politischen Verfolgung von Dmitry Bagrash</p>
+  <div class="badge">Дело 0</div>
+  <h1>Как я «оскорбил» берлинскую прокуратуру</h1>
+  <p>События до заключения под стражу — предполагаемая подоплёка политического преследования Дмитрия Баграша</p>
 </div>
 
-<!-- HAUPTINHALT -->
 <div class="container">
 
-  <!-- INHALTSVERZEICHNIS -->
   <div class="toc">
-    <h3>Inhalt dieser Seite</h3>
+    <h3>Содержание</h3>
     <ol>
-      <li><a href="#bedeutung-wahlen">Die Bedeutung der russischen Wahlen</a></li>
-      <li><a href="#putin-killer">Die Figur Putin und das Schild „Putin is a Killer"</a></li>
-      <li><a href="#demonstration">Der Krimi um die Demonstration am 17. September 2021</a></li>
-      <li><a href="#schlussfolgerungen">Schlussfolgerungen</a></li>
-      <li><a href="#zusammenhang">Zusammenhang mit dem versuchten Mord</a></li>
-      <li><a href="#dokumente">Originaldokumente &amp; Download</a></li>
+      <li><a href="#wahlen">Значение выборов в России</a></li>
+      <li><a href="#putin-killer">Фигура Путина и плакат «Putin is a Killer»</a></li>
+      <li><a href="#demonstration">Детектив вокруг демонстрации 17 сентября 2021 года</a></li>
+      <li><a href="#schlussfolgerungen">Выводы</a></li>
+      <li><a href="#zusammenhang">Связь с покушением на убийство</a></li>
+      <li><a href="#dokumente">Оригинальные документы и скачивание</a></li>
     </ol>
   </div>
 
-  <!-- EINLEITUNG -->
   <div class="section">
-    <p><strong>Hallo, Freunde!</strong></p>
-    <p>Nun werde ich euch von dem Ereignis erzählen, das meiner Verhaftung wegen angeblich versuchten Mordes vorausging. Es wird darum gehen, wie ich die Staatsanwaltschaft in Berlin „beleidigt" habe und die Ereignisse der Putin-Administration gestört habe. Und was kam dabei heraus?</p>
-    <p>Diese Geschichte besteht aus 5 Teilen:</p>
+    <p><strong>Друзья!</strong></p>
+    <p>Сейчас я расскажу вам о событиях, которые предшествовали моему аресту по обвинению в якобы совершённом покушении на убийство. Речь пойдёт о том, как я «оскорбил» берлинскую прокуратуру и нарушил планы путинской администрации. И что из этого вышло?</p>
+    <p>Эта история состоит из 5 частей:</p>
     <ol style="margin-left:24px; margin-bottom:16px;">
-      <li>Über die Bedeutung von Wahlen in Putins Russland und ob es möglich ist, die Fälschung der russischen Wahlen in Deutschland für 400 Euro zu verhindern.</li>
-      <li>Über die Figur Putins und die Aufschrift „Putin is a Killer".</li>
-      <li>Der Krimi um den Versuch, die Demonstration am 17. September 2021 zu stören.</li>
-      <li>Schlussfolgerungen.</li>
-      <li>Zusammenhang mit dem versuchten Mord.</li>
+      <li>О значении выборов в путинской России и о том, можно ли за 400 евро помешать фальсификации российских выборов в Германии.</li>
+      <li>О фигуре Путина и надписи «Putin is a Killer».</li>
+      <li>Детектив о попытке срыва демонстрации 17 сентября 2021 года.</li>
+      <li>Выводы.</li>
+      <li>Связь с покушением на убийство.</li>
     </ol>
   </div>
 
-  <!-- TEIL 1 -->
-  <div class="section" id="bedeutung-wahlen">
-    <h2>Teil 1: Die Bedeutung der Wahlen in Russland</h2>
-
-    <p>Am 19. September 2021 fanden in Russland die Wahlen zur Staatsduma der Russischen Föderation statt. Alle Einwohner der Russischen Föderation und der postsowjetischen Länder, die sich zumindest ein wenig für Politik interessieren, wissen sehr wohl, dass die Wahlergebnisse völlig gefälscht sind, dass unbequeme Kandidaten nicht an den Wahlen teilnehmen dürfen und dass die Wahlergebnisse manipuliert sind.</p>
-
-    <div class="foto-einzeln">
-      <img src="fotos/Foto_1_lange Schlange vor der Botschaft_19.09.2021.jpg" alt="Warteschlange vor der russischen Botschaft am Wahltag 19.09.2021">
-      <div class="bildunterschrift">Warteschlange vor der russischen Botschaft Berlin am Wahltag, 19.09.2021</div>
-    </div>
-
-    <p>Die Wahl-Organisatoren müssen eine hohe Wahlbeteiligung sicherstellen. Die Ergebnisse werden ohnehin so ausfallen, wie Putin es sich vorstellt und wünscht. Aber in Europa glauben die Bevölkerung, die Journalisten und die Politiker nicht an eine totale Fälschung in Russland.</p>
-
-    <p>Und wie kann man den Europäern die Legitimität der illegitimen Wahlen in Russland beweisen? Ganz einfach: Indem man in allen Massenmedien Fotos von Wählerschlangen in den Wahllokalen der Russischen Föderation und im Ausland – vor den Botschaften – veröffentlicht.</p>
+  <!-- ЧАСТЬ 1 -->
+  <div class="section" id="wahlen">
+    <h2>Часть 1: Значение выборов в России</h2>
+    <p>19 сентября 2021 года в России прошли выборы в Государственную думу. Все жители России и постсоветских стран, хоть немного интересующиеся политикой, прекрасно знают: результаты полностью фальсифицированы, неудобные кандидаты не допускаются к выборам, итоги голосования подделываются.</p>
 
     <div class="foto-einzeln">
-      <img src="fotos/Foto_2_Infoplakaten_19.09.2021_.jpg" alt="Informationsplakate bei der Demonstration 19.09.2021">
-      <div class="bildunterschrift">Informationsplakate bei der Demonstration vor der russischen Botschaft Berlin, 19.09.2021</div>
+      <img src="../../de/fall0/fotos/Foto_1_lange Schlange vor der Botschaft_19.09.2021.jpg" alt="Очередь перед российским посольством в день выборов 19.09.2021">
+      <div class="bildunterschrift">Очередь перед российским посольством в Берлине в день выборов, 19.09.2021</div>
     </div>
 
-    <p>Deshalb sind alle Residenzen von Sonderdiensten, Einflussagenten, kontrollierter Opposition und Millionenbudgets darauf ausgerichtet, am Wahltag eine Schlange vor den Botschaften der Russischen Föderation zu bilden und westliche Medien einzuladen.</p>
-
-    <p>Sollte dies verhindert werden? Ja, es ist notwendig. Der Krieg hat diese Notwendigkeit bewiesen. Die europäischen Politiker hatten es mit Mördern zu tun. Und das können wir verhindern!</p>
-
-    <p>Deshalb habe ich vom 17. September bis 20. September 2021 eine 24-stündige Demonstration vor dem Eingang der russischen Botschaft in Berlin organisiert. Dort habe ich große Stände mit der Geschichte des Ausschlusses bestimmter Kandidaten in deutscher und englischer Sprache aufgestellt.</p>
+    <p>Поэтому я с 17 по 20 сентября 2021 года организовал круглосуточную демонстрацию перед входом в российское посольство в Берлине. Там я разместил большие стенды с историями о недопущении кандидатов на немецком и английском языках.</p>
   </div>
 
-  <!-- TEIL 2 -->
+  <!-- ЧАСТЬ 2 -->
   <div class="section" id="putin-killer">
-    <h2>Teil 2: Die Figur Putin und die Aufschrift „Putin is a Killer"</h2>
+    <h2>Часть 2: Фигура Путина и надпись «Putin is a Killer»</h2>
 
     <div class="foto-reihe">
       <div class="foto-box">
-        <img src="fotos/Foto_4_Novichok_Tea_27.09.2020.jpg" alt="Erste Demonstration mit Sperrholz-Putin und Novichok-Schild, September 2020">
-        <div class="bildunterschrift">Mannwache „Stop Putin's Terror" 24/7, September 2020 vor der russischen Botschaft — erste Erscheinung der Sperrholz-Putin-Figur</div>
+        <img src="../../de/fall0/fotos/Foto_5_Putin_is_a_Killer_27.02.2021.jpg" alt="27.02.2021 у российского посольства — первое появление 'Putin is a Killer'">
+        <div class="bildunterschrift">27.02.2021 у российского посольства — годовщина убийства Бориса Немцова. Первое появление баннера «Putin is a Killer»</div>
       </div>
       <div class="foto-box">
-        <img src="fotos/Foto_5_Putin_is_a_Killer_27.02.2021.jpg" alt="27.02.2021 vor der russischen Botschaft — erste Erscheinung von 'Putin is a Killer'">
-        <div class="bildunterschrift">27.02.2021 vor der russischen Botschaft — Jahrestag der Ermordung von Boris Nemzow. Erste Erscheinung des Banners „Putin is a Killer"</div>
+        <img src="../../de/fall0/fotos/Foto_6_Putin_Democrati_Camp_21.04.2021.jpg" alt="Лагерь демократии 24/7 у Бранденбургских ворот, 9 апреля — 9 мая 2021">
+        <div class="bildunterschrift">Круглосуточный лагерь демократии, 09.04.–09.05.2021 у Бранденбургских ворот</div>
       </div>
     </div>
 
-    <p>Ich habe zum ersten Mal im August/September 2020 einen Sperrholz-Putin angefertigt, als ich die erste Demonstration vor der russischen Botschaft organisierte. Damals gab es noch nicht die Aufschrift „Putin is a Killer". Stattdessen stand Putin vor einem Tisch mit einem Samowar und der Aufschrift „From Russia with love, tea, Novichok" vor dem Hintergrund einer Gasse von Opfern. Etwa 95 % der Passanten machten Fotos und Selfies.</p>
+    <p>Впервые я изготовил фанерного Путина в августе/сентябре 2020 года, когда организовывал первую демонстрацию у российского посольства. Баннер с надписью «Putin is a Killer» появился впервые 27 февраля 2021 года — в годовщину убийства Бориса Немцова.</p>
 
-    <p>Später habe ich einen Metallrahmen angefertigt und über Putin ein Banner mit der Aufschrift „Putin is a Killer" angebracht. Diese Installation wurde erstmals am 27. Februar 2021 vor der russischen Botschaft in Berlin gezeigt — am Jahrestag der Ermordung von Boris Nemzow.</p>
-
-    <div class="foto-einzeln">
-      <img src="fotos/Foto_6_Putin_Democrati_Camp_21.04.2021.jpg" alt="Demokratie-Camp 24/7 vor dem Brandenburger Tor, 9. April bis 9. Mai 2021">
-      <div class="bildunterschrift">Mannwache Demokratie-Camp 24/7, 09.04. – 09.05.2021 vor dem Brandenburger Tor — „Putin is a Killer" rund um die Uhr sichtbar</div>
-    </div>
-
-    <p>Vom 9. April bis 9. Mai 2021 organisierten wir ein 24-stündiges Zeltlager vor dem Brandenburger Tor. Dort stand Putin immer an zentraler Stelle vor dem Hintergrund der Opferallee unter der Aufschrift „Putin is a Killer". Auch hier machten etwa 95 % der Passanten Selfies — darunter natürlich auch Polizeibeamte.</p>
+    <p>С 9 апреля по 9 мая 2021 года мы организовали круглосуточный лагерь у Бранденбургских ворот. Путин постоянно стоял в центре на фоне «Аллеи жертв» с надписью «Putin is a Killer». Около 95% прохожих делали селфи — в том числе полицейские.</p>
 
     <div class="hinweis-box">
-      <strong>Wichtiger Rechtsfakt:</strong> Die Polizei hat bereits am 26. Februar 2021 sowie vom 9. April bis 9. Mai 2021 das Plakat „Putin is a Killer" gesehen, beim Aufstellen geholfen und Fotos davor gemacht. Es hat <strong>nie Beschwerden gegeben</strong>.
+      <strong>Важный правовой факт:</strong> Полиция видела плакат «Putin is a Killer» ещё 26 февраля 2021 года и с 9 апреля по 9 мая 2021 года, помогала его устанавливать и фотографировалась рядом. <strong>Жалоб никогда не поступало.</strong>
     </div>
-
-    <h3>Wie läuft die Anmeldung einer Demonstration ab?</h3>
-    <p>Ich sende einen Online-Antrag auf Anmeldung der Demonstration an die Polizei. Dann genehmigt die Versammlungsbehörde die Anmeldung und schickt sie an die örtliche Polizei (Polizeiabschnitt 28). Am Tag der Demonstration kommt ein Polizist und überprüft alle Materialien auf ihre Übereinstimmung mit dem deutschen Gesetz. Alles war immer äußerst freundlich und korrekt.</p>
   </div>
 
-  <!-- TEIL 3 -->
+  <!-- ЧАСТЬ 3 -->
   <div class="section" id="demonstration">
-    <h2>Teil 3: Der Krimi — Versuch, die Demonstration am 17. September 2021 zu stören</h2>
-    <p><em>Aktenzeichen: (348Gs)231 Js 3707/21 (3115/21)</em></p>
+    <h2>Часть 3: Детектив — попытка срыва демонстрации 17 сентября 2021 года</h2>
+    <p><em>Дело: (348Gs)231 Js 3707/21 (3115/21)</em></p>
 
     <div class="foto-reihe">
       <div class="foto-box">
-        <img src="fotos/Foto_3_Vor polizeiliche Angrif_17.09.2024.jpg" alt="Vor dem Polizeilichen Eingriff am 17.09.2021">
-        <div class="bildunterschrift">Mannwache vor der russischen Botschaft — vor dem Polizeilichen Eingriff am 17.09.2021</div>
+        <img src="../../de/fall0/fotos/Foto_7_Putin_is_a_Killer_1_17.09.2021.jpg" alt="Баннер Putin is a Killer, 17.09.2021">
+        <div class="bildunterschrift">Баннер «Putin is a Killer» 17.09.2021 — конфискован по личному распоряжению OStA Raupach</div>
       </div>
       <div class="foto-box">
-        <img src="fotos/Foto_7_Putin_is_a_Killer_1_17.09.2021.jpg" alt="Putin is a Killer Banner, 17.09.2021">
-        <div class="bildunterschrift">Das Banner „Putin is a Killer" am 17.09.2021 — unter direkter Anordnung von OStA Raupach beschlagnahmt</div>
+        <img src="../../de/fall0/fotos/Foto_8_Putin_is_a_Killer_2_17.09.2021.jpg" alt="Восстановленный баннер с кавычками, 17.09.2021">
+        <div class="bildunterschrift">Восстановленный баннер с кавычками — полицейский сказал: «Отличная идея, тогда я могу проигнорировать распоряжение Raupach»</div>
       </div>
     </div>
 
-    <p>Am Morgen des 17. September 2021 kam derselbe Polizist, der am Vortag geholfen hatte, die Opferallee aufzubauen. Er hatte diese Installation bereits bei früheren Demonstrationen gesehen und sagte, er habe schlechte Nachrichten.</p>
+    <p>Утром 17 сентября 2021 года пришёл тот же полицейский, который накануне помог установить «Аллею жертв». Он сказал, что у него плохие новости: <strong>оберштаатсанвальт Raupach</strong> распорядился немедленно конфисковать фанерного Путина и плакат «Putin is a Killer».</p>
 
-    <p>Er wurde von <strong>Oberstaatsanwalt Raupach</strong> angewiesen, den Sperrholz-Putin und das Schild „Putin is a Killer" sofort zu beschlagnahmen. Der Polizist sagte, dass der Oberstaatsanwalt auf dieser Anweisung bestehe, egal, was er entgegnete.</p>
+    <p>Я предложил нарисовать на плакате кавычки и представить надпись «Putin is a Killer» как цитату Байдена. Полицейский согласился с идеей, но Raupach настоял на немедленной конфискации.</p>
 
-    <p>Ich schlug vor, Anführungszeichen auf das Plakat zu malen und die Aufschrift „Putin is a Killer" als Zitat von Joe Biden darzustellen. Der Polizist fand die Idee gut und wollte versuchen, Staatsanwalt Raupach zu überzeugen — doch dieser bestand auf der sofortigen Beschlagnahme.</p>
-
-    <div class="foto-reihe">
-      <div class="foto-box">
-        <img src="fotos/Foto_8_Putin_is_a_Killer_2_17.09.2021.jpg" alt="Banner nach Wiederherstellung mit Anführungszeichen, 17.09.2021">
-        <div class="bildunterschrift">Das wiederhergestellte Banner mit Anführungszeichen — der Polizist sagte: „Tolle Idee, dann kann ich die Anordnung von Raupach missachten"</div>
-      </div>
-      <div class="foto-box">
-        <img src="fotos/Foto_9_Putinis_a_Killer_18.09.2021.jpg" alt="Putin is a Killer, 18.09.2021">
-        <div class="bildunterschrift">Fortsetzung der Mannwache am 18.09.2021</div>
-      </div>
-    </div>
-
-    <p>Nachdem die Polizisten das Plakat in ihr Auto geladen hatten, sagte ich dem Polizisten, dass ich die Aufschrift sofort wiederherstellen würde — diesmal mit Anführungszeichen. Der Polizist antwortete wörtlich:</p>
+    <p>После того как полицейские загрузили плакат в машину, я сказал, что сразу восстановлю надпись — на этот раз с кавычками. Полицейский ответил дословно:</p>
 
     <blockquote style="border-left:4px solid #e63946; padding:12px 20px; margin:20px 0; background:#fff; font-style:italic; color:#333;">
-      „Tolle Idee, dann kann ich die Anordnung von Oberprokurator Raupach missachten, und alles wird gut."
+      «Отличная идея, тогда я могу проигнорировать распоряжение обергосударственного прокурора Raupach, и всё будет хорошо.»
     </blockquote>
 
-    <p>Zum Pech der Polizei befand sich ein deutscher Journalist in der Nähe des Geschehens und filmte alles. Am 20. September 2021 veröffentlichte <strong>Julian Röpcke in der BILD-Zeitung</strong> einen Artikel mit Beschreibung und Fotos.</p>
-
     <div class="foto-einzeln">
-      <img src="fotos/Foto_10_BILD_20.09.2021.png" alt="BILD-Zeitung Artikel vom 20.09.2021 von Julian Röpcke">
-      <div class="bildunterschrift">BILD-Zeitung, 20.09.2021 — Artikel von Julian Röpcke über den Polizeilichen Eingriff bei der Demonstration von Dmitry Bagrash</div>
+      <img src="../../de/fall0/fotos/Foto_10_BILD_20.09.2021.png" alt="Статья BILD от 20.09.2021 Юлиана Рёпке">
+      <div class="bildunterschrift">BILD, 20.09.2021 — статья Юлиана Рёпке о полицейском вмешательстве на демонстрации Баграша</div>
     </div>
+
+    <p>К счастью для нас, рядом оказался немецкий журналист, который всё снял на видео. 20 сентября 2021 года <strong>Юлиан Рёпке в газете BILD</strong> опубликовал статью с описанием и фотографиями.</p>
 
     <div class="hinweis-box">
-      <strong>Rechtlicher Hinweis:</strong> Ein Staatsanwalt hat nur in Notfällen das Recht, Gegenstände ohne gerichtliche Genehmigung zu beschlagnahmen. Er muss dies jedoch innerhalb von drei Tagen dem Gericht melden und eine gerichtliche Genehmigung einholen. <strong>Was war also so dringend an meinem Plakat — es sei denn, es ging um die russischen Wahlen?</strong>
+      <strong>Правовой контекст:</strong> У прокурора есть право конфисковать предметы без судебного разрешения только в чрезвычайных случаях. Однако он обязан в течение трёх дней сообщить об этом суду и получить судебное разрешение. <strong>Что же было такого срочного в моём плакате — если не российские выборы?</strong>
     </div>
 
-    <p>Gegen mich wurde ein Strafverfahren wegen Beleidigung des Präsidenten der Russischen Föderation eingeleitet. Einige Monate später wurde das Verfahren gemäß <strong>§ 170 StPO eingestellt</strong>.</p>
+    <p>Против меня было возбуждено уголовное дело об оскорблении президента России. Несколько месяцев спустя оно было прекращено по <strong>§ 170 StPO</strong>.</p>
 
-    <p>Am <strong>5. Oktober 2021</strong> bestätigte Richter <strong>Dr. Fricke</strong> am Amtsgericht Tiergarten die Rechtmäßigkeit der Beschlagnahme des Plakats „Putin is a Killer". Hier ein wichtiges Detail: <strong>Derselbe Richter Dr. Fricke</strong> erließ am <strong>14. Dezember 2022</strong> einen Haftbefehl gegen mich und bestätigte ihn im Zusammenhang mit einer Anklage wegen versuchten Mordes.</p>
+    <p><strong>5 октября 2021 года</strong> судья <strong>д-р Фрике</strong> подтвердил законность конфискации плаката «Putin is a Killer». И тот же судья Фрике <strong>14 декабря 2022 года</strong> выдал против меня ордер на арест по обвинению в покушении на убийство.</p>
   </div>
 
-  <!-- TEIL 4 -->
+  <!-- ЧАСТЬ 4 -->
   <div class="section" id="schlussfolgerungen">
-    <h2>Teil 4: Schlussfolgerungen</h2>
+    <h2>Часть 4: Выводы</h2>
 
     <div class="schluss-box">
-      <div class="frage">1. Wer wollte die Aktion der Unkremlin e. V. stören?</div>
-      <p style="font-size:15px; margin-bottom:8px;">Die Aktion fand am Wahltag zur Staatsduma der Russischen Föderation vor der russischen Botschaft in Berlin statt und bewies die Unrechtmäßigkeit der Wahlen in Russland.</p>
+      <div class="frage">1. Кто хотел сорвать акцию Unkremlin e.V.?</div>
+      <p style="font-size:15px; margin-bottom:8px;">Акция проходила в день выборов в Государственную думу России перед российским посольством в Берлине и доказывала незаконность выборов.</p>
       <ul>
-        <li>Die Verwaltung des Präsidenten der Russischen Föderation?</li>
-        <li>Die Regierung Deutschlands?</li>
-        <li>Andere?</li>
+        <li>Администрация Президента России?</li>
+        <li>Правительство Германии?</li>
+        <li>Другие?</li>
       </ul>
     </div>
 
     <div class="schluss-box">
-      <div class="frage">2. Hat diese Aktion Deutschland überhaupt geschadet?</div>
-      <p style="font-size:15px; margin-bottom:8px;">Ich habe mich zu 100 Prozent an die Gesetze gehalten. Der Organisator war ich und die Unkremlin e.V. — die deutsche Regierung wurde dadurch von jeglicher Verantwortung befreit.</p>
+      <div class="frage">2. Нанесла ли эта акция вред Германии?</div>
+      <p style="font-size:15px; margin-bottom:8px;">Я на 100% соблюдал законы. Организатором был я и Unkremlin e.V. — германское правительство тем самым было освобождено от какой-либо ответственности.</p>
       <ul>
-        <li>Diese Aktion war schädlich für Deutschland? — <strong>Nein.</strong></li>
-        <li>Diese Aktion war illegal? — <strong>Nein. Das Verfahren wurde eingestellt.</strong></li>
-        <li>Diese Aktion hat Deutschland in keiner Weise beeinträchtigt. — <strong>Ja.</strong></li>
+        <li>Эта акция нанесла вред Германии? — <strong>Нет.</strong></li>
+        <li>Эта акция была незаконной? — <strong>Нет. Дело прекращено.</strong></li>
       </ul>
     </div>
   </div>
 
-  <!-- TEIL 5 -->
+  <!-- ЧАСТЬ 5 -->
   <div class="section" id="zusammenhang">
-    <h2>Teil 5: Zusammenhang mit dem versuchten Mord</h2>
+    <h2>Часть 5: Связь с покушением на убийство</h2>
 
-    <p>Am <strong>22. Juli 2024</strong> wurde Dmitry Bagrash vom Landgericht Berlin zu <strong>5 Jahren und 4 Monaten Freiheitsstrafe</strong> verurteilt — wegen versuchten Mordes. Das Urteil ist <strong>nicht rechtskräftig</strong>.</p>
+    <p><strong>22 июля 2024 года</strong> Дмитрий Баграш был приговорён Земельным судом Берлина к <strong>5 годам и 4 месяцам лишения свободы</strong> за покушение на убийство. Приговор <strong>не вступил в законную силу</strong>.</p>
 
-    <p>Relevante Verbindungen zu den Ereignissen in Fall 0:</p>
-
-    <ul style="margin-left:24px; margin-bottom:16px;">
-      <li style="margin-bottom:8px;"><strong>Richter Dr. Fricke</strong> — derselbe Richter, der 2021 die Beschlagnahme des Plakats bestätigte, erließ 2022 den Haftbefehl gegen Bagrash.</li>
-      <li style="margin-bottom:8px;"><strong>OSCE-Erwähnungen</strong> — Am 24.09.2021 und 08.04.2022 nannte die russische Delegation bei der OSZE Unkremlin e.V. ausdrücklich als politisch störende Organisation.</li>
-      <li style="margin-bottom:8px;"><strong>Richter Groß</strong> äußerte im aktuellen Strafverfahren ausdrücklich seinen Unmut über die Anti-Putin-Aktivitäten von Bagrash.</li>
-      <li style="margin-bottom:8px;"><strong>Facebook-Löschung</strong> — Im Zeitraum 28.11.2024 bis 16.12.2024 wurden Beiträge aus Facebook gelöscht, die im Gerichtsverfahren als Beweise verwendet wurden. Zugang zum Facebook-Konto hatten das Landgericht Berlin, OStA Wachs und Richter Groß.</li>
+    <ul style="margin-left:24px; margin-bottom:16px; font-size:15px; line-height:1.9;">
+      <li><strong>Судья д-р Фрике</strong> — тот же судья, который в 2021 году подтвердил конфискацию плаката, в 2022 году выдал ордер на арест Баграша.</li>
+      <li><strong>Упоминания в ОБСЕ</strong> — 24.09.2021 и 08.04.2022 российская делегация прямо назвала Unkremlin e.V. как политически опасную организацию.</li>
+      <li><strong>Судья Гросс</strong> прямо выразил недовольство антипутинской деятельностью Баграша в ходе судебного процесса.</li>
+      <li><strong>Удаление с Facebook</strong> — в период с 28.11.2024 по 16.12.2024 были удалены публикации, использованные в суде как доказательства.</li>
     </ul>
 
-    <p>Weitere Details finden Sie in <a href="fall1.html" style="color:#0f3460;">Fall 1 (Strafsache)</a> und in der <a href="analyse.html" style="color:#0f3460;">Analyse (Fall 4)</a>.</p>
+    <p>Подробнее см. <a href="../fall1/fall1.html" style="color:#0f3460;">Дело 1 (Уголовное дело)</a> и <a href="../analyse/analyse.html" style="color:#0f3460;">Анализ (Дело 4)</a>.</p>
   </div>
 
-  <!-- DOKUMENTE -->
+  <!-- ДОКУМЕНТЫ -->
   <div class="section" id="dokumente">
-    <h2>Originaldokumente &amp; Download</h2>
-    <p>Alle Originaldokumente befinden sich in Google Drive und können dort eingesehen und heruntergeladen werden:</p>
+    <h2>Оригинальные документы и скачивание</h2>
+    <p>Все оригинальные документы находятся в Google Drive:</p>
   </div>
 
   <div class="download-bereich">
-    <h3>📁 Google Drive — Fall 0</h3>
-    <a href="https://drive.google.com/drive/folders/1AF6WYX74nDVxPwQWl-b6KdxLOGeLkaKy?usp=sharing" target="_blank" class="download-btn">Fall 0 ansehen (Google Drive)</a>
-    <a href="https://drive.google.com/drive/folders/1I7eaTTepSWhg2vnvW0H_5cbUfHQZOfVp?usp=drive_link" target="_blank" class="download-btn sekundaer">Anlagen herunterladen</a>
-    <a href="https://drive.google.com/drive/folders/1VgZ9fZZHuIgDzvAnis_b82EBTsPBdq7K?usp=drive_link" target="_blank" class="download-btn sekundaer">Alle Fälle (ZIP)</a>
+    <h3>📁 Google Drive — Дело 0</h3>
+    <a href="https://drive.google.com/drive/folders/1Xa0huX8XI53dmcw_s_xCZDR-ccTmE6zv" target="_blank" class="download-btn">Дело 0 (Google Drive)</a>
+    <a href="https://drive.google.com/file/d/1upyTUQgHV_FDL4OPx3pC6Rp1tjSjxagA/view?usp=drivesdk" target="_blank" class="download-btn sekundaer">Пресс-релиз (PDF)</a>
+    <a href="https://drive.google.com/drive/folders/1BStA_NPC3vNybGlsDMaWqzxzz6ZhX11u" target="_blank" class="download-btn sekundaer">Все дела (ZIP)</a>
   </div>
 
-  <!-- QUELLEN -->
-  <div class="quellen">
-    <strong>Quellen &amp; Belege:</strong><br>
-    BILD-Zeitung, Julian Röpcke, 20.09.2021:
-    <a href="https://www.bild.de/politik/inland/politik-inland/anfangsverdacht-einer-beleidigung-berliner-polizei-stoppt-anti-putin-protest-77732168.bild.html" target="_blank">bild.de — Berliner Polizei stoppt Anti-Putin-Protest</a><br>
-    Facebook-Quellen (Demonstrationen 2020–2021):
-    <a href="https://www.facebook.com/bagrasch/posts/" target="_blank">facebook.com/bagrasch</a><br>
-    OSCE-Dokument PC.DEL/526/22, 08.04.2022 — Erwähnung Unkremlin e.V.<br>
-    Aktenzeichen Beschlagnahme: (348Gs)231 Js 3707/21 (3115/21)
-  </div>
-
-  <!-- NAVIGATION ZWISCHEN FÄLLEN -->
   <div class="fall-navigation">
-    <a href="index.html" class="fall-nav-btn">
-      <div class="richtung">← Zurück</div>
-      <div class="titel">Startseite</div>
+    <a href="../index.html" class="fall-nav-btn">
+      <div class="richtung">← Назад</div>
+      <div class="titel">Главная</div>
     </a>
-    <a href="fall1.html" class="fall-nav-btn rechts">
-      <div class="richtung">Weiter →</div>
-      <div class="titel">Fall 1 — Strafsache „Versuchter Mord"</div>
+    <a href="../fall1/fall1.html" class="fall-nav-btn rechts">
+      <div class="richtung">Далее →</div>
+      <div class="titel">Дело 1 — Уголовное дело «Покушение на убийство»</div>
     </a>
   </div>
 
-</div><!-- /container -->
+</div>
 
-<!-- FOOTER -->
 <footer>
   <div class="verantwortlich">
-    Verantwortlich für alle Inhalte dieser Website: <strong style="color:#fff;">Dmitry Bagrash</strong>, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br>
-    Kontakt: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a>
+    Ответственный за все материалы сайта: <strong style="color:#fff;">Дмитрий Баграш</strong>, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br>
+    Контакт: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a>
   </div>
-  <a href="impressum.html">Impressum</a>
-  <a href="datenschutz.html">Datenschutz</a>
-  <a href="index.html">Startseite</a>
+  <a href="../../de/impressum.html">Impressum</a>
+  <a href="../../de/datenschutz.html">Datenschutz</a>
+  <a href="../index.html">Главная</a>
   <br><br>
-  <span style="font-size:11px;">© Dmitry Bagrash — Alle Inhalte dürfen für journalistische und rechtliche Zwecke frei verwendet werden.</span>
+  <span style="font-size:11px;">© Дмитрий Баграш — Все материалы могут свободно использоваться в журналистских и правовых целях.</span>
 </footer>
 
 </body>
