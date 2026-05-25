@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Presse – Дмитрий Баграш: Pressemitteilungen, Medienberichte, Dossiers und Kontakt für Journalisten. Hungerstreik-Erklärungen, Offener Brief, BILD, OSCE, UN.">
+  <meta name="keywords" content="Дмитрий Баграш Presse, Pressemitteilung, Hungerstreik, Offener Brief, Justizblockade, Anti-Putin, Berlin, Medien, Journalisten, Dossier">
+  <link rel="alternate" hreflang="ru" href="presse.html">
+  <link rel="alternate" hreflang="ru" href="presse.html">
+  <link rel="alternate" hreflang="en" href="../../en/presse/presse.html">
+  <title>Пресса – Пресс-релизы и СМИ | Дмитрий Баграш</title>
+  <style>
+    :root {
+      --bg: #0e0e0e;
+      --surface: #161616;
+      --surface2: #1c1c1c;
+      --border: #282828;
+      --border-hi: #363636;
+      --text: #e6e6e6;
+      --muted: #888;
+      --dim: #555;
+      --gold: #c8a050;
+      --gold-dim: rgba(200,160,80,0.15);
+      --red: #d95050;
+      --red-dim: rgba(217,80,80,0.12);
+      --blue: #4d8fd4;
+      --green: #4ca870;
+      --green-dim: rgba(76,168,112,0.12);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: 'Segoe UI', -apple-system, sans-serif;
+      font-size: 15px; line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(14,14,14,.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-wrap {
+      max-width: 1140px; margin: 0 auto; padding: 0 20px;
+      display: flex; align-items: center; height: 52px; gap: 4px;
+    }
+    .nav-logo {
+      font-size: 13px; font-weight: 700; letter-spacing: .06em;
+      color: var(--gold); text-decoration: none; margin-right: 24px;
+      white-space: nowrap;
+    }
+    .nav-links { display: flex; flex-wrap: wrap; list-style: none; gap: 0; }
+    .nav-links a {
+      display: block; padding: 6px 10px;
+      color: var(--muted); text-decoration: none; font-size: 12.5px;
+      transition: color .15s; white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.cur { color: var(--gold); }
+    .nav-lang { margin-left: auto; display: flex; gap: 6px; }
+    .nav-lang a {
+      font-size: 12px; color: var(--dim); text-decoration: none;
+      padding: 3px 7px; border-radius: 3px; transition: color .15s;
+    }
+    .nav-lang a.cur { color: var(--gold); font-weight: 600; }
+    .nav-lang a:hover { color: var(--text); }
+
+    /* ── ANWALT BANNER ── */
+    .anwalt-banner {
+      background: linear-gradient(135deg, #1a1208 0%, #1c1a10 100%);
+      border-bottom: 1px solid rgba(200,160,80,.25);
+    }
+    .anwalt-inner {
+      max-width: 1140px; margin: 0 auto; padding: 14px 20px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .anwalt-icon { font-size: 24px; flex-shrink: 0; }
+    .anwalt-text { flex: 1; }
+    .anwalt-text strong { color: var(--gold); font-size: 13.5px; }
+    .anwalt-text p { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+    .anwalt-btn {
+      background: var(--gold); color: #000;
+      padding: 8px 16px; border-radius: 5px;
+      font-size: 12px; font-weight: 700; text-decoration: none;
+      white-space: nowrap; transition: opacity .15s; flex-shrink: 0;
+    }
+    .anwalt-btn:hover { opacity: .85; }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      background: linear-gradient(180deg, #111 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .ph-badge {
+      display: inline-block; margin-bottom: 14px;
+      background: var(--gold-dim); border: 1px solid rgba(200,160,80,.3);
+      color: var(--gold); font-size: 11px; letter-spacing: .1em;
+      text-transform: uppercase; padding: 4px 14px; border-radius: 20px;
+    }
+    .page-header h1 {
+      font-size: clamp(24px, 4vw, 38px); font-weight: 800;
+      letter-spacing: -.02em; margin-bottom: 12px;
+    }
+    .page-header p { font-size: 14px; color: var(--muted); max-width: 580px; margin: 0 auto; }
+
+    /* ── TABS ── */
+    .tabs { border-bottom: 1px solid var(--border); background: var(--surface); }
+    .tabs-wrap {
+      max-width: 1140px; margin: 0 auto; padding: 0 20px;
+      display: flex; gap: 0; overflow-x: auto;
+    }
+    .tab-btn {
+      display: flex; align-items: center; gap: 7px;
+      padding: 14px 20px; font-size: 13px; font-weight: 500;
+      color: var(--muted); text-decoration: none;
+      border-bottom: 2px solid transparent; white-space: nowrap;
+      transition: all .15s;
+    }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+    /* ── MAIN LAYOUT ── */
+    .main { max-width: 900px; margin: 0 auto; padding: 48px 20px 96px; }
+
+    /* ── SECTION LABEL ── */
+    .sec-label {
+      font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--dim); margin-bottom: 20px; margin-top: 60px;
+      padding-bottom: 10px; border-bottom: 1px solid var(--border);
+    }
+    .sec-label:first-child { margin-top: 0; }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 7px; padding: 22px 26px;
+      margin-bottom: 48px;
+      display: flex; gap: 18px; align-items: flex-start;
+    }
+    .contact-box .ico { font-size: 26px; flex-shrink: 0; margin-top: 2px; }
+    .contact-box h3 { font-size: 13.5px; font-weight: 600; margin-bottom: 8px; }
+    .contact-box p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+    .contact-box a { color: var(--gold); text-decoration: none; }
+
+    /* ── PRESS CARD ── */
+    .pcard {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 26px 30px;
+      margin-bottom: 18px; position: relative;
+      transition: border-color .2s;
+    }
+    .pcard:hover { border-color: var(--border-hi); }
+    .pcard.warn  { border-color: rgba(217,80,80,.35); background: linear-gradient(135deg,#180d0d,var(--surface)); }
+    .pcard.info  { border-color: rgba(77,143,212,.3); }
+    .pcard.suc   { border-color: rgba(76,168,112,.3); background: linear-gradient(135deg,#0c1510,var(--surface)); }
+
+    /* NEW ribbon */
+    .rib-new {
+      position: absolute; top: -1px; right: 22px;
+      background: var(--green); color: #fff;
+      font-size: 9.5px; font-weight: 800; letter-spacing: .08em;
+      padding: 3px 10px; border-radius: 0 0 6px 6px;
+    }
+    .rib-new.red { background: var(--red); }
+
+    /* Card meta */
+    .pmeta {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 12px; font-size: 11.5px;
+      font-family: 'Courier New', monospace;
+    }
+    .pmeta-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 2px 9px; color: var(--muted);
+    }
+    .pmeta-chip.date { color: var(--gold); border-color: rgba(200,160,80,.2); }
+    .pmeta-chip.reach { color: var(--blue); border-color: rgba(77,143,212,.2); }
+
+    .ptitle { font-size: 16px; font-weight: 700; line-height: 1.35; margin-bottom: 11px; }
+    .pbody  { font-size: 13.5px; color: var(--muted); line-height: 1.7; margin-bottom: 12px; }
+    .pbody strong { color: var(--text); }
+
+    /* Recipients box */
+    .rbox {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 12px 15px; margin: 14px 0;
+      font-size: 11.5px; color: var(--muted);
+      font-family: 'Courier New', monospace; line-height: 1.65;
+    }
+    .rbox-lbl {
+      font-size: 10px; text-transform: uppercase; letter-spacing: .08em;
+      color: var(--dim); margin-bottom: 6px;
+    }
+
+    /* Quote */
+    .pquote {
+      border-left: 3px solid var(--red);
+      background: var(--red-dim);
+      padding: 12px 16px; margin: 14px 0;
+      font-style: italic; font-size: 13px; color: var(--muted); line-height: 1.6;
+    }
+    .pquote cite {
+      display: block; margin-top: 6px; font-style: normal;
+      font-size: 11px; color: var(--dim); font-family: 'Courier New', monospace;
+    }
+
+    /* Card buttons */
+    .pbtn-row { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+    .pbtn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 7px 15px; border-radius: 5px; font-size: 12px;
+      font-weight: 600; text-decoration: none; transition: all .15s;
+      font-family: 'Courier New', monospace;
+    }
+    .pbtn-main { background: var(--gold); color: #000; }
+    .pbtn-main:hover { opacity: .85; }
+    .pbtn-sec {
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--border-hi);
+    }
+    .pbtn-sec:hover { color: var(--text); border-color: var(--muted); }
+
+    /* ── MEDIA CARD ── */
+    .mcard {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 22px 26px; margin-bottom: 14px;
+      display: flex; gap: 18px; align-items: flex-start;
+      transition: border-color .2s;
+    }
+    .mcard:hover { border-color: var(--border-hi); }
+    .mcard-logo {
+      font-size: 10.5px; font-weight: 800; letter-spacing: .05em;
+      background: var(--surface2); border: 1px solid var(--border);
+      padding: 6px 10px; border-radius: 4px; color: var(--muted);
+      white-space: nowrap; min-width: 60px; text-align: center;
+      margin-top: 2px; flex-shrink: 0; font-family: 'Courier New', monospace;
+      line-height: 1.3;
+    }
+    .mcard-logo.new-l {
+      background: var(--green-dim);
+      border-color: rgba(76,168,112,.3); color: var(--green);
+    }
+    .mcard-content { flex: 1; }
+    .mcard-date { font-size: 11px; color: var(--dim); font-family: 'Courier New', monospace; margin-bottom: 5px; }
+    .mcard-title { font-size: 14.5px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+    .mcard-body { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 11px; }
+
+    /* ── DOSSIER GRID ── */
+    .dossier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .dcard {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 7px; padding: 20px;
+    }
+    .dcard .dico { font-size: 22px; margin-bottom: 10px; }
+    .dcard h4 { font-size: 13.5px; font-weight: 600; margin-bottom: 7px; }
+    .dcard p { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin-bottom: 13px; }
+
+    /* ── JOURNALISTS SECTION ── */
+    .j-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--blue); border-radius: 7px; padding: 26px 30px;
+      margin-bottom: 20px;
+    }
+    .j-box h3 { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+    .j-q-list { padding-left: 18px; }
+    .j-q-list li { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin-bottom: 11px; }
+
+    /* ── NAV PREV/NEXT ── */
+    .nav-pn {
+      display: flex; justify-content: space-between; gap: 16px;
+      margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--border);
+    }
+    .nav-pn a { color: var(--muted); text-decoration: none; font-size: 13px; transition: color .15s; }
+    .nav-pn a:hover { color: var(--text); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 20px; text-align: center;
+      font-size: 11.5px; color: var(--dim);
+      font-family: 'Courier New', monospace;
+    }
+    footer .fw { max-width: 900px; margin: 0 auto; }
+    footer .fl { margin-bottom: 12px; line-height: 1.7; }
+    footer a { color: var(--dim); text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: var(--muted); }
+
+    @media (max-width: 640px) {
+      .anwalt-inner { flex-wrap: wrap; }
+      .pcard, .j-box { padding: 18px; }
+      .dossier-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .mcard { flex-direction: column; gap: 10px; }
+    }
+  </style>
+  <script defer data-domain="bagrash-justice.github.io" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-wrap">
+    <a href="../index.html" class="nav-logo">BAGRASH</a>
+    <ul class="nav-links">
+      <li><a href="../fall0/fall0.html">Дело 0</a></li>
+      <li><a href="../fall1/fall1.html">Дело 1</a></li>
+      <li><a href="../fall2/fall2.html">Дело 2</a></li>
+      <li><a href="../fall3/fall3.html">Дело 3</a></li>
+      <li><a href="../analyse/analyse.html">Анализ</a></li>
+      <li><a href="../verfahren/verfahren.html">🔴 Aktuelle Verfahren</a></li>
+      <li><a href="../../de/presse/presse.html">Пресса</a></li>
+      <li><a href="../ueber-mich/ueber-mich.html">Обо мне</a></li>
+      <li><a href="../appell/appell.html">Обращение</a></li>
+    </ul>
+    <div class="nav-lang">
+      <a href="../../de/presse/presse.html">🇩🇪</a>
+      <a href="presse.html" class="cur">🇷🇺</a>
+      <a href="../../en/presse/presse.html">🇬🇧</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── ANWALT BANNER ── -->
+<div class="anwalt-banner">
+  <div class="anwalt-inner">
+    <div class="anwalt-icon">⚖️</div>
+    <div class="anwalt-text">
+      <strong>Срочно ищу адвоката для возобновления дела</strong>
+      <p>Дмитрий Баграш sucht einen Anwalt (nicht zwingend aus Berlin), der bereit ist, gegen den Druck der Berliner Generalstaatsanwaltschaft vorzugehen, mit der Presse zusammenzuarbeiten und alle eingehenden/ausgehenden Schriftsätze zu veröffentlichen.</p>
+    </div>
+    <a href="mailto:bagrash.presse@gmail.com" class="anwalt-btn">Kontakt →</a>
+  </div>
+</div>
+
+<!-- ── PAGE HEADER ── -->
+<div class="page-header">
+  <div class="ph-badge">Presse &amp; Medien</div>
+  <h1>Пресс-релизы и публикации</h1>
+  <p>Все пресс-релизы · Публикации СМИ · Досье · Контакт для журналистов</p>
+</div>
+
+<!-- ── TABS ── -->
+<div class="tabs">
+  <div class="tabs-wrap">
+    <a href="#pm"          class="tab-btn active">📋 Пресс-релизы</a>
+    <a href="#medien"      class="tab-btn">📰 Публикации СМИ</a>
+    <a href="#dossier"     class="tab-btn">🔍 Досье</a>
+    <a href="#journalisten" class="tab-btn">✉️ Для журналистов</a>
+  </div>
+</div>
+
+<!-- ── MAIN ── -->
+<div class="main">
+
+  <!-- PRESS CONTACT -->
+  <div class="contact-box" style="margin-top:0;">
+    <div class="ico">📧</div>
+    <div>
+      <h3>Kontakt für Journalisten und Redaktionen</h3>
+      <p>
+        E-Mail: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a>
+        &nbsp;·&nbsp; Presse-ID: <strong style="color:var(--text)">2135610</strong><br>
+        Post: Дмитрий Баграш, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br>
+        Alle Dokumente dürfen für journalistische Zwecke frei verwendet werden.
+        Antwortzeiten sind aufgrund der Haftbedingungen verzögert.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ════════════ PRESSEMITTEILUNGEN ════════════ -->
+  <div id="pm" class="sec-label">Pressemitteilungen von Дмитрий Баграш — chronologisch</div>
+
+  <!-- 1 · Fall 0 / 2021–2022 -->
+  <div class="pcard">
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 2021–2022</span>
+      <span class="pmeta-chip">📍 Berlin</span>
+    </div>
+    <div class="ptitle">Пресс-релиз Дело 0: «Как я оскорбил берлинскую прокуратуру»</div>
+    <div class="pbody">
+      Ausführliche Darstellung der Ereignisse vor der Inhaftierung — Anti-Putin-Demonstrationen,
+      Beschlagnahme des Banners <em>„Putin is a Killer"</em> auf Anordnung von OStA Raupach,
+      BILD-Artikel von Julian Röpcke, OSCE-Erwähnungen. Erklärt den politischen Hintergrund der späteren Verhaftung.
+    </div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1AF6WYX74nDVxPwQWl-b6KdxLOGeLkaKy?usp=sharing" class="pbtn pbtn-main" target="_blank">Volltext (Google Drive) →</a>
+      <a href="../fall0/fall0.html" class="pbtn pbtn-sec">→ Fall 0</a>
+    </div>
+  </div>
+
+  <!-- 2 · Letztes Wort 22.07.2024 -->
+  <div class="pcard">
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 22. Juli 2024</span>
+      <span class="pmeta-chip">📍 Landgericht Berlin I</span>
+    </div>
+    <div class="ptitle">Letztes Wort von Дмитрий Баграш vor dem Landgericht Berlin</div>
+    <div class="pbody">
+      Im letzten Wort schilderte Bagrash seine politische Tätigkeit als Anti-Putin-Aktivist,
+      erklärte warum die Vorwürfe falsch sind, und kündigte an, nach seiner Entlassung
+      Ermittlungen gegen OStA Wachs zu initiieren. Richter Groß unterbrach ihn:
+      <em>„Das ist irrelevant."</em> Das Urteil fiel auf 5 Jahre und 4 Monate.
+    </div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1_qY5_JpmuK7CPKQy7E4jf7HQXNMYRTVa?usp=drive_link" class="pbtn pbtn-main" target="_blank">Urteil und letztes Wort →</a>
+      <a href="../fall1/fall1.html" class="pbtn pbtn-sec">→ Fall 1</a>
+    </div>
+  </div>
+
+  <!-- 3 · Hungerstreik 1 — 05.05.2025 -->
+  <div class="pcard warn">
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 05. Mai 2025</span>
+      <span class="pmeta-chip">📍 JVA Moabit, Berlin</span>
+      <span class="pmeta-chip reach">📨 40+ Empfänger</span>
+    </div>
+    <div class="ptitle">Голодовка I — из-за правового произвола Берлинского Сената</div>
+    <div class="pbody">
+      Дмитрий Баграш kündigt Hungerstreik ab dem 05. Mai 2025 an und erhebt öffentlich den
+      Vorwurf der Rechtsbeugung gegen die Berliner Senatsverwaltung für Justiz (Senatorin Dr. Felor Badenberg, CDU).
+      Die E-Mail ging an über 40 Empfänger — darunter Bundespräsident Steinmeier, MdB Thorsten Frei,
+      Strack-Zimmermann (MdEP), Lagodinsky (MdEP), sowie Redaktionen von
+      Spiegel, FAZ, Süddeutsche, BILD, Zeit, Handelsblatt und OHCHR, HRW, Amnesty International.
+    </div>
+    <div class="pbody"><strong>Was mir konkret verweigert wird:</strong>
+      Akteneinsicht · Freie Verteidigerwahl · Postverkehr mit Gerichten · Zugang zum Urkundsbeamten</div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1AF6WYX74nDVxPwQWl-b6KdxLOGeLkaKy?usp=sharing" class="pbtn pbtn-main" target="_blank">Originaldokument →</a>
+      <a href="../fall2/fall2.html#hungerstreik" class="pbtn pbtn-sec">→ Дело 2: Голодовка</a>
+    </div>
+  </div>
+
+  <!-- ★ NEU 4 · Ankündigung Hungerstreik II — 02.08.2025 -->
+  <div class="pcard warn">
+    <span class="rib-new red">NEU</span>
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 02. August 2025</span>
+      <span class="pmeta-chip">📍 JVA Heidering, Großbeeren</span>
+      <span class="pmeta-chip reach">📨 Behörden + 20 Redaktionen</span>
+    </div>
+    <div class="ptitle">Объявление о голодовке II — с 04.08.2025, wegen andauernder Verweigerung des Justiz-Zugangs</div>
+    <div class="pbody">
+      Zwei Tage vor Beginn des zweiten Hungerstreiks richtet Bagrash eine öffentliche Ankündigung
+      an Senatorin Dr. Badenberg, Staatssekretär Feuerberg und die Berliner Pressestelle —
+      gleichzeitig in CC an 20 Medien und Organisationen:
+      FAZ, Süddeutsche, taz, FR, Handelsblatt, Die Presse, NZZ, Cicero, Spiegel, Welt, Focus, Stern,
+      Zeit, NTV, HRW, Amnesty, OHCHR, EGMR, ICC.
+    </div>
+    <div class="pbody">
+      <strong>Kern:</strong> Der Hungerstreik sei das <em>einzige verbleibende Mittel</em>, nachdem
+      ihm durch gezieltes Zusammenwirken von JVA, Gericht und Senatsverwaltung über Wochen
+      der Zugang zu fristgebundenen Eingaben und zur EGMR-Beschwerde verweigert wurde.
+    </div>
+    <div class="rbox">
+      <div class="rbox-lbl">Empfänger (TO / CC)</div>
+      senatorin@senjustva.berlin.de · staatssekretaer@senjustva.berlin.de · pressestelle@senjustv.berlin.de<br>
+      + CC: info@faz.de · redaktion@sueddeutsche.de · info@taz.de · redaktion@handelsblatt.com ·
+      redaktion@diepresse.com · info@nzz.ch · redaktion@cicero.de · hinweise@spiegel.de ·
+      digitalredaktion@welt.de · redaktion@focus.de · leserbriefe@stern.de · redaktion@zeit.de ·
+      kontakt@ntv.de · office@ohchr.org · registry@echr.coe.int · registry@icc-cpi.int ·
+      press@hrw.org · info@amnesty.de
+    </div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1Foiqj5hGYlgL-DvI84T2g5uT53Wo0xOI?usp=drive_link" class="pbtn pbtn-main" target="_blank">Originaldokument (Google Drive) →</a>
+      <a href="../verfahren/verfahren.html" class="pbtn pbtn-sec">→ Aktuelle Verfahren</a>
+    </div>
+  </div>
+
+  <!-- 5 · Hungerstreik II — 05.08.2025 -->
+  <div class="pcard warn">
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 05. August 2025</span>
+      <span class="pmeta-chip">📍 JVA Heidering, Großbeeren</span>
+      <span class="pmeta-chip reach">📨 Behörden + 20 Medien + EGMR + ICC</span>
+    </div>
+    <div class="ptitle">Голодовка II — продолжающиеся нарушения основных прав в JVA Heidering</div>
+    <div class="pbody">
+      Nach Verlegung in die JVA Heidering setzt sich die systematische Blockade fort.
+      Am 01.08.2025 wurde ein Brief mit EGMR-Dokumenten vom Stationsbeamten Mattusch geöffnet
+      und zurückgehalten — erst nach Beginn des zweiten Hungerstreiks ausgehändigt.
+      Bagrash fordert: Ermittlungsverfahren gegen JVA-Leitung, Disziplinarprüfung wegen §§ 202, 339, 258a StGB,
+      Wiederherstellung des Justiz-Zugangs.
+    </div>
+    <div class="pquote">
+      „Ist es Ihrer Auffassung nach mit der freiheitlich-demokratischen Grundordnung vereinbar,
+      dass ein Mensch in Berlin im Jahr 2025 zu einem Hungerstreik gezwungen wird, um eine
+      Beschwerde vor dem EGMR überhaupt realisieren zu können?"
+      <cite>— Schlussfrage an Senatorin Badenberg, 05.08.2025</cite>
+    </div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1Foiqj5hGYlgL-DvI84T2g5uT53Wo0xOI?usp=drive_link" class="pbtn pbtn-main" target="_blank">Originaldokument — Anlage 64_F2 →</a>
+      <a href="../verfahren/verfahren.html" class="pbtn pbtn-sec">→ Aktuelle Verfahren</a>
+    </div>
+  </div>
+
+  <!-- ★ NEU 6 · Offener Brief 09.09.2025 — WICHTIGSTE PM -->
+  <div class="pcard warn">
+    <span class="rib-new red">NEU · WICHTIGSTE</span>
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 09. September 2025</span>
+      <span class="pmeta-chip">📍 JVA Heidering, Großbeeren</span>
+      <span class="pmeta-chip reach">📨 50+ Empfänger — größte Pressemitteilung</span>
+    </div>
+    <div class="ptitle">Открытое письмо: Блокада правосудия · Голодовка как единственное средство · Просьба принять меры в течение 7 дней</div>
+    <div class="pbody">
+      Die umfangreichste Pressemitteilung des Falles — ein Offener Brief an Senatorin Badenberg,
+      gleichzeitig verschickt an <strong>über 50 Empfänger</strong> aus Justiz, Medien,
+      Menschenrechtsorganisationen und internationalen Institutionen.
+      Bagrash benennt konkret: <strong>irreparablen Schaden</strong> durch fortgesetzte Justizblockade
+      und <strong>Wiederholungsgefahr</strong> — mit Forderung nach Abhilfe binnen 7 Tagen.
+    </div>
+    <div class="rbox">
+      <div class="rbox-lbl">Vollständige Empfängerliste (50+)</div>
+      <strong>Behörden:</strong> senatorin@senjust.berlin.de · pressestelle@senjustv.berlin.de<br>
+      <strong>Print überregional:</strong> redaktion@faz.de · presse@faz.de · redaktion@sueddeutsche.de · redaktion@taz.de · politik@fr.de · handelsblatt@vhb.de · spiegel@spiegel.de · <strong>investigativ@spiegel.de</strong> · online-cvd@zeit.de · redaktion@zeit.de · redaktion@welt.de · leserbriefe@tagesspiegel.de · online@tagesspiegel.de · redaktion@focus.de · redaktion@berliner-zeitung.de · chefredaktion@diepresse.com · innenpolitik@derstandard.at · redaktion@tages-anzeiger.ch<br>
+      <strong>TV / Radio:</strong> info@ndr.de · panorama@ndr.de · monitor@wdr.de · <strong>investigativ@ndr.de · investigativ@wdr.de</strong> · frontal@zdf.de · heute@zdf.de · info@ard.de · br24@br.de · kontraste@rbb-online.de · kontakt@deutschlandfunk.de · redaktion@tagesschau.de · redaktion@phoenix.de · newsroom@rtl.de<br>
+      <strong>Investigativ / Digital:</strong> redaktion@correctiv.org · kontakt@netzpolitik.org · srf@srf.ch · investigativ@funk.net<br>
+      <strong>International:</strong> newsdesk@reuters.com · berlin@ap.org · editors@theguardian.com · letters@nytimes.com<br>
+      <strong>NGOs / Menschenrechte:</strong> info@reporter-ohne-grenzen.de · info@amnesty.de · urgent-action@amnesty.de · presse@ecchr.eu · info@ecchr.eu · contact@hrw.org · press@hrw.org · info@verfassungsblog.de
+    </div>
+    <div class="pquote">
+      „Ich halte fest: Ich habe aktuell — <strong>jetzt!!</strong> — keinen Zugang zur Justiz."
+      <cite>— Дмитрий Баграш, Offener Brief, 09.09.2025</cite>
+    </div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1Foiqj5hGYlgL-DvI84T2g5uT53Wo0xOI?usp=drive_link" class="pbtn pbtn-main" target="_blank">Originaldokument (Google Drive) →</a>
+      <a href="../verfahren/verfahren.html" class="pbtn pbtn-sec">→ Aktuelle Verfahren</a>
+      <a href="../appell/appell.html" class="pbtn pbtn-sec">→ Appell</a>
+    </div>
+  </div>
+
+  <!-- ★ NEU 7 · Der Fall Bagrash & OStA Wachs — 21.12.2025 -->
+  <div class="pcard suc">
+    <span class="rib-new">NEU</span>
+    <div class="pmeta">
+      <span class="pmeta-chip date">📅 21. Dezember 2025</span>
+      <span class="pmeta-chip">📍 JVA Heidering</span>
+      <span class="pmeta-chip reach">📨 Anwälte · Vermittler · Journalisten</span>
+    </div>
+    <div class="ptitle">Дело Баграша — задокументированные нарушения процесса и роль OStA Wachs</div>
+    <div class="pbody">
+      Ausführliches dokumentarisches Schreiben, das konkrete Verfahrensfehler benennt
+      und die zentrale Rolle von Oberstaatsanwalt Wachs bei der Strafverfolgung analysiert —
+      mit direkten Verweisen auf beschlagnahmte Beweise und die beim BGH eingereichten
+      eidesstattlichen Erklärungen.
+    </div>
+    <div class="pbody">
+      <strong>Kernthema:</strong> Systematische Unterdrückung von Revisionsunterlagen durch das
+      koordinierte Handeln von Gericht, JVA und Staatsanwaltschaft —
+      mit Benennung konkreter Verantwortlicher gem. § 339 StGB (Rechtsbeugung).
+    </div>
+    <div class="pbtn-row">
+      <a href="https://drive.google.com/drive/folders/1ARy8Z_uDkD6Xf4uJ3VxO1NjdKv_vEhlU?usp=drive_link" class="pbtn pbtn-main" target="_blank">Originaldokument (Analyse/Fall 4) →</a>
+      <a href="../analyse/analyse.html" class="pbtn pbtn-sec">→ Analyse (Webseite)</a>
+    </div>
+  </div>
+
+
+  <!-- ════════════ MEDIENBERICHTE ════════════ -->
+  <div id="medien" class="sec-label">Medienberichte über Дмитрий Баграш</div>
+
+  <!-- Elena Vasiljeva -->
+  <div class="mcard">
+    <div class="mcard-logo new-l">🆕 NEU<br>2026</div>
+    <div class="mcard-content">
+      <div class="mcard-date">Elena Vasiljeva · 12. Mai 2026 · Blogpost · Russisch · Finnland</div>
+      <div class="mcard-title">«Дмитрий Баграш или история о том, как ФСБ нагнуло целый Минюст Германии»</div>
+      <div class="mcard-body">
+        Ausführliche journalistische Recherche über russische Geheimdienstoperationen in Deutschland.
+        Die Autorin analysiert Beweislage, Zeugenaussagen und Gutachten — und kommt zum Schluss:
+        Bagrash hat die Tat nicht begangen. Kanister war physikalisch nicht zündfähig (laut Gutachterin);
+        das dem Angeklagten zugeordnete Telefon benutzten ukrainische Flüchtlinge;
+        das Urteil enthielt zunächst keine einzige Rechtsnorm; systematische Isolation in Einzelhaft.
+      </div>
+      <div class="pbtn-row">
+        <a href="https://evasiljeva.blogspot.com/2026/05/blog-post_12.html" class="pbtn pbtn-main" target="_blank">Читать статью (Русский) →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BILD -->
+  <div class="mcard">
+    <div class="mcard-logo">BILD</div>
+    <div class="mcard-content">
+      <div class="mcard-date">Julian Röpcke · BILD-Zeitung · 20. September 2021</div>
+      <div class="mcard-title">„Berliner Polizei stoppt Anti-Putin-Protest"</div>
+      <div class="mcard-body">
+        Bericht über die Beschlagnahme des Banners „Putin is a Killer" auf Anordnung von OStA Raupach
+        während der Demonstration vor der russischen Botschaft am Wahltag zur Staatsduma.
+        Mit Fotos und Beschreibung des Polizeieinsatzes.
+      </div>
+      <div class="pbtn-row">
+        <a href="https://www.bild.de/politik/inland/politik-inland/anfangsverdacht-einer-beleidigung-berliner-polizei-stoppt-anti-putin-protest-77732168.bild.html" class="pbtn pbtn-sec" target="_blank">Artikel auf bild.de →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- OSCE -->
+  <div class="mcard">
+    <div class="mcard-logo">OSCE</div>
+    <div class="mcard-content">
+      <div class="mcard-date">OSCE Permanent Council · PC.DEL/526/22 · 08. April 2022</div>
+      <div class="mcard-title">Offizielle OSCE-Erklärung — Erwähnung Unkremlin e.V.</div>
+      <div class="mcard-body">
+        Die russische Delegation nannte Unkremlin e.V. auf Seite 2 Absatz 7 ausdrücklich
+        als Beispiel für „russophobe Aktivitäten" — widerlegt die Behauptung des LG Berlin,
+        Bagrash's politische Tätigkeit sei „unbedeutend" gewesen.
+      </div>
+      <div class="pbtn-row">
+        <a href="https://drive.google.com/drive/folders/1AF6WYX74nDVxPwQWl-b6KdxLOGeLkaKy?usp=sharing" class="pbtn pbtn-sec" target="_blank">OSCE-Dokument (Google Drive) →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Russische Medien -->
+  <div class="mcard">
+    <div class="mcard-logo">Lenta.ru<br>REN TV</div>
+    <div class="mcard-content">
+      <div class="mcard-date">Lenta.ru · REN TV · 07.05.2022 &nbsp;|&nbsp; Sputnik · 02.02.2023</div>
+      <div class="mcard-title">Russische Medienberichterstattung über die USBV (Lepsiusstraße)</div>
+      <div class="mcard-body">
+        Russische Staatsmedien berichteten am 07.05.2022 über „Kanister mit Drähten"
+        mit Feoktistov als Quelle. Am 02.02.2023 nannte Feoktistov in Sputnik Bagrash „mutmaßlich" als Täter —
+        während die Berliner Staatsanwaltschaft gleichzeitig sagte, es gebe „keine Hinweise, keine Denunziation".
+      </div>
+      <div class="pbtn-row">
+        <a href="../analyse/analyse.html#punkt9" class="pbtn pbtn-sec">→ Analyse Punkt 9</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- UN -->
+  <div class="mcard">
+    <div class="mcard-logo">UN</div>
+    <div class="mcard-content">
+      <div class="mcard-date">United Nations · Dokument A/80/518–S/2025/698 · 2025</div>
+      <div class="mcard-title">UN-Dokument A/80/518–S/2025/698</div>
+      <div class="mcard-body">
+        UN-Dokument enthält Hinweise auf Nichtverlängerung des Aufenthaltstitels,
+        angeordnete Ausreise und Passbeschlagnahme im Zusammenhang mit dem Fall Bagrash.
+      </div>
+      <div class="pbtn-row">
+        <a href="https://digitallibrary.un.org" class="pbtn pbtn-sec" target="_blank">UN Digital Library →</a>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size:12.5px;color:var(--dim);margin-top:14px;font-style:italic;">
+    Kennen Sie weitere Medienberichte?
+    Bitte schreiben Sie an <a href="mailto:bagrash.presse@gmail.com" style="color:var(--gold);">bagrash.presse@gmail.com</a>
+  </p>
+
+
+  <!-- ════════════ DOSSIERS ════════════ -->
+  <div id="dossier" class="sec-label">Досье — тематические обзоры</div>
+  <div class="dossier-grid">
+    <div class="dcard">
+      <div class="dico">🔒</div>
+      <h4>Dossier: Justizblockade</h4>
+      <p>Systematische Verweigerung des Zugangs zum Urkundsbeamten, zur Revision und zum EGMR — dokumentiert durch 10 eidesstattliche Erklärungen.</p>
+      <a href="../fall2/fall2.html" class="pbtn pbtn-sec">→ Fall 2</a>
+    </div>
+    <div class="dcard">
+      <div class="dico">⚖️</div>
+      <h4>Dossier: OStA Wachs &amp; Rechtsbeugung</h4>
+      <p>Rolle von Oberstaatsanwalt Wachs bei Ermittlung, Anklage und Blockade der Revision. Strafanzeigen gem. § 339 StGB eingereicht.</p>
+      <a href="../analyse/analyse.html" class="pbtn pbtn-sec">→ Analyse</a>
+    </div>
+    <div class="dcard">
+      <div class="dico">🕍</div>
+      <h4>Dossier: Jüdische Gemeinde</h4>
+      <p>116 Tage ohne Kontakt zur Jüdischen Gemeinde — Verletzung Art. 4 GG und Art. 9 EMRK. Freigeschaltet erst am letzten Revisionstag.</p>
+      <a href="../fall3/fall3.html" class="pbtn pbtn-sec">→ Fall 3</a>
+    </div>
+    <div class="dcard">
+      <div class="dico">📮</div>
+      <h4>Dossier: Postkontrolle</h4>
+      <p>Briefe mit EGMR-Dokumenten wurden geöffnet, in ausgetauschten Umschlägen zugestellt oder zurückgehalten — Verstoß §§ 202, 206 StGB.</p>
+      <a href="../analyse/analyse.html#punkt6" class="pbtn pbtn-sec">→ Analyse Punkt 6</a>
+    </div>
+    <div class="dcard">
+      <div class="dico">🇷🇺</div>
+      <h4>Dossier: FSB-Bezug &amp; politische Verfolgung</h4>
+      <p>Verbindung zwischen russischen Staatsmedien (Feoktistov/Sputnik), OSCE-Erwähnungen und dem Ermittlungsbeginn gegen Bagrash.</p>
+      <a href="../fall0/fall0.html" class="pbtn pbtn-sec">→ Fall 0</a>
+    </div>
+    <div class="dcard">
+      <div class="dico">📄</div>
+      <h4>Dossier: EGMR-Beschwerde</h4>
+      <p>313-seitige Individualbeschwerde (Reg. 39) zu Art. 6, 9, 13, 34 EMRK. Einreichung war selbst durch institutionelle Blockaden massiv erschwert.</p>
+      <a href="../fall2/fall2.html" class="pbtn pbtn-sec">→ Fall 2</a>
+    </div>
+  </div>
+
+
+  <!-- ════════════ FÜR JOURNALISTEN ════════════ -->
+  <div id="journalisten" class="sec-label">Für Journalisten und Parlamentarier</div>
+
+  <div class="j-box">
+    <h3>7 Fragen an die Berliner Justiz — bisher ohne Antwort</h3>
+    <ol class="j-q-list">
+      <li>Welche prozessualen Gründe wurden für die Verweigerung von Akteneinsicht genannt — und sind diese Gründe überprüfbar dokumentiert?</li>
+      <li>Wurde die Rolle von Mediennarrativen (russische Staatsmedien, Feoktistov) bei Ermittlungsentscheidungen und der Beweiswürdigung reflektiert?</li>
+      <li>Welche Kontakte bestanden zwischen Belastungszeugen aus dem Umfeld russischer Staatsmedien und den Berliner Ermittlungsbehörden?</li>
+      <li>Wie ist es möglich, dass eine JVA-Bedienstete beim Urkundsbeamten Kenntnis über Inhalte von Schriftsätzen hatte, die der Geheimhaltungspflicht des AG Tiergarten unterliegen?</li>
+      <li>Warum wurde der Antrag auf Entpflichtung des Pflichtverteidigers seit Dezember 2024 nicht entschieden?</li>
+      <li>Warum wurden Strafanzeigen gegen VRiLG Groß und OStA Wachs nicht bearbeitet — ohne Aktenzeichen, ohne Rückmeldung?</li>
+      <li>War die Beschlagnahme des Banners „Putin is a Killer" am 17.09.2021 durch OStA Raupach — genau am Wahltag zur russischen Staatsduma — ein Zufall?</li>
+    </ol>
+  </div>
+
+  <div class="mcard" style="margin-top:0;">
+    <div class="mcard-logo">🎥</div>
+    <div class="mcard-content">
+      <div class="mcard-title">Botschafts-Videos — erscheinen demnächst</div>
+      <div class="mcard-body">
+        Дмитрий Баграш plant kurze Videobotschaften direkt an Journalisten, Abgeordnete
+        und internationale Organisationen. Diese werden hier veröffentlicht sobald sie verfügbar sind.
+      </div>
+      <div class="pbtn-row">
+        <a href="https://www.youtube.com/@unkremlin" class="pbtn pbtn-sec" target="_blank">YouTube-Kanal Unkremlin →</a>
+        <a href="https://www.unkremlin.com" class="pbtn pbtn-sec" target="_blank">www.unkremlin.com →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV PREV/NEXT -->
+  <div class="nav-pn">
+    <a href="../verfahren/verfahren.html">← Aktuelle Verfahren</a>
+    <a href="../ueber-mich/ueber-mich.html">Über Дмитрий Баграш →</a>
+  </div>
+
+</div><!-- /main -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="fw">
+    <div class="fl">
+      Verantwortlich: <strong>Дмитрий Баграш</strong> · JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren ·
+      <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a>
+    </div>
+    <a href="../../de/impressum.html">Impressum</a>
+    <a href="../../de/datenschutz.html">Datenschutz</a>
+    <a href="../index.html">Startseite</a>
+    <br><br>
+    © Дмитрий Баграш — Все материалы могут свободно использоваться в журналистских и правовых целях.
+  </div>
+</footer>
+
+</body>
+</html>
