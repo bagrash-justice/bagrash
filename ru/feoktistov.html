@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sergey Feoktistov – Dossier DE/RU. Zeuge, Medienakteur und Kontext im Verfahren Dmitri Bagrash. Leiter Berliner Büro Rossiya Segodnya/Sputnik. Benennt Bagrash am 02.02.2023. 2025 aus Deutschland ausgewiesen.">
+  <title>Sergey Feoktistov – Dossier | Dmitry Bagrash</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #bbb; text-decoration: none; padding: 14px 14px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    nav ul li a.aktiv { color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch button { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; background: none; border: none; cursor: pointer; }
+    .lang-switch button.aktiv, .lang-switch button:hover { background: #e63946; color: #fff; }
+
+    .page-header { background: linear-gradient(160deg, #0a0a1a 0%, #1a1a2e 50%, #0d1530 100%); color: #fff; padding: 50px 20px 40px; }
+    .page-header .eyebrow { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #5ba3d9; margin-bottom: 14px; }
+    .page-header h1 { font-size: 2em; font-weight: bold; line-height: 1.2; margin-bottom: 10px; }
+    .page-header .subtitle { font-family: Arial, sans-serif; font-size: 13px; color: #aac4e8; max-width: 640px; line-height: 1.7; margin-bottom: 20px; }
+    .corr-note { display: inline-flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 10px 18px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 13px; color: #aaa; }
+    .corr-note strong { color: #fff; }
+
+    .facts-bar { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid #333; margin-top: 28px; }
+    .fact { flex: 1; min-width: 160px; padding: 12px 18px; border-right: 1px solid #333; }
+    .fact:last-child { border-right: none; }
+    .fact-label { font-family: Arial, sans-serif; font-size: 10px; color: #777; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .fact-value { font-family: Arial, sans-serif; font-size: 13px; color: #ddd; line-height: 1.4; }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 50px 0; }
+    section + section { border-top: 1px solid #eee; }
+    .section-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #e63946; margin-bottom: 8px; }
+    .section-title { font-size: 1.6em; color: #1a1a1a; margin-bottom: 18px; line-height: 1.3; }
+
+    .breadcrumb { font-family: Arial, sans-serif; font-size: 13px; color: #999; padding: 14px 0 0; }
+    .breadcrumb a { color: #e63946; text-decoration: none; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* LANG TOGGLE */
+    .lang-toggle { display: flex; gap: 4px; margin: 30px 0 20px; }
+    .lt-btn { font-family: Arial, sans-serif; font-size: 13px; padding: 8px 20px; border: 1px solid #ddd; border-radius: 4px; background: #fff; color: #555; cursor: pointer; transition: all 0.2s; }
+    .lt-btn.active { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+
+    .lang-panel { display: none; }
+    .lang-panel.active { display: block; }
+
+    p { margin-bottom: 1.1em; color: #333; }
+    p strong { color: #1a1a1a; }
+    p em { color: #666; font-style: italic; }
+
+    /* TIMELINE */
+    .tl { border-left: 3px solid #ddd; padding-left: 24px; margin: 20px 0; }
+    .tl-item { position: relative; padding-bottom: 20px; }
+    .tl-item::before { content: ''; position: absolute; left: calc(-24px - 6px); top: 7px; width: 9px; height: 9px; border-radius: 50%; background: #ccc; }
+    .tl-item.red::before { background: #e63946; }
+    .tl-item.blue::before { background: #3a7acc; }
+    .tl-date { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; color: #e63946; margin-bottom: 4px; }
+    .tl-item.blue .tl-date { color: #3a7acc; }
+    .tl-text { font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6; }
+    .tl-text strong { color: #1a1a1a; }
+    .tl-note { font-family: Arial, sans-serif; font-size: 12px; color: #e63946; margin-top: 4px; }
+
+    .callout { background: #fff; border-left: 4px solid #e67e22; padding: 16px 20px; margin: 16px 0; font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.7; }
+    .callout .src { font-size: 12px; color: #aaa; margin-top: 8px; display: block; }
+    .warnbox { background: #fde8e8; border: 1px solid #e63946; border-radius: 4px; padding: 16px 20px; margin: 16px 0; }
+    .warnbox-title { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #c0392b; margin-bottom: 8px; }
+    .warnbox p { font-family: Arial, sans-serif; font-size: 14px; color: #333; margin: 0; }
+
+    .q-list { list-style: none; counter-reset: q; margin-top: 14px; }
+    .q-list li { counter-increment: q; padding: 10px 0 10px 36px; border-bottom: 1px solid #eee; position: relative; font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.7; }
+    .q-list li::before { content: counter(q); position: absolute; left: 0; top: 10px; font-family: Georgia, serif; font-size: 1.3em; font-weight: bold; color: rgba(58,122,204,0.3); }
+    .q-list li strong { color: #1a1a1a; }
+
+    .doc-list { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+    .doc-item { display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 12px 16px; text-decoration: none; color: inherit; transition: border-color 0.2s; }
+    .doc-item:hover { border-color: #e63946; }
+    .doc-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 3px; }
+    .doc-title { font-family: Arial, sans-serif; font-size: 13px; color: #333; }
+    .doc-arr { color: #e63946; }
+
+    .nav-pn { display: flex; justify-content: space-between; padding: 30px 0 10px; font-family: Arial, sans-serif; font-size: 13px; }
+    .nav-pn a { color: #e63946; text-decoration: none; }
+
+    footer { background: #0a0a1a; color: #666; padding: 40px 20px 30px; font-family: Arial, sans-serif; font-size: 13px; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .footer-col h4 { color: #aaa; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .footer-col a { display: block; color: #666; text-decoration: none; margin-bottom: 6px; }
+    .footer-col a:hover { color: #e63946; }
+    .footer-col p { color: #555; line-height: 1.6; font-size: 12px; }
+    .footer-bottom { border-top: 1px solid #222; padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #444; font-size: 12px; }
+    .footer-bottom a { color: #555; text-decoration: none; margin-left: 16px; }
+    .footer-bottom a:hover { color: #e63946; }
+  </style>
+</head>
+<body onload="setLang('ru')">
+
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Dmitry <span>Bagrash</span></a>
+    <ul>
+      <li><a href="../fall0/fall0.html">Fall 0</a></li>
+      <li><a href="../fall1/fall1.html">Fall 1</a></li>
+      <li><a href="../fall2/fall2.html">Fall 2</a></li>
+      <li><a href="../fall3/fall3.html">Fall 3</a></li>
+      <li><a href="../analyse/analyse.html" class="aktiv">Analyse</a></li>
+      <li><a href="../verfahren/verfahren.html" style="color:#e63946;">🔴 Aktuelle Verfahren</a></li>
+      <li><a href="../presse/presse.html">Presse</a></li>
+      <li><a href="../ueber-mich/ueber-mich.html">Über mich</a></li>
+    </ul>
+    <div class="lang-switch">
+      <button class="aktiv" id="nav-de" onclick="setLang('de')">🇩🇪 DE</button>
+      <button id="nav-ru" onclick="setLang('ru')">🇷🇺 RU</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="eyebrow">Analyse / Fall 4 · Zeuge &amp; Kontext · Свидетель и контекст</div>
+  <h1>Sergey Feoktistov</h1>
+  <p class="subtitle lang-panel de active" id="sub-de">Zeuge, Medienakteur und Kontext im Verfahren Dmitri Bagrash | Material für Parlamentarier:innen und Journalist:innen | Stand: 22.01.2026</p>
+  <p class="subtitle lang-panel ru" id="sub-ru" style="display:none">Свидетель, медийный участник и контекст в деле Дмитрия Баграша | Материал для парламентариев и журналистов | по состоянию на 22.01.2026</p>
+  <div class="corr-note">⚠️ <strong>Korreliert direkt mit dem Fall OStA Wachs</strong> — Täterbenennung nie aufgeklärt</div>
+  <div class="facts-bar">
+    <div class="fact"><div class="fact-label">Position</div><div class="fact-value" id="f1-de">Leiter Berliner Büro, Rossiya Segodnya / RIA Novosti / Sputnik</div><div class="fact-value" id="f1-ru" style="display:none">Руководитель берлинского офиса «Россия сегодня» / РИА Новости / Sputnik</div></div>
+    <div class="fact"><div class="fact-label">Schlüsseldatum</div><div class="fact-value">02.02.2023 — Sputnik-Aussage</div></div>
+    <div class="fact"><div class="fact-label">UN-Dokument 2025</div><div class="fact-value">A/80/518–S/2025/698 — Ausreise bis 19.08.2025</div></div>
+    <div class="fact"><div class="fact-label" id="f4l-de">Verbindung zu Wachs</div><div class="fact-label" id="f4l-ru" style="display:none">Связь с Ваксом</div><div class="fact-value" id="f4-de">Täterbenennung — von Wachs nicht aufgeklärt</div><div class="fact-value" id="f4-ru" style="display:none">Называние имени — Вакс не стал расследовать</div></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="../index.html">Startseite</a><span>›</span>
+    <a href="../analyse/analyse.html">Analyse</a><span>›</span>
+    <span>Sergey Feoktistov</span>
+  </div>
+
+  <div class="lang-toggle">
+    <button class="lt-btn active" id="tab-de" onclick="setLang('de')">🇩🇪 Deutsch</button>
+    <button class="lt-btn" id="tab-ru" onclick="setLang('ru')">🇷🇺 Русский</button>
+  </div>
+
+  <!-- DEUTSCH -->
+  <div id="lang-de" class="lang-panel active">
+
+    <section>
+      <div class="section-label">1 · Öffentlich dokumentierte Ereignisse</div>
+      <h2 class="section-title">Was öffentlich nachprüfbar ist</h2>
+      <div class="tl">
+        <div class="tl-item blue">
+          <div class="tl-date">06.05.2022 · Berlin</div>
+          <div class="tl-text">In mehreren Medien wird berichtet, dass nach einem Flaschenwurf ein verdächtiger Gegenstand (Kanister/Behälter mit Drähten) entdeckt und die Polizei alarmiert wurde. <strong>Feoktistov wird als Quelle/Spokesperson genannt.</strong></div>
+        </div>
+        <div class="tl-item red">
+          <div class="tl-date">02.02.2023 · Sputnik (ru)</div>
+          <div class="tl-text">Feoktistov wird zitiert: <strong>„Это он. Это, предположительно, Дмитрий Баграш … мы заявили в полицию."</strong><br>= „Das ist er. Vermutlich Dmitry Bagrash … wir haben Anzeige bei der Polizei erstattet."</div>
+          <div class="tl-note">→ Diese Aussage wurde von OStA Wachs nie ernsthaft aufgeklärt.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Ende Mai / Juni 2025 · UN-Dokument A/80/518–S/2025/698</div>
+          <div class="tl-text">Berliner Behörden verlängerten Feoktistov den Aufenthaltstitel nicht. Ausreise bis <strong>19.08.2025</strong> angeordnet. Zudem: Durchsuchung und Beschlagnahme von Pässen von Familienangehörigen.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">2 · Medienzitate — Quellenhinweis</div>
+      <h2 class="section-title">Feoktistovs Aussagen zu Dmitri Bagrash</h2>
+      <p>In Artikeln vom 02.02.2023 (Sputnik-Publikationen) wird Feoktistov mit der Aussage zitiert, Dmitri Bagrash sei <em>„предположительно"/„mutmaßlich"</em> die Person hinter dem Vorfall.</p>
+      <div class="warnbox">
+        <div class="warnbox-title">Quellenhinweis</div>
+        <p>Diese Inhalte sind als Zitate der Quelle zu behandeln und von gerichtlichen Feststellungen zu trennen. Der entscheidende Punkt: Feoktistov erklärte öffentlich, <strong>Anzeige bei der Polizei erstattet zu haben</strong> — eine Täterbenennung durch eine Führungsperson russischer Staatsmedien.</p>
+      </div>
+      <p>OStA Wachs argumentierte, eine Geheimdienst-Provokation sei unplausibel, weil niemand die Polizei über den Namen des Täters informiert habe. Diese Argumentation ist durch Feoktistows öffentliche Aussage vom 02.02.2023 <strong>direkt widerlegt.</strong></p>
+    </section>
+
+    <section>
+      <div class="section-label">3 · Aussagekomplex Heinemann-Grüder</div>
+      <h2 class="section-title">Der blockierte Experte</h2>
+      <p>Das Dokument „Täuschung als modus operandi" beschreibt, dass <strong>Prof. Andreas Heinemann-Grüder</strong> — Berater der deutschen Bundesregierung für Osteuropa — als sachkundiger Zeuge zur Einordnung russischer Strukturen vorgesehen war. Seine Befragung im Verfahren erfolgte nur eingeschränkt.</p>
+      <div class="callout">
+        Zitat aus dem Agentenbericht (Text II): <em>„Die Hilfe, die Professor Andreas Heinemann-Grüder, Berater der deutschen Regierung für Osteuropa, der den Feind ‚B' gut kennt, dem Gericht und der Ermittlung anbot, wurde vor Gericht abgelehnt. Zitat: ‚Was kann uns dieser Universitätsprofessor schon sagen?!'"</em>
+        <span class="src">Aus dem satirischen Agentenbericht · <a href="../humor/humor.html" style="color:#e63946;">→ Humor-Seite</a></span>
+      </div>
+      <div class="warnbox">
+        <div class="warnbox-title">Bestätigungsbedürftig</div>
+        <p>Ohne Sitzungsprotokoll lässt sich der genaue Wortlaut nicht unabhängig verifizieren. Bestätigung kann nur durch Prof. Heinemann-Grüder selbst erfolgen.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">4 · Prüffragen</div>
+      <h2 class="section-title">Für Parlament &amp; Presse</h2>
+      <ol class="q-list">
+        <li>Wann und in welcher Form wurde <strong>Feoktistovs Aussage</strong> vom 02.02.2023 von den Ermittlungsbehörden registriert? Welche Vorgangsnummer?</li>
+        <li>Welche Ermittlungsmaßnahmen folgten auf Feoktistovs Erklärung, Anzeige erstattet zu haben?</li>
+        <li>Wurde die Rolle von <strong>Mediennarrativen</strong> aus dem Umfeld russischer Staatsmedien bei Ermittlungsentscheidungen reflektiert?</li>
+        <li>Welche Kontakte/Kommunikationswege bestanden zwischen <strong>Feoktistov</strong> und den Ermittlungsbehörden im Zeitraum 2022–2023?</li>
+        <li>Hat OStA Wachs das Gericht <strong>wissentlich getäuscht</strong>, als er erklärte, es gebe keine Täterbenennung?</li>
+      </ol>
+    </section>
+
+    <section>
+      <div class="section-label">Dokumente</div>
+      <h2 class="section-title">Quellen</h2>
+      <div class="doc-list">
+        <a href="https://docs.google.com/document/d/1en5CRQhj_Us69A57gX12jLFmQSYOptpQRgP7byj2QEU/edit" target="_blank" class="doc-item"><div><div class="doc-label">Dossier DE</div><div class="doc-title">Dossier: Sergey Feoktistov – Zeuge, Medienakteur und Kontext (Deutsch)</div></div><span class="doc-arr">↗</span></a>
+        <a href="https://docs.google.com/document/d/1xsBGM5v6wHbr5jr-XwdzyLN9VPstFjukScav6Y_s_WY/edit" target="_blank" class="doc-item"><div><div class="doc-label">Досье RU</div><div class="doc-title">Досье: Сергей Феоктистов — свидетель, медийный участник и контекст (Русский)</div></div><span class="doc-arr">↗</span></a>
+        <a href="wachs.html" class="doc-item"><div><div class="doc-label">Verbundenes Dossier</div><div class="doc-title">OStA Klaus Michael Wachs — wie Feoktistov und Wachs zusammenhängen</div></div><span class="doc-arr">→</span></a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- РУССКИЙ -->
+  <div id="lang-ru" class="lang-panel" style="display:none">
+
+    <section>
+      <div class="section-label">1 · Публично задокументированные факты</div>
+      <h2 class="section-title">Что поддаётся публичной проверке</h2>
+      <div class="tl">
+        <div class="tl-item blue">
+          <div class="tl-date">06.05.2022 · Берлин</div>
+          <div class="tl-text">В ряде СМИ сообщается, что после броска бутылки был обнаружен подозрительный предмет (канистра/конструкция с проводами), вызвана полиция. <strong>Феоктистов называется источником/комментатором.</strong></div>
+        </div>
+        <div class="tl-item red">
+          <div class="tl-date">02.02.2023 · Sputnik (ru)</div>
+          <div class="tl-text">Феоктистов цитируется с заявлением: <strong>«Это он. Это, предположительно, Дмитрий Баграш … мы заявили в полицию.»</strong></div>
+          <div class="tl-note">→ Это заявление так и не было серьёзно расследовано прокурором Ваксом.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Конец мая / июнь 2025 · Документ ООН A/80/518–S/2025/698</div>
+          <div class="tl-text">Берлинские власти не продлили Феоктистову ВНЖ. Предписано покинуть Германию до <strong>19.08.2025</strong>. Также: обыск и изъятие паспортов у членов семьи.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">2 · Медийные цитаты — примечание к источнику</div>
+      <h2 class="section-title">Высказывания Феоктистова о Дмитрии Баграше</h2>
+      <p>В публикациях от 02.02.2023 (публикации Sputnik) Феоктистов цитируется с утверждением, что Дмитрий Баграш <em>«предположительно»</em> причастен к инциденту.</p>
+      <div class="warnbox">
+        <div class="warnbox-title">Примечание к источнику</div>
+        <p>Эти материалы следует квалифицировать как утверждения источника. Ключевое: Феоктистов публично заявил, что <strong>подал заявление в полицию</strong> — это называние имени подозреваемого со стороны руководителя российских государственных СМИ. OStA Вакс никогда не расследовал это должным образом.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">3 · Эпизод Хайнеманн-Грюдер</div>
+      <h2 class="section-title">Заблокированный эксперт</h2>
+      <p>В документе «Täuschung als modus operandi» описывается, что <strong>проф. Андреас Хайнеманн-Грюдер</strong> — советник федерального правительства Германии по Восточной Европе — должен был выступить как компетентный свидетель. Его допрос в ходе процесса был ограничен.</p>
+      <div class="warnbox">
+        <div class="warnbox-title">Требует подтверждения</div>
+        <p>Без судебного протокола точный текст не поддаётся независимой проверке. Подтверждение возможно только от самого проф. Хайнеманн-Грюдера.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">4 · Вопросы для проверки</div>
+      <h2 class="section-title">Для парламента и прессы</h2>
+      <ol class="q-list">
+        <li>Когда и в какой форме <strong>заявление Феоктистова</strong> от 02.02.2023 было зарегистрировано следственными органами?</li>
+        <li>Какие следственные действия последовали после заявления Феоктистова о подаче в полицию — и кто решил не разрабатывать эту версию?</li>
+        <li>Была ли отражена роль <strong>медийных нарративов</strong> из окружения российских государственных СМИ в следственных решениях?</li>
+        <li>Обманул ли OStA Вакс суд, когда заявил, что <strong>никакого называния имён не было</strong>?</li>
+      </ol>
+    </section>
+
+  </div>
+
+  <div class="nav-pn">
+    <a href="wachs.html">← OStA Wachs</a>
+    <a href="taeuschung.html">Täuschung als modus operandi →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Dokumentation</h4>
+        <a href="../fall0/fall0.html">Fall 0</a><a href="../fall1/fall1.html">Fall 1</a>
+        <a href="../fall2/fall2.html">Fall 2</a><a href="../fall3/fall3.html">Fall 3</a>
+        <a href="../analyse/analyse.html">Analyse</a>
+        <a href="../verfahren/verfahren.html">Aktuelle Verfahren</a>
+      </div>
+      <div class="footer-col">
+        <h4>Fall 4 — Analyse</h4>
+        <a href="taeuschung.html">Täuschung als modus operandi</a>
+        <a href="wachs.html">OStA Klaus Michael Wachs</a>
+        <a href="feoktistov.html">Sergey Feoktistov</a>
+        <a href="../humor/humor.html">Über den Prozess mit Humor</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <a href="../impressum.html">Impressum</a>
+        <a href="../datenschutz.html">Datenschutz</a>
+      </div>
+      <div class="footer-col">
+        <h4>Verantwortlich</h4>
+        <p>Dmitry Bagrash · JVA Heidering<br>Ernst-Stargardt-Allee 1 · 14979 Großbeeren<br><br>
+        <a href="mailto:bagrash.presse@gmail.com" style="color:#e63946;">bagrash.presse@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Dmitry Bagrash — Alle Inhalte dürfen für journalistische und rechtliche Zwecke frei verwendet werden.</span>
+      <div><a href="../impressum.html">Impressum</a><a href="../datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function setLang(lang) {
+  ['de','ru'].forEach(l => {
+    document.getElementById('lang-'+l).style.display = 'none';
+    document.getElementById('lang-'+l).classList.remove('active');
+    var t = document.getElementById('tab-'+l); if(t){t.classList.remove('active');}
+    var n = document.getElementById('nav-'+l); if(n){n.classList.remove('aktiv');}
+  });
+  document.getElementById('lang-'+lang).style.display = 'block';
+  document.getElementById('lang-'+lang).classList.add('active');
+  var t = document.getElementById('tab-'+lang); if(t){t.classList.add('active');}
+  var n = document.getElementById('nav-'+lang); if(n){n.classList.add('aktiv');}
+  // subtitle
+  document.getElementById('sub-de').style.display = lang==='de'?'':'none';
+  var sru = document.getElementById('sub-ru'); if(sru) sru.style.display = lang==='ru'?'':'none';
+  // facts
+  ['f1','f4','f4l'].forEach(function(id){
+    var de=document.getElementById(id+'-de'), ru=document.getElementById(id+'-ru');
+    if(de) de.style.display=lang==='de'?'':'none';
+    if(ru) ru.style.display=lang==='ru'?'':'none';
+  });
+}
+</script>
+</body>
+</html>
