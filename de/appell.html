@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Appell von Dmitry Bagrash – an Journalisten, Abgeordnete, UN-Stellen und Menschenrechtsorganisationen. Was Sie tun können. Kontaktadressen für Beschwerden.">
+  <meta name="keywords" content="Dmitry Bagrash Appell, Petition, Bundestag, UN, Menschenrechte, Journalisten, Beschwerden, Abgeordnetenhaus Berlin">
+  <link rel="alternate" hreflang="de" href="appell.html">
+  <link rel="alternate" hreflang="ru" href="../ru/appell/appell.html">
+  <link rel="alternate" hreflang="en" href="../en/appell/appell.html">
+  <title>Appell – Was Sie tun können | Dmitry Bagrash</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; font-size: 17px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #bbb; text-decoration: none; padding: 14px 13px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    nav ul li a.aktiv { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
+
+    /* HERO */
+    .page-header {
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0d2040 100%);
+      color: #fff; padding: 60px 20px 50px; text-align: center;
+    }
+    .page-header .badge { display: inline-block; background: #e63946; color: #fff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 2px; padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; text-transform: uppercase; }
+    .page-header h1 { font-size: 2.4em; font-weight: bold; margin-bottom: 16px; line-height: 1.2; }
+    .page-header h1 em { font-style: normal; color: #e63946; }
+    .page-header p { font-size: 1.1em; color: #aac4e8; max-width: 680px; margin: 0 auto; line-height: 1.7; }
+
+    .breadcrumb { background: #eee; padding: 10px 20px; font-family: Arial, sans-serif; font-size: 13px; color: #666; }
+    .breadcrumb a { color: #0f3460; text-decoration: none; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 50px 20px 70px; }
+
+    /* ЛИЧНОЕ ОБРАЩЕНИЕ */
+    .zitat-bagrash {
+      background: #1a1a2e; color: #fff; border-radius: 8px;
+      padding: 36px 40px; margin-bottom: 50px;
+      position: relative;
+    }
+    .zitat-bagrash::before {
+      content: '"';
+      font-size: 80px; color: #e63946; opacity: 0.3;
+      position: absolute; top: 10px; left: 20px;
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .zitat-bagrash p { font-size: 16px; line-height: 1.9; color: #ddd; margin-bottom: 16px; text-align: justify; }
+    .zitat-bagrash p:last-of-type { margin-bottom: 0; }
+    .zitat-bagrash .autor { font-family: Arial, sans-serif; font-size: 13px; color: #aac4e8; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+    /* РАЗДЕЛИТЕЛИ СЕКЦИЙ */
+    .section { margin-bottom: 50px; }
+    .section-header {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 24px;
+    }
+    .section-number {
+      background: #e63946; color: #fff; font-family: Arial, sans-serif;
+      font-size: 18px; font-weight: bold; width: 44px; height: 44px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-title { font-size: 1.5em; color: #1a1a2e; line-height: 1.3; }
+    .section p { margin-bottom: 14px; font-size: 15px; line-height: 1.8; }
+
+    /* КАРТОЧКИ АДРЕСОВ */
+    .adress-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 20px 0; }
+    .adress-karte {
+      background: #fff; border: 1px solid #ddd; border-top: 3px solid #e63946;
+      border-radius: 6px; padding: 20px 22px;
+    }
+    .adress-karte .ak-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 8px; }
+    .adress-karte h4 { font-size: 15px; color: #1a1a2e; margin-bottom: 8px; line-height: 1.3; }
+    .adress-karte p { font-family: Arial, sans-serif; font-size: 13px; color: #555; line-height: 1.6; }
+    .adress-karte a { color: #e63946; text-decoration: none; word-break: break-all; }
+    .adress-karte a:hover { text-decoration: underline; }
+
+    /* ШАБЛОН ПИСЬМА */
+    .vorlage-box {
+      background: #f8f9ff; border: 1px solid #c5cae9; border-left: 4px solid #3949ab;
+      border-radius: 4px; padding: 24px 28px; margin: 20px 0;
+    }
+    .vorlage-box .vb-titel { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #3949ab; margin-bottom: 14px; }
+    .vorlage-box p { font-size: 14px; color: #333; line-height: 1.8; margin-bottom: 10px; }
+    .vorlage-box p:last-child { margin-bottom: 0; }
+
+    /* ЧТО ВЫ МОЖЕТЕ СДЕЛАТЬ */
+    .aktion-liste { margin: 16px 0; }
+    .aktion-item {
+      display: flex; gap: 14px; align-items: flex-start;
+      background: #fff; border: 1px solid #eee; border-radius: 6px;
+      padding: 16px 18px; margin-bottom: 12px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .aktion-item:hover { border-color: #e63946; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .aktion-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .aktion-text h4 { font-family: Arial, sans-serif; font-size: 15px; color: #1a1a2e; margin-bottom: 4px; }
+    .aktion-text p { font-family: Arial, sans-serif; font-size: 13px; color: #555; line-height: 1.5; }
+    .aktion-text a { color: #e63946; text-decoration: none; }
+    .aktion-text a:hover { text-decoration: underline; }
+
+    /* КОНТАКТ */
+    .kontakt-box {
+      background: #e63946; color: #fff; border-radius: 8px;
+      padding: 30px 34px; margin: 40px 0; text-align: center;
+    }
+    .kontakt-box h3 { font-size: 1.4em; margin-bottom: 10px; }
+    .kontakt-box p { font-family: Arial, sans-serif; font-size: 15px; opacity: 0.9; margin-bottom: 16px; }
+    .kontakt-box .email { font-size: 1.3em; font-weight: bold; font-family: Arial, sans-serif; }
+    .kontakt-box a { color: #fff; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5); }
+    .kontakt-box a:hover { border-bottom-color: #fff; }
+    .kontakt-box .presse-id { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.7; margin-top: 8px; }
+
+    /* РАЗДЕЛИТЕЛЬ */
+    hr { border: none; border-top: 2px solid #eee; margin: 40px 0; }
+
+    footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px 20px; font-family: Arial, sans-serif; font-size: 13px; }
+    footer a { color: #aac4e8; text-decoration: none; margin: 0 10px; }
+    footer .verantwortlich { color: #aaa; margin-bottom: 12px; font-size: 12px; }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.8em; }
+      .zitat-bagrash { padding: 24px 20px; }
+      .zitat-bagrash::before { display: none; }
+      .adress-grid { grid-template-columns: 1fr; }
+    }
+      .anwalt-banner { background: linear-gradient(135deg, #c0392b, #e63946); color: #fff; padding: 14px 20px; position: sticky; top: 60px; z-index: 90; }
+    .anwalt-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .anwalt-inner strong { font-family: Arial, sans-serif; font-size: 14px; flex: 1; min-width: 200px; }
+    .anwalt-inner p { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.9; flex: 2; min-width: 200px; }
+    .anwalt-inner a { background: #fff; color: #c0392b; padding: 7px 14px; border-radius: 3px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .anwalt-inner a:hover { background: #ffe0e0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Dmitry <span>Bagrash</span></a>
+    <ul>
+      <li><a href="fall0/fall0.html">Fall 0</a></li>
+      <li><a href="fall1/fall1.html">Fall 1</a></li>
+      <li><a href="fall2/fall2.html">Fall 2</a></li>
+      <li><a href="fall3/fall3.html">Fall 3</a></li>
+      <li><a href="analyse/analyse.html">Analyse</a></li>
+      <li><a href="verfahren/verfahren.html">Aktuelle Verfahren</a></li>
+      <li><a href="presse/presse.html">Presse</a></li>
+      <li><a href="ueber-mich/ueber-mich.html">Über mich</a></li>
+      <li><a href="appell.html" class="aktiv">Appell</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="appell.html" class="aktiv">🇩🇪 DE</a>
+      <a href="../ru/appell/appell.html">🇷🇺 RU</a>
+      <a href="../en/appell/appell.html">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <a href="index.html">Startseite</a> › Appell
+</div>
+
+<div class="page-header">
+  <div class="badge">Appell</div>
+  <h1>Helfen Sie, <em>Gerechtigkeit</em> herzustellen</h1>
+  <p>Dmitry Bagrash wendet sich an Journalisten, Abgeordnete, internationale Organisationen und alle Menschen, denen Rechtsstaat und Menschenwürde wichtig sind.</p>
+</div>
+
+<div class="container">
+
+  <!-- ЛИЧНОЕ ОБРАЩЕНИЕ БАГРАША -->
+  <div class="zitat-bagrash">
+    <p>Mein Name ist Dmitry Bagrash. Ich sitze seit dem 14. Dezember 2022 im Gefängnis — wegen einer Tat, die ich nicht begangen habe. Das Urteil des Landgerichts Berlin enthielt keine einzige Rechtsnorm. Die Revision wurde von Behörden blockiert, die meine Schriftsätze nicht annehmen wollten. Mein Pflichtverteidiger handelte ohne mein Wissen. Die Jüdische Gemeinde wurde mir 116 Tage lang verweigert. Briefe wurden geöffnet.</p>
+    <p>Ich habe dreimal gehungert. Ich habe Verfassungsbeschwerden eingereicht, beim EGMR geklagt, Hunderte von Schriftsätzen verfasst. Alles ist dokumentiert — mit Originaldokumenten, eidesstattlichen Erklärungen und Chronologien.</p>
+    <p>Ich bitte Sie nicht, mir zu glauben. Ich bitte Sie, die Dokumente zu lesen — und dann zu urteilen. Wenn Sie zu dem Schluss kommen, dass hier etwas fundamental falsch läuft, dann tun Sie bitte etwas dagegen. Jede Stimme zählt.</p>
+    <div class="autor">— Dmitry Bagrash, JVA Heidering, Großbeeren · bagrash.presse@gmail.com · Presse-ID: 2135610</div>
+  </div>
+
+  <!-- СЕКЦИЯ 1 — ЧТО МОЖНО СДЕЛАТЬ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">1</div>
+      <h2 class="section-title">Was Sie konkret tun können</h2>
+    </div>
+
+    <div class="aktion-liste">
+      <div class="aktion-item">
+        <div class="aktion-icon">📧</div>
+        <div class="aktion-text">
+          <h4>Petition an den Petitionsausschuss des Deutschen Bundestages senden</h4>
+          <p>Sie können als Einzelperson eine Petition einreichen — online, kostenlos, auf Deutsch. Schildern Sie kurz den Fall und fordern Sie eine parlamentarische Prüfung.<br>
+          <a href="https://epetitionen.bundestag.de" target="_blank">epetitionen.bundestag.de →</a></p>
+        </div>
+      </div>
+      <div class="aktion-item">
+        <div class="aktion-icon">🏛️</div>
+        <div class="aktion-text">
+          <h4>Abgeordnete des Berliner Abgeordnetenhauses anschreiben</h4>
+          <p>Mitglieder des Rechtsausschusses des Berliner Abgeordnetenhauses können parlamentarische Anfragen stellen. Ein kurzes E-Mail mit Verweis auf diese Website genügt.<br>
+          <a href="https://www.parlament-berlin.de/de/Abgeordnetenhaus/Ausschuesse/Rechtsausschuss" target="_blank">Rechtsausschuss Berlin →</a></p>
+        </div>
+      </div>
+      <div class="aktion-item">
+        <div class="aktion-icon">📰</div>
+        <div class="aktion-text">
+          <h4>Journalisten und Redaktionen informieren</h4>
+          <p>Schicken Sie einen Hinweis auf diesen Fall an Redaktionen, Investigativjournalisten oder Menschenrechtskorrespondenten. Alle Dokumente sind öffentlich zugänglich.<br>
+          Kontakt Bagrash: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="aktion-item">
+        <div class="aktion-icon">🌐</div>
+        <div class="aktion-text">
+          <h4>Internationale Organisationen kontaktieren</h4>
+          <p>UN-Sonderberichterstatter für Folter, für faire Verfahren, für Menschenrechtsverteidiger — alle können Berichte erhalten und handeln.<br>
+          <a href="https://www.ohchr.org/en/special-procedures/sr-torture" target="_blank">OHCHR: UN Special Rapporteur →</a></p>
+        </div>
+      </div>
+      <div class="aktion-item">
+        <div class="aktion-icon">🔗</div>
+        <div class="aktion-text">
+          <h4>Diese Website teilen</h4>
+          <p>Teilen Sie diese Website in sozialen Netzwerken, in E-Mails, in Gruppen. Je mehr Menschen von diesem Fall erfahren, desto schwerer wird es, ihn zu ignorieren.</p>
+        </div>
+      </div>
+      <div class="aktion-item">
+        <div class="aktion-icon">⚖️</div>
+        <div class="aktion-text">
+          <h4>Anwälte und Rechtsexperten ansprechen</h4>
+          <p>Kennen Sie einen Anwalt oder Rechtsexperten der bereit wäre, den Fall zu prüfen? Dmitry Bagrash benötigt dringend internationalen rechtlichen Beistand.<br>
+          Kontakt: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- СЕКЦИЯ 2 — АДРЕСА -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">2</div>
+      <h2 class="section-title">Wichtige Kontaktadressen</h2>
+    </div>
+
+    <div class="adress-grid">
+
+      <div class="adress-karte">
+        <div class="ak-label">Deutschland — Bundestag</div>
+        <h4>Petitionsausschuss des Deutschen Bundestages</h4>
+        <p>Platz der Republik 1<br>11011 Berlin<br>
+        <a href="mailto:petitionsausschuss@bundestag.de">petitionsausschuss@bundestag.de</a><br>
+        <a href="https://epetitionen.bundestag.de" target="_blank">epetitionen.bundestag.de</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">Deutschland — Berlin</div>
+        <h4>Abgeordnetenhaus Berlin — Rechtsausschuss</h4>
+        <p>Niederkirchnerstraße 5<br>10111 Berlin<br>
+        <a href="https://www.parlament-berlin.de" target="_blank">parlament-berlin.de</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">Deutschland — Aufsicht</div>
+        <h4>Berliner Beauftragte für Datenschutz und Informationsfreiheit</h4>
+        <p>Friedrichstraße 219<br>10969 Berlin<br>
+        <a href="mailto:mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">International — UN</div>
+        <h4>UN Special Rapporteur on Torture</h4>
+        <p>Office of the High Commissioner for Human Rights<br>
+        Palais Wilson, Geneva<br>
+        <a href="https://www.ohchr.org/en/special-procedures/sr-torture" target="_blank">ohchr.org/sr-torture</a><br>
+        <a href="mailto:sr-torture@ohchr.org">sr-torture@ohchr.org</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">International — UN</div>
+        <h4>UN Special Rapporteur on Human Rights Defenders</h4>
+        <p>Office of the High Commissioner for Human Rights<br>
+        <a href="https://www.ohchr.org/en/special-procedures/sr-human-rights-defenders" target="_blank">ohchr.org/sr-defenders</a><br>
+        <a href="mailto:defenders@ohchr.org">defenders@ohchr.org</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">International — NGOs</div>
+        <h4>Amnesty International Deutschland</h4>
+        <p>Zinnowitzer Str. 8<br>10115 Berlin<br>
+        <a href="mailto:info@amnesty.de">info@amnesty.de</a><br>
+        <a href="https://www.amnesty.de" target="_blank">amnesty.de</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">International — Pressefreiheit</div>
+        <h4>Reporter ohne Grenzen (RSF)</h4>
+        <p>Postfach 300 643<br>10726 Berlin<br>
+        <a href="mailto:info@rsf.de">info@rsf.de</a><br>
+        <a href="https://www.reporter-ohne-grenzen.de" target="_blank">reporter-ohne-grenzen.de</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">International — Digitalrechte</div>
+        <h4>Gesellschaft für Freiheitsrechte (GFF)</h4>
+        <p>Tempelhofer Ufer 23–24<br>10963 Berlin<br>
+        <a href="mailto:info@freiheitsrechte.org">info@freiheitsrechte.org</a><br>
+        <a href="https://freiheitsrechte.org" target="_blank">freiheitsrechte.org</a></p>
+      </div>
+
+      <div class="adress-karte">
+        <div class="ak-label">Europa — EGMR</div>
+        <h4>Europäischer Gerichtshof für Menschenrechte</h4>
+        <p>Council of Europe<br>67075 Strasbourg Cedex<br>
+        <a href="https://www.echr.coe.int" target="_blank">echr.coe.int</a><br>
+        <em>(Beschwerde bereits eingereicht — Reg. 39)</em></p>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- СЕКЦИЯ 3 — ШАБЛОН ПИСЬМА -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">3</div>
+      <h2 class="section-title">Vorlage für ein kurzes Schreiben</h2>
+    </div>
+
+    <p style="font-family:Arial,sans-serif; font-size:14px; color:#555; margin-bottom:16px;">Sie können diesen Text als Grundlage verwenden — passen Sie ihn gerne an:</p>
+
+    <div class="vorlage-box">
+      <div class="vb-titel">📋 Mustertext — für Abgeordnete oder Organisationen</div>
+      <p>Sehr geehrte Damen und Herren,</p>
+      <p>ich möchte Ihre Aufmerksamkeit auf den Fall von Dmitry Bagrash lenken — einem russischen Anti-Putin-Aktivisten und Vereinsvorsitzenden von Unkremlin e.V., der seit Dezember 2022 in Berlin inhaftiert ist.</p>
+      <p>Laut der auf seiner Website (www.[ihre-domain].de) veröffentlichten und durch Originaldokumente belegten Darstellung bestehen erhebliche Zweifel an der Rechtmäßigkeit des Verfahrens: Das Urteil enthielt zunächst keine Rechtsnormen; Revisionsbegründungen wurden systematisch nicht angenommen; der Zugang zur Jüdischen Gemeinde wurde 116 Tage verwehrt; Briefe wurden geöffnet.</p>
+      <p>Ich bitte Sie, diesen Fall zu prüfen und gegebenenfalls tätig zu werden.</p>
+      <p>Mit freundlichen Grüßen<br>[Ihr Name]</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- СЕКЦИЯ 4 — ДОКУМЕНТЫ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">4</div>
+      <h2 class="section-title">Alle Dokumente — öffentlich zugänglich</h2>
+    </div>
+    <p>Alle Originaldokumente befinden sich in Google Drive und können ohne Anmeldung eingesehen werden:</p>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;">
+      <a href="fall0/fall0.html" style="display:inline-block; background:#1a1a2e; color:#fff; padding:10px 18px; border-radius:4px; text-decoration:none; font-family:Arial,sans-serif; font-size:13px;">Fall 0</a>
+      <a href="fall1/fall1.html" style="display:inline-block; background:#1a1a2e; color:#fff; padding:10px 18px; border-radius:4px; text-decoration:none; font-family:Arial,sans-serif; font-size:13px;">Fall 1</a>
+      <a href="fall2/fall2.html" style="display:inline-block; background:#1a1a2e; color:#fff; padding:10px 18px; border-radius:4px; text-decoration:none; font-family:Arial,sans-serif; font-size:13px;">Fall 2</a>
+      <a href="fall3/fall3.html" style="display:inline-block; background:#1a1a2e; color:#fff; padding:10px 18px; border-radius:4px; text-decoration:none; font-family:Arial,sans-serif; font-size:13px;">Fall 3</a>
+      <a href="analyse/analyse.html" style="display:inline-block; background:#1a1a2e; color:#fff; padding:10px 18px; border-radius:4px; text-decoration:none; font-family:Arial,sans-serif; font-size:13px;">Analyse</a>
+      <a href="dokumente.html" style="display:inline-block; background:#e63946; color:#fff; padding:10px 18px; border-radius:4px; text-decoration:none; font-family:Arial,sans-serif; font-size:13px;">Alle 306 Dokumente</a>
+    </div>
+  </div>
+
+  <!-- КОНТАКТ -->
+  <div class="kontakt-box">
+    <h3>Direkter Kontakt zu Dmitry Bagrash</h3>
+    <p>Für Journalisten, Anwälte, Abgeordnete und Menschenrechtsorganisationen:</p>
+    <div class="email"><a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a></div>
+    <div class="presse-id">Presse-ID: 2135610 · Post: JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren</div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="verantwortlich">
+    Verantwortlich für alle Inhalte: <strong style="color:#fff;">Dmitry Bagrash</strong>,
+    JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br>
+    <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a>
+  </div>
+  <a href="impressum.html">Impressum</a>
+  <a href="datenschutz.html">Datenschutz</a>
+  <a href="index.html">Startseite</a>
+  <br><br>
+  <span style="font-size:11px;">© Dmitry Bagrash — Alle Inhalte dürfen für journalistische und rechtliche Zwecke frei verwendet werden.</span>
+</footer>
+
+</body>
+</html>

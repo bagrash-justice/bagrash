@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aktuelle offene Verfahren von Dmitry Bagrash – chronologischer Überblick aller laufenden Rechtssachen: Verfassungsbeschwerde, EGMR, Urkundsbeamter, Berichtigungsbeschluss, Wiederaufnahme.">
+  <meta name="keywords" content="Dmitry Bagrash, aktuelle Verfahren, Verfassungsbeschwerde, EGMR, Urkundsbeamter, JVA Heidering, offene Rechtssachen, Wiederaufnahme">
+  <title>Aktuelle Verfahren | Dmitry Bagrash</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #f4f4f0;
+    }
+
+    nav {
+      background: #1a1a2e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    nav ul li a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      padding: 14px 16px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    nav ul li a.aktiv { background: #e63946; color: #fff; }
+
+    .page-header {
+      background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 60%, #0d3060 100%);
+      color: #fff;
+      padding: 50px 20px 40px;
+      text-align: center;
+    }
+    .page-header .badge {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    .page-header h1 {
+      font-size: 2.1em;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .page-header p {
+      font-size: 1em;
+      color: #aac4e8;
+      max-width: 680px;
+      margin: 0 auto 16px;
+    }
+    .stand-datum {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 8px 18px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #aac4e8;
+    }
+
+    .breadcrumb {
+      background: #eee;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #666;
+    }
+    .breadcrumb a { color: #0f3460; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* ЛЕГЕНДА СТАТУСОВ */
+    .legende {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 16px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+    .legende-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-rot { background: #e63946; }
+    .dot-orange { background: #e67e22; }
+    .dot-gruen { background: #27ae60; }
+    .dot-grau { background: #95a5a6; }
+
+    /* СТАТИСТИКА */
+    .stats-leiste {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .stat-mini {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: 3px solid #e63946;
+      border-radius: 4px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .stat-mini .zahl {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #e63946;
+      font-family: Arial, sans-serif;
+      line-height: 1.1;
+    }
+    .stat-mini .bez {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    /* ТЕМАТИЧЕСКИЕ ГРУППЫ */
+    .thema-gruppe {
+      margin-bottom: 40px;
+    }
+    .thema-titel {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      background: #0a1628;
+      padding: 10px 16px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .thema-count {
+      background: #e63946;
+      color: #fff;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    /* КАРТОЧКА ДЕЛА */
+    .verfahren-karte {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+    .verfahren-karte:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
+
+    .karte-header {
+      padding: 14px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .status-badge {
+      flex-shrink: 0;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 3px;
+    }
+    .status-offen { background: #fde8e8; color: #c0392b; border: 1px solid #e63946; }
+    .status-ausstehend { background: #fff3e0; color: #e67e22; border: 1px solid #e67e22; }
+    .status-eingereicht { background: #e8eaf6; color: #3949ab; border: 1px solid #3949ab; }
+    .status-abgeschlossen { background: #e8f5e9; color: #2e7d32; border: 1px solid #27ae60; }
+    .status-abgelehnt { background: #f5f5f5; color: #666; border: 1px solid #bbb; }
+
+    .karte-titel-block { flex: 1; }
+    .karte-titel {
+      font-size: 15px;
+      font-weight: bold;
+      color: #0a1628;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .karte-meta {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #888;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .karte-meta span { display: flex; align-items: center; gap: 4px; }
+
+    .karte-body {
+      padding: 14px 18px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #333;
+    }
+    .karte-body p { margin-bottom: 8px; }
+    .karte-body p:last-child { margin-bottom: 0; }
+
+    .karte-footer {
+      padding: 10px 18px;
+      background: #f9f9f9;
+      border-top: 1px solid #f0f0f0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .doc-link {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #0a1628;
+      background: #e8eaf6;
+      border: 1px solid #c5cae9;
+      padding: 3px 10px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .doc-link:hover { background: #0a1628; color: #fff; }
+    .doc-link.rot { background: #fde8e8; border-color: #ef9a9a; color: #c0392b; }
+    .doc-link.rot:hover { background: #c0392b; color: #fff; }
+
+    /* БЛОК ДЛЯ ДОБАВЛЕНИЯ НОВЫХ ДЕЛ */
+    .hinzufuegen-box {
+      background: #f0f4ff;
+      border: 2px dashed #aac4e8;
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin-top: 30px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+    }
+    .hinzufuegen-box strong { color: #0a1628; }
+
+    /* БЛОК ОБНОВЛЕНИЯ */
+    .update-box {
+      background: #1a1a2e;
+      color: #aac4e8;
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .update-box strong { color: #fff; }
+
+    .fall-navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid #eee;
+      flex-wrap: wrap;
+    }
+    .fall-nav-btn {
+      flex: 1 1 200px;
+      padding: 16px 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #333;
+      background: #fff;
+      transition: border-color 0.2s;
+    }
+    .fall-nav-btn:hover { border-color: #0a1628; background: #f0f4ff; }
+    .fall-nav-btn .richtung { font-size: 11px; color: #999; margin-bottom: 4px; }
+    .fall-nav-btn .titel { font-weight: bold; color: #0a1628; }
+    .fall-nav-btn.rechts { text-align: right; }
+
+    footer {
+      background: #0a1628;
+      color: #888;
+      text-align: center;
+      padding: 30px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+    footer a { color: #aac4e8; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
+    footer .verantwortlich { color: #aaa; margin-bottom: 12px; font-size: 12px; }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.5em; }
+      .karte-header { flex-direction: column; gap: 8px; }
+      .stats-leiste { grid-template-columns: repeat(2, 1fr); }
+    }
+      .anwalt-banner { background: linear-gradient(135deg, #c0392b, #e63946); color: #fff; padding: 14px 20px; position: sticky; top: 60px; z-index: 90; }
+    .anwalt-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .anwalt-inner strong { font-family: Arial, sans-serif; font-size: 14px; flex: 1; min-width: 200px; }
+    .anwalt-inner p { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.9; flex: 2; min-width: 200px; }
+    .anwalt-inner a { background: #fff; color: #c0392b; padding: 7px 14px; border-radius: 3px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .anwalt-inner a:hover { background: #ffe0e0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="../index.html">Startseite</a></li>
+    <li><a href="../fall0/fall0.html">Fall 0</a></li>
+    <li><a href="../fall1/fall1.html">Fall 1</a></li>
+    <li><a href="../fall2/fall2.html">Fall 2</a></li>
+    <li><a href="../fall3/fall3.html">Fall 3</a></li>
+    <li><a href="../analyse/analyse.html">Analyse</a></li>
+    <li><a href="../verfahren/verfahren.html" class="aktiv">Aktuelle Verfahren</a></li>
+    <li><a href="../presse/presse.html">Presse</a></li>
+    <li><a href="../ueber-mich/ueber-mich.html">Über mich</a></li>
+      <li><a href="../appell.html">Appell</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb">
+  <a href="../index.html">Startseite</a> › Aktuelle offene Verfahren
+</div>
+
+<div class="page-header">
+  <div class="badge">🔴 Live — Wird aktualisiert</div>
+  <h1>Aktuelle offene Verfahren</h1>
+  <p>Chronologischer Überblick aller laufenden und abgeschlossenen Rechtssachen von Dmitry Bagrash — mit direkten Links zu den Originaldokumenten</p>
+  <div class="stand-datum">Stand: April 2026 — wird laufend ergänzt</div>
+</div>
+
+<div class="container">
+
+  <!-- БЛОК ОБНОВЛЕНИЯ -->
+  <div class="update-box">
+    <strong>Wie wird diese Seite aktualisiert?</strong><br>
+    Dmitry Bagrash übermittelt neue Ereignisse schriftlich aus der JVA Heidering. Ein Helfer trägt diese hier ein. Alle Einträge sind durch Originaldokumente in Google Drive belegt.
+    Kontakt für Journalisten: <strong>bagrash.presse@gmail.com</strong>
+  </div>
+
+  <!-- ЛЕГЕНДА -->
+  <div class="legende">
+    <strong style="font-family:Arial,sans-serif; font-size:13px;">Legende:</strong>
+    <div class="legende-item"><div class="status-dot dot-rot"></div> Offen — läuft aktiv</div>
+    <div class="legende-item"><div class="status-dot dot-orange"></div> Ausstehend — wartet auf Entscheidung</div>
+    <div class="legende-item"><div class="status-dot dot-gruen"></div> Eingereicht — Eingang bestätigt</div>
+    <div class="legende-item"><div class="status-dot dot-grau"></div> Abgeschlossen / Abgelehnt</div>
+  </div>
+
+  <!-- СТАТИСТИКА -->
+  <div class="stats-leiste">
+    <div class="stat-mini">
+      <div class="zahl">8</div>
+      <div class="bez">Verfahren aktiv offen</div>
+    </div>
+    <div class="stat-mini">
+      <div class="zahl">3</div>
+      <div class="bez">Instanzen gleichzeitig</div>
+    </div>
+    <div class="stat-mini">
+      <div class="zahl">2</div>
+      <div class="bez">Verfassungsbeschwerden</div>
+    </div>
+    <div class="stat-mini">
+      <div class="zahl">1</div>
+      <div class="bez">EGMR-Beschwerde Reg. 39</div>
+    </div>
+  </div>
+
+  <!-- ГРУППА 1: КОНСТИТУЦИОННЫЕ ЖАЛОБЫ -->
+  <div class="thema-gruppe">
+    <div class="thema-titel">
+      ⚖️ Bundesverfassungsgericht
+      <span class="thema-count">3 Verfahren</span>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-offen">🔴 Offen</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Verfassungsbeschwerde gegen BGH-Beschluss 07.05.2025 (Revision)</div>
+          <div class="karte-meta">
+            <span>📋 Az. 2 BvR 964/25</span>
+            <span>📅 Eingereicht: 18.06.2025</span>
+            <span>📍 BVerfG Karlsruhe</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Beschwerde gegen den Beschluss des 5. Strafsenats des BGH vom 07.05.2025, der die Revision verwarf — formelhaft, ohne inhaltliche Prüfung. Gerügt: Art. 103 Abs. 1 GG, Art. 19 Abs. 4 GG, Art. 6 EMRK.</p>
+        <p><strong>Aktuell:</strong> BVerfG hat am 01.09.2025 die Annahme abgelehnt (Az. 2 BvR 964/25). Bagrash hat Ergänzungen eingereicht (23.07., 25.07., 19.08.2025). Neue Verfassungsbeschwerde gegen Berichtigungsbeschluss 30.07.2025 eingereicht am 24.11.2025.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall1/fall1.html#verfassungsbeschwerde" class="doc-link">→ Fall 1: Verfassungsbeschwerde</a>
+        <a href="https://drive.google.com/drive/folders/1_qY5_JpmuK7CPKQy7E4jf7HQXNMYRTVa?usp=drive_link" target="_blank" class="doc-link rot">↗ Google Drive</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-offen">🔴 Offen</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Verfassungsbeschwerde gegen Berichtigungsbeschluss LG Berlin 30.07.2025</div>
+          <div class="karte-meta">
+            <span>📋 Az. beim KG: 3 Ws 48/25 + 49/25</span>
+            <span>📅 Eingereicht: 24.11.2025</span>
+            <span>📍 BVerfG Karlsruhe</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Das LG Berlin fügte am 30.07.2025 — mehr als ein Jahr nach Urteilsverkündung und nach Abschluss des Revisionsverfahrens — eine umfangreiche Normenliste in das rechtskräftige Urteil ein. Das Kammergericht verwarf Bagrash's Rechtsmittel am 31.10.2025.</p>
+        <p><strong>Gerügt:</strong> Art. 101 Abs. 1 S. 2 GG, Art. 2 Abs. 2 S. 2 GG i.V.m. Art. 20 Abs. 3 GG (Rechtssicherheit), Art. 3 Abs. 1 GG. Entscheidung des BVerfG steht aus.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall1/fall1.html#nachtrag" class="doc-link">→ Fall 1: Berichtigungsbeschluss</a>
+        <a href="https://drive.google.com/drive/folders/1_qY5_JpmuK7CPKQy7E4jf7HQXNMYRTVa?usp=drive_link" target="_blank" class="doc-link rot">↗ Google Drive</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-offen">🔴 Offen</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Verfassungsbeschwerde — Zugang zum Urkundsbeamten (JVA Heidering)</div>
+          <div class="karte-meta">
+            <span>📋 Az. LG Berlin: 599 StVK 215/25 Vollz</span>
+            <span>📅 Zuletzt: 24.11.2025</span>
+            <span>📍 BVerfG (angekündigt)</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Nach Verlegung in JVA Heidering am 10.06.2025 wurde Bagrash der Zugang zum Urkundsbeamten für fristgebundene Anhörungsrügen verweigert. LG Berlin wies seine Anträge am 10.12.2025 kostenpflichtig zurück — mit der Begründung, die JVA habe "offenkundig unzulässige" Rechtsmittel nicht protokollieren müssen.</p>
+        <p><strong>Aktuell:</strong> Verfassungsbeschwerde nach Ausschöpfung des Rechtswegs angekündigt. Erwiderung an LG Berlin eingereicht am 24.11.2025.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall2/fall2.html#chronologie" class="doc-link">→ Fall 2: Urkundsbeamte</a>
+        <a href="https://drive.google.com/drive/folders/1Foiqj5hGYlgL-DvI84T2g5uT53Wo0xOI?usp=drive_link" target="_blank" class="doc-link rot">↗ Google Drive Anlage 83–87_F2</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ГРУППА 2: EGMR -->
+  <div class="thema-gruppe">
+    <div class="thema-titel">
+      🌐 Europäischer Gerichtshof für Menschenrechte (EGMR)
+      <span class="thema-count">1 Verfahren</span>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-eingereicht">🔵 Eingereicht</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Individualbeschwerde nach Regel 39 EMRK</div>
+          <div class="karte-meta">
+            <span>📋 EGMR Reg. 39</span>
+            <span>📅 Eingereicht: Januar–März 2025</span>
+            <span>📍 EGMR Straßburg</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Umfassende Individualbeschwerde (313 Seiten + Anlagen) beim EGMR. Gerügt: Art. 6 EMRK (faires Verfahren), Art. 9 EMRK (Religionsfreiheit), Art. 13 EMRK (effektiver Rechtsbehelf), Art. 34 EMRK (Behinderung der EGMR-Kommunikation).</p>
+        <p><strong>Besonderheit:</strong> EGMR-Entwürfe wurden in JVA beschlagnahmt, DHL-Sendungen zurückgeschickt. Die Einreichung selbst war durch institutionelle Blockaden massiv erschwert.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall2/fall2.html" class="doc-link">→ Fall 2</a>
+        <a href="../fall3/fall3.html#egmr" class="doc-link">→ Fall 3: EGMR</a>
+        <a href="https://drive.google.com/drive/folders/1Foiqj5hGYlgL-DvI84T2g5uT53Wo0xOI?usp=drive_link" target="_blank" class="doc-link rot">↗ Anlage 78_F2 (313 S.)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ГРУППА 3: ОТКРЫТЫЕ ХОДАТАЙСТВА -->
+  <div class="thema-gruppe">
+    <div class="thema-titel">
+      📋 Offene Anträge — ohne Entscheidung
+      <span class="thema-count">4 Verfahren</span>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-ausstehend">🟡 Ausstehend</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Antrag auf Entpflichtung des Pflichtverteidigers RA Römer</div>
+          <div class="karte-meta">
+            <span>📅 Gestellt: 17.12.2024</span>
+            <span>📍 LG Berlin, Az. 522 Ks 5/23</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Seit 17.12.2024 — über 15 Monate — ist dieser Antrag nicht entschieden. Bagrash hat keinen Kontakt zu RA Römer und weiß nicht, was dieser in der Revision einreichte. De facto ist er ohne Verteidiger.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../analyse/analyse.html#punkt4" class="doc-link">→ Analyse Punkt 4</a>
+        <a href="../fall2/fall2.html" class="doc-link">→ Fall 2: Anlage 1_F2</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-ausstehend">🟡 Ausstehend</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Antrag auf Akteneinsicht — wiederholt seit Dez. 2024</div>
+          <div class="karte-meta">
+            <span>📅 Erstmals: 12.12.2024</span>
+            <span>📍 LG Berlin / Generalstaatsanwaltschaft</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Bagrash hat keinen Zugang zu seinen eigenen Ermittlungs- und Gerichtsakten. Trotz mehrfacher Anträge wurde Akteneinsicht mit wechselnden Begründungen verweigert. Ohne Akteneinsicht ist eine informierte Verteidigung unmöglich.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../analyse/analyse.html#punkt5" class="doc-link">→ Analyse Punkt 5</a>
+        <a href="../fall2/fall2.html" class="doc-link">→ Fall 2: Anlage 3_F2</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-ausstehend">🟡 Ausstehend</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Antrag auf Wiederaufnahme des Verfahrens</div>
+          <div class="karte-meta">
+            <span>📅 In Vorbereitung</span>
+            <span>📍 LG Berlin</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Bagrash bereitet einen Antrag auf Wiederaufnahme vor. Gründe: (1) Feoktistov-Widerspruch — öffentliche Aussage vs. Staatsanwaltschaft; (2) OSCE-Dokumente 2021/2022 — nicht Bestandteil des Verfahrens; (3) systematische Unterdrückung durch OStA Wachs.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../analyse/analyse.html#punkt9" class="doc-link">→ Analyse Punkt 9: Wiederaufnahme</a>
+        <a href="../fall0/fall0.html" class="doc-link">→ Fall 0: OSCE</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-ausstehend">🟡 Ausstehend</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">Strafanzeige gegen VRiLG Groß und OStA Wachs — keine Reaktion</div>
+          <div class="karte-meta">
+            <span>📅 Gestellt: 2024/2025</span>
+            <span>📍 Generalstaatsanwaltschaft Berlin</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>Bagrash hat Strafanzeigen wegen systematischer Beweismittelunterdrückung, Rechtsbeugung und Urkundenfälschung gestellt. Bis heute: keine Rückmeldung, kein Aktenzeichen, keine prozessuale Reaktion.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../analyse/analyse.html#punkt6" class="doc-link">→ Analyse Punkt 6</a>
+        <a href="../fall2/fall2.html#verschwörung" class="doc-link">→ Fall 2: Verschwörung</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ГРУППА 4: ЗАВЕРШЁННЫЕ/ОТКЛОНЁННЫЕ -->
+  <div class="thema-gruppe">
+    <div class="thema-titel" style="background:#555;">
+      ✗ Abgelehnte Rechtsmittel — dokumentiert
+      <span class="thema-count">3 Entscheidungen</span>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-abgelehnt">✗ Abgelehnt</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">BGH-Beschluss — Revision verworfen, 07.05.2025</div>
+          <div class="karte-meta">
+            <span>📋 Az. 5 StR 72/25</span>
+            <span>📅 07.05.2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>5. Strafsenat verwarf Revision formelhaft. Anhörungsrügen vom 26.–28.05.2025 wurden mit BGH-Beschluss vom 19.06.2025 ebenfalls abgelehnt. Gegen beide Beschlüsse läuft Verfassungsbeschwerde.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall1/fall1.html#revision" class="doc-link">→ Fall 1: BGH-Beschlüsse</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-abgelehnt">✗ Nicht angenommen</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">BVerfG — Nichtannahme Verfassungsbeschwerde 2 BvR 964/25</div>
+          <div class="karte-meta">
+            <span>📋 Az. 2 BvR 964/25</span>
+            <span>📅 01.09.2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>BVerfG (3. Kammer des Zweiten Senats: Richterinnen Langenfeld, Fetzer und Richter Offenloch) hat die Annahme abgelehnt — mit formeller Begründung. Bagrash hält die Begründung für unzutreffend und hat Ergänzungen eingereicht.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall1/fall1.html#verfassungsbeschwerde" class="doc-link">→ Fall 1: Verfassungsbeschwerde</a>
+        <a href="https://drive.google.com/drive/folders/1_qY5_JpmuK7CPKQy7E4jf7HQXNMYRTVa?usp=drive_link" target="_blank" class="doc-link rot">↗ BVerfG-Beschluss 01.09.2025</a>
+      </div>
+    </div>
+
+    <div class="verfahren-karte">
+      <div class="karte-header">
+        <span class="status-badge status-abgelehnt">✗ Zurückgewiesen</span>
+        <div class="karte-titel-block">
+          <div class="karte-titel">LG Berlin — Anträge auf Ausführung zum Urkundsbeamten, 10.12.2025</div>
+          <div class="karte-meta">
+            <span>📋 Az. 599 StVK 215/25 Vollz</span>
+            <span>📅 10.12.2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="karte-body">
+        <p>LG Berlin wies Anträge kostenpflichtig zurück (Verfahrenswert: 600 €). Begründung: JVA durfte Ausführung verweigern, weil Frist angeblich abgelaufen war. Das Gericht bezeichnete Bagrash's Anträge als "wider besseres Wissen" und "rechtsmissbräuchlich" — ohne seine Dokumentation der Zugangsverweigerungen inhaltlich zu prüfen.</p>
+      </div>
+      <div class="karte-footer">
+        <a href="../fall2/fall2.html#chronologie" class="doc-link">→ Fall 2: Chronologie Punkt 130</a>
+        <a href="https://drive.google.com/drive/folders/1Foiqj5hGYlgL-DvI84T2g5uT53Wo0xOI?usp=drive_link" target="_blank" class="doc-link rot">↗ Anlage 87_F2</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- КАК ДОБАВЛЯТЬ НОВЫЕ ДЕЛА -->
+  <div class="hinzufuegen-box">
+    <strong>📌 Wie neue Verfahren hinzugefügt werden:</strong><br>
+    Dmitry Bagrash übermittelt neue Ereignisse schriftlich. Ein Helfer ergänzt die Karte nach diesem Schema:<br><br>
+    <strong>Titel</strong> — kurze Beschreibung des Verfahrens<br>
+    <strong>Status</strong> — Offen / Ausstehend / Eingereicht / Abgelehnt<br>
+    <strong>Datum + Aktenzeichen</strong> — soweit bekannt<br>
+    <strong>Beschreibung</strong> — was ist passiert, was steht aus<br>
+    <strong>Links</strong> — zu Google Drive Dokumenten und zugehörigen Fall-Seiten
+  </div>
+
+  <div class="fall-navigation">
+    <a href="../analyse/analyse.html" class="fall-nav-btn">
+      <div class="richtung">← Zurück</div>
+      <div class="titel">Analyse — 10 Themenpunkte</div>
+    </a>
+    <a href="../presse/presse.html" class="fall-nav-btn rechts">
+      <div class="richtung">Weiter →</div>
+      <div class="titel">Presse — Pressemitteilungen</div>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="verantwortlich">
+    Verantwortlich für alle Inhalte dieser Website: <strong style="color:#fff;">Dmitry Bagrash</strong>, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br>
+    Kontakt: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a>
+  </div>
+  <a href="../impressum.html">Impressum</a>
+  <a href="../datenschutz.html">Datenschutz</a>
+  <a href="../index.html">Startseite</a>
+  <br><br>
+  <span style="font-size:11px;">© Dmitry Bagrash — Alle Inhalte dürfen für journalistische und rechtliche Zwecke frei verwendet werden.</span>
+</footer>
+
+</body>
+</html>

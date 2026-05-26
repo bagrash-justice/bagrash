@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anlage 115_F2: Vollzugs- und Eingliederungsplan JVA Moabit 17.04.2026 — Analyse der rechtswidrigen Stellen. Dokument ohne Unterschrift. Wahrnehmung von Rechtsschutz als Prognoserisiko gewertet.">
+  <meta name="keywords" content="Dmitry Bagrash, Vollzugsplan, JVA Moabit, Rechtsschutz, Wiederaufnahme, VRiLG Groß, Anlage 115, politischer Gefangener Berlin">
+  <link rel="canonical" href="https://bagrash-justice.github.io/bagrash/de/fall2/anlagen/anlage-115-f2.html">
+  <link rel="alternate" hreflang="de" href="anlage-115-f2.html">
+  <title>Anlage 115_F2 — Vollzugsplan JVA Moabit (Analyse) | Dmitry Bagrash</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; font-size: 16px; line-height: 1.9; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #ccc; text-decoration: none; padding: 14px 12px; font-family: Arial, sans-serif; font-size: 13px; }
+    nav ul li a:hover, nav ul li a.aktiv { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
+
+    /* БАННЕР АДВОКАТА */
+    .anwalt-banner { background: linear-gradient(135deg, #c0392b, #e63946); color: #fff; padding: 14px 20px; }
+    .anwalt-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .anwalt-inner strong { font-family: Arial, sans-serif; font-size: 14px; flex: 1; }
+    .anwalt-inner p { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.9; flex: 2; }
+    .anwalt-inner a { background: #fff; color: #c0392b; padding: 7px 14px; border-radius: 3px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; white-space: nowrap; }
+
+    .breadcrumb { background: #eee; padding: 10px 20px; font-family: Arial, sans-serif; font-size: 13px; color: #666; }
+    .breadcrumb a { color: #0f3460; text-decoration: none; }
+
+    .doc-header { background: #1a1a2e; color: #fff; padding: 40px 20px; }
+    .doc-header-inner { max-width: 860px; margin: 0 auto; }
+    .doc-header .az { font-family: Arial, sans-serif; font-size: 12px; color: #e63946; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 14px; }
+    .doc-header h1 { font-size: 1.7em; margin-bottom: 12px; line-height: 1.3; }
+    .doc-header .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 20px; }
+    .doc-header .meta-item { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; padding: 10px 14px; }
+    .doc-header .meta-item .mi-label { font-family: Arial, sans-serif; font-size: 11px; color: #aac4e8; margin-bottom: 3px; }
+    .doc-header .meta-item .mi-val { font-family: Arial, sans-serif; font-size: 13px; color: #fff; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px 70px; }
+
+    /* КЛЮЧЕВОЕ НАРУШЕНИЕ — красный блок вверху */
+    .kernnverstos {
+      background: #c0392b;
+      color: #fff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 36px;
+    }
+    .kernverstos-titel { font-family: Arial, sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; opacity: 0.8; }
+    .kernverstos-titel::before { content: "🔴 "; }
+    .kernnverstos h2 { font-size: 1.2em; margin-bottom: 10px; }
+    .kernnverstos p { font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; opacity: 0.95; }
+
+    /* ДОКУМЕНТ */
+    .dokument { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 32px 36px; margin-bottom: 30px; }
+    .dokument h2 { font-size: 1.3em; color: #1a1a2e; border-bottom: 2px solid #e63946; padding-bottom: 8px; margin-bottom: 20px; }
+    .dokument h3 { font-size: 1.05em; color: #1a1a2e; margin: 24px 0 10px; }
+    .dokument p { margin-bottom: 14px; font-size: 15px; line-height: 1.8; }
+
+    /* ВЫДЕЛЕНИЕ НАРУШЕНИЙ */
+    .verstos {
+      background: #fde8e8;
+      border-left: 4px solid #e63946;
+      border-radius: 3px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      position: relative;
+    }
+    .verstos::before {
+      content: "⚠ RECHTSWIDRIG";
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      color: #c0392b;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .verstos p { margin: 0; font-size: 14px; color: #333; }
+    .verstos .verstos-begruendung { font-family: Arial, sans-serif; font-size: 12px; color: #c0392b; margin-top: 8px; font-style: italic; }
+
+    /* ОРИГИНАЛЬНЫЙ ТЕКСТ ДОКУМЕНТА */
+    .original-text {
+      background: #fafafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .original-text .ot-header { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+    .original-text p { margin-bottom: 12px; color: #333; }
+    /* Выделение красным внутри оригинального текста */
+    .ot-rot { background: #fde8e8; color: #c0392b; padding: 2px 4px; border-radius: 2px; font-weight: bold; }
+    /* Выделение жёлтым — спорные места */
+    .ot-gelb { background: #fff3cd; color: #856404; padding: 2px 4px; border-radius: 2px; }
+
+    .kein-unterschrift {
+      background: #fff3cd;
+      border: 2px solid #ffc107;
+      border-left: 4px solid #c0392b;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    .kein-unterschrift strong { color: #c0392b; }
+
+    .video-platz {
+      background: #f0f4ff;
+      border: 2px dashed #3949ab;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin: 30px 0;
+      text-align: center;
+    }
+    .video-platz .vp-label { font-family: Arial, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #3949ab; margin-bottom: 10px; }
+    .video-platz h3 { font-size: 1.1em; color: #1a1a2e; margin-bottom: 8px; }
+    .video-platz p { font-family: Arial, sans-serif; font-size: 13px; color: #555; }
+    .video-platz.has-video { border-style: solid; background: #fff; }
+    .video-platz iframe { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 4px; }
+
+    .zurueck-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 24px; border-top: 2px solid #eee; flex-wrap: wrap; }
+    .zurueck-btn { flex: 1 1 200px; padding: 14px 18px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; color: #333; background: #fff; }
+    .zurueck-btn:hover { border-color: #e63946; }
+    .zurueck-btn .zb-dir { font-size: 11px; color: #999; margin-bottom: 4px; }
+    .zurueck-btn .zb-titel { font-weight: bold; color: #c0392b; }
+    .zurueck-btn.right { text-align: right; }
+
+    footer { background: #1a1a2e; color: #888; text-align: center; padding: 24px 20px; font-family: Arial, sans-serif; font-size: 13px; }
+    footer a { color: #aac4e8; text-decoration: none; margin: 0 10px; }
+
+    @media (max-width: 600px) { .doc-header h1 { font-size: 1.3em; } .dokument { padding: 20px; } }
+  </style>
+  <!-- Plausible Analytics — бесплатный счётчик без cookie -->
+  <script defer data-domain="bagrash-justice.github.io" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-logo">Dmitry <span>Bagrash</span></a>
+    <ul>
+      <li><a href="../../fall0/fall0.html">Fall 0</a></li>
+      <li><a href="../../fall1/fall1.html">Fall 1</a></li>
+      <li><a href="../../fall2/fall2.html" class="aktiv">Fall 2</a></li>
+      <li><a href="../../fall3/fall3.html">Fall 3</a></li>
+      <li><a href="../../analyse/analyse.html">Analyse</a></li>
+      <li><a href="../../verfahren/verfahren.html">Aktuelle Verfahren</a></li>
+      <li><a href="../../presse/presse.html">Presse</a></li>
+      <li><a href="../../ueber-mich/ueber-mich.html">Über mich</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="anlage-115-f2.html" class="aktiv">🇩🇪 DE</a>
+      <a href="../../../ru/fall2/fall2.html">🇷🇺 RU</a>
+      <a href="../../../en/fall2/fall2.html">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="anwalt-banner">
+  <div class="anwalt-inner">
+    <strong>⚖️ Dringend gesucht: Anwalt für Wiederaufnahme</strong>
+    <p>Bereit zur Medienarbeit und Veröffentlichung aller Schriftsätze — nicht zwingend aus Berlin</p>
+    <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com →</a>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="../../index.html">Startseite</a> ›
+  <a href="../../fall2/fall2.html">Fall 2</a> ›
+  Anlage 115_F2 — Vollzugs- und Eingliederungsplan (Analyse)
+</div>
+
+<div class="doc-header">
+  <div class="doc-header-inner">
+    <div class="az">Fall 2 · Anlage 115_F2 · Vollzugsplan</div>
+    <h1>Vollzugs- und Eingliederungsplan der JVA Moabit<br>— und was er über die Justiz verrät</h1>
+    <div class="meta-grid">
+      <div class="meta-item">
+        <div class="mi-label">Dokument datiert</div>
+        <div class="mi-val">17. April 2026</div>
+      </div>
+      <div class="meta-item">
+        <div class="mi-label">Ausgehändigt am</div>
+        <div class="mi-val">24. April 2026</div>
+      </div>
+      <div class="meta-item">
+        <div class="mi-label">Aussteller</div>
+        <div class="mi-val">JVA Moabit, Bearb.: E4</div>
+      </div>
+      <div class="meta-item">
+        <div class="mi-label">⚠ Unterschrift</div>
+        <div class="mi-val" style="color:#e63946;">NICHT VORHANDEN</div>
+      </div>
+      <div class="meta-item">
+        <div class="mi-label">Az. (Vollzug)</div>
+        <div class="mi-val">599 StVK 215/25 Vollz</div>
+      </div>
+      <div class="meta-item">
+        <div class="mi-label">Konferenz</div>
+        <div class="mi-val">13.03.2026 · JVA Moabit</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- КЛЮЧЕВОЕ НАРУШЕНИЕ -->
+  <div class="kernnverstos">
+    <div class="kernverstos-titel">Kernverstoß — Apogee des Entzugs von Rechtsschutz</div>
+    <h2>Wahrnehmung von Grundrechten wird als Gefährdungsindiz gewertet</h2>
+    <p>Dieser Vollzugs- und Eingliederungsplan ist der dokumentierte Höhepunkt einer systematischen Strategie: Dmitry Bagrash wird die Wahrnehmung seiner Verfassungsrechte — Einlegung von Rechtsmitteln, Beschwerden, Pressekontakte, Kritik an staatlichem Handeln — als Beweis seiner Gefährlichkeit und mangelnden Resozialisierungsfähigkeit angerechnet. Das ist der Kern des Widerspruchs, den Bagrash seit Jahren kämpft zu durchbrechen.</p>
+  </div>
+
+  <!-- ВИДЕО МЕСТО -->
+  <div class="video-platz" id="video-ansprache">
+    <div class="vp-label">📹 Video — demnächst verfügbar</div>
+    <h3>Dmitry Bagrash wendet sich an das deutsche Volk</h3>
+    <p>Video-Ansprache mit begründeter Forderung nach Einleitung eines Strafverfahrens gegen Richter Groß wegen Urkundenfälschung und Rechtsverweigerung — sowie Forderung nach Amtsenthebung.</p>
+    <p style="margin-top:10px; font-family:Arial,sans-serif; font-size:12px; color:#888;">Das Video wird hier eingebettet sobald verfügbar. Kanal: <a href="https://www.youtube.com/@unkremlin" target="_blank" style="color:#3949ab;">YouTube: Unkremlin</a></p>
+  </div>
+
+  <!-- ФОРМАЛЬНОЕ НАРУШЕНИЕ — НЕТ ПОДПИСИ -->
+  <div class="kein-unterschrift">
+    <strong>⚠ Formeller Mangel: Dokument ohne Unterschrift und ohne namentlich benannte verantwortliche Person</strong><br>
+    Das Schriftstück enthält weder eine eigenhändige Unterschrift noch die namentliche Benennung einer verantwortlichen Person. Ausgewiesen sind lediglich „Bearb.: E4" sowie am Ende „Im Auftrag / E4". Wer die Entscheidung persönlich verantwortet, bleibt damit unklar — was die Anfechtung des Dokuments erheblich erschwert und gegen §§ 37 Abs. 3, 39 VwVfG verstößt.
+  </div>
+
+  <!-- АНАЛИЗ КЛЮЧЕВЫХ НАРУШЕНИЙ -->
+  <div class="dokument">
+    <h2>Analyse der rechtswidrigen Stellen</h2>
+
+    <h3>1. Rechtsschutz als Prognoserisiko — Verstoß gegen Art. 19 Abs. 4 GG</h3>
+
+    <div class="original-text">
+      <div class="ot-header">Originaltext aus dem Vollzugsplan (S. 2)</div>
+      <p>„Die Missbrauchsgefahr ergibt sich aus der <span class="ot-rot">derzeitigen starken Fokussierung auf den Kampf gegen die deutsche Justiz</span>, die auch zwei Jahre nach Verurteilung das Erleben und Handeln des Herrn B. gänzlich bestimmt. [...] <span class="ot-rot">Seinen Kampf gegen bestimmte Personen der deutschen Justiz möchte er nach Verlegung in den offenen Vollzug sofort fortsetzen und weitere Protestaktionen organisieren.</span>"</p>
+    </div>
+
+    <div class="verstos">
+      <p>Die Wahrnehmung von Rechtsschutz — Einlegen von Rechtsmitteln, Beschwerden, Petitionen, Medienkontakte, Kritik an staatlichem Handeln — wird hier als „Kampf gegen die Justiz" etikettiert und als Grundlage für die Ablehnung des offenen Vollzugs verwendet.</p>
+      <p class="verstos-begruendung">Verstoß gegen: Art. 19 Abs. 4 GG (effektiver Rechtsschutz), Art. 5 GG (Meinungsfreiheit), Art. 8 GG (Versammlungsfreiheit), § 115 Abs. 3 StVollzG BIn (Eingliederungsgebot)</p>
+    </div>
+
+    <h3>2. Fehlendes Schuldeingeständnis als Ausschlusskriterium</h3>
+
+    <div class="original-text">
+      <div class="ot-header">Originaltext aus dem Vollzugsplan (S. 2)</div>
+      <p>„<span class="ot-rot">Eine Straftatauseinandersetzung ist derzeit nicht möglich, da Herr B. sich zu Unrecht verurteilt fühlt.</span> [...] Eine Straftatauseinandersetzung ist bisher nicht erfolgt, wobei <span class="ot-rot">Herr B. deren eigentliches Ziel außerdem ablehnt.</span>"</p>
+    </div>
+
+    <div class="verstos">
+      <p>Das Fehlen eines Schuldeingeständnisses wird als negativer Prognosefaktor gewertet. Damit wird auf Bagrash faktisch Druck ausgeübt, eine Schuld einzugestehen, die er — nach rechtskräftigem aber anfechtendem Urteil — bestreitet. Das widerspricht dem Grundsatz nemo tenetur se ipsum accusare (Verbot des Zwangs zur Selbstbelastung).</p>
+      <p class="verstos-begruendung">Verstoß gegen: Art. 6 EMRK (Nemo-tenetur-Grundsatz), BVerfGE 38, 105 — Schweigerecht des Beschuldigten gilt fort</p>
+    </div>
+
+    <h3>3. Zeitliche Koinzidenz — koordinierte Maßnahmen</h3>
+
+    <div class="original-text">
+      <div class="ot-header">Zeitlicher Zusammenhang — dokumentiert</div>
+      <p>— 17.04.2026: Vollzugsplan erstellt (JVA Moabit)<br>
+      — 24.04.2026: Vollzugsplan an Bagrash ausgehändigt (Anlage 115_F2)<br>
+      — <span class="ot-rot">27.04.2026: Anhörungsschreiben des Landesamts für Einwanderung über beabsichtigte Ausweisung</span><br>
+      — 28.04.2026: Bagrash stellt Antrag auf gerichtliche Entscheidung gegen Vollzugsplan (Anlage 116_F2)</p>
+    </div>
+
+    <div class="verstos">
+      <p>Das Ausweisungsschreiben des Landesamts folgte nur drei Tage nach Aushändigung des Vollzugsplans und einen Tag vor dem Antrag auf gerichtliche Entscheidung. Diese zeitliche Koinzidenz begründet den dokumentierten Verdacht institutionell abgestimmter Maßnahmen.</p>
+      <p class="verstos-begruendung">Verweis: Aus der gerichtlichen Stellungnahme der JVA Heidering vom 26.09.2025 (Anlage 84_F2) geht ausdrücklich hervor, dass am 11.08.2025 mit der Senatsverwaltung für Justiz eine „gemeinsame Linie" erarbeitet wurde.</p>
+    </div>
+
+    <h3>4. Bagraschs Kampf: um Zugang zum Urkundsbeamten — nicht gegen die Justiz</h3>
+
+    <p>Was der Vollzugsplan als „Kampf gegen die Justiz" bezeichnet, ist in Wirklichkeit der dokumentierte Kampf um:</p>
+    <ul style="margin-left:24px; margin-bottom:16px; font-size:15px; line-height:2;">
+      <li>Zugang zum Urkundsbeamten der JVA (Az. 599 StVK 215/25 Vollz)</li>
+      <li>Annahme von Schriftsätzen durch den Urkundsbeamten</li>
+      <li>Weiterleitung von Beschwerden an zuständige Gerichte</li>
+      <li>Akteneinsicht (seit Dezember 2024 verweigert)</li>
+      <li>Ablösung des Pflichtverteidigers (Antrag seit 17.12.2024 unbearbeitet)</li>
+    </ul>
+    <p>Sämtliche dieser Handlungen sind verfassungsrechtlich garantiert. Ihre Verweigerung ist in 10 eidesstattlichen Erklärungen und 119 Anlagen dokumentiert.</p>
+
+  </div>
+
+  <!-- ANLAGE 84_F2 ССЫЛКА -->
+  <div class="dokument" style="border-left: 4px solid #3949ab;">
+    <h2>Anlage 84_F2 — Stellungnahme JVA Heidering (26.09.2025)</h2>
+    <p>Dieses Dokument enthält den entscheidenden Satz: Am <strong>11.08.2025</strong> wurde Bagrashs Fall <strong>mit der Senatsverwaltung für Justiz erörtert</strong> und dort <strong>„eine gemeinsame Linie erarbeitet"</strong>.</p>
+
+    <div class="verstos">
+      <p>Das bedeutet: Nicht die Vollzugsanstalt allein entschied über den Umgang mit Bagrash — sondern in Abstimmung mit der Senatsverwaltung für Justiz. Dies begründet den Verdacht einer institutionell koordinierten Einschränkung des Rechtsschutzzugangs.</p>
+      <p class="verstos-begruendung">Verweis im Antrag Anlage 116_F2 (28.04.2026) auf dieses Dokument als Beweis für koordinierten institutionellen Druck.</p>
+    </div>
+
+    <p style="margin-top:16px;"><a href="https://drive.google.com/drive/folders/1p3YlgETNeKZjFS7Pt--6_lc8ZQb0ypkl" target="_blank" style="color:#3949ab; font-weight:bold; font-family:Arial,sans-serif; font-size:14px;">Anlage 84_F2 in Google Drive (Fall 2) →</a></p>
+  </div>
+
+  <!-- ANLAGE 116_F2 -->
+  <div class="dokument" style="border-left: 4px solid #e63946;">
+    <h2>Anlage 116_F2 — Antrag auf gerichtliche Entscheidung (28.04.2026)</h2>
+    <p>Am 28.04.2026 stellte Bagrash beim LG Berlin I — Strafvollstreckungskammer — einen Antrag auf gerichtliche Entscheidung und vorläufigen Rechtsschutz gegen den Vollzugsplan.</p>
+
+    <div class="verstos">
+      <p>Bis heute hat Bagrash <strong>keine Eingangsbestätigung</strong> des Gerichts für diesen Antrag erhalten. Das bedeutet: Er weiß nicht, ob sein Rechtsbehelf überhaupt registriert wurde.</p>
+      <p class="verstos-begruendung">Verstoß gegen: § 37 StPO (Zustellungspflicht), Art. 19 Abs. 4 GG (effektiver Rechtsschutz). Die fehlende Eingangsbestätigung folgt dem dokumentierten Muster der Anlage 2 (Chronologie Fall 2, 57+ Ereignisse).</p>
+    </div>
+
+    <p style="margin-top:16px;"><a href="https://drive.google.com/drive/folders/1p3YlgETNeKZjFS7Pt--6_lc8ZQb0ypkl" target="_blank" style="color:#e63946; font-weight:bold; font-family:Arial,sans-serif; font-size:14px;">Anlage 116_F2 in Google Drive (Fall 2) →</a></p>
+  </div>
+
+  <!-- ВИДЕО МЕСТО 2 -->
+  <div class="video-platz" id="video-gross">
+    <div class="vp-label">📹 Video — demnächst verfügbar</div>
+    <h3>Forderung: Strafverfahren gegen Richter Groß — Urkundenfälschung und Rechtsverweigerung</h3>
+    <p>Dmitry Bagrash wendet sich direkt an das deutsche Volk mit einer begründeten Forderung nach Einleitung eines Strafverfahrens gegen VRiLG Groß wegen des nachträglichen Einfügens von Rechtsnormen in ein rechtskräftiges Urteil (Berichtigungsbeschluss 30.07.2025) sowie wegen systematischer Rechtsverweigerung.</p>
+    <p style="margin-top:10px; font-family:Arial,sans-serif; font-size:12px; color:#888;">Das Video wird hier eingebettet sobald verfügbar. Kanal: <a href="https://www.youtube.com/@unkremlin" target="_blank" style="color:#3949ab;">YouTube: Unkremlin</a></p>
+  </div>
+
+  <!-- ПРИЗЫВ К ЖУРНАЛИСТАМ -->
+  <div style="background:#1a1a2e; color:#fff; border-radius:8px; padding:28px 32px; margin:30px 0;">
+    <h2 style="font-family:Arial,sans-serif; font-size:16px; margin-bottom:12px;">Für Journalisten und Parlamentarier</h2>
+    <p style="font-family:Arial,sans-serif; font-size:14px; color:#aac4e8; line-height:1.7; margin-bottom:16px;">Alle Originaldokumente (Anlage 115_F2, 116_F2, 84_F2) sind in Google Drive öffentlich zugänglich. Dieses Dokument darf frei verwendet werden. Für Hintergrundinformationen und Interviews:</p>
+    <a href="mailto:bagrash.presse@gmail.com" style="display:inline-block; background:#e63946; color:#fff; padding:10px 20px; border-radius:4px; font-family:Arial,sans-serif; font-size:13px; font-weight:bold; text-decoration:none;">bagrash.presse@gmail.com →</a>
+    <a href="https://drive.google.com/drive/folders/1p3YlgETNeKZjFS7Pt--6_lc8ZQb0ypkl" target="_blank" style="display:inline-block; margin-left:10px; background:rgba(255,255,255,0.1); color:#fff; padding:10px 20px; border-radius:4px; font-family:Arial,sans-serif; font-size:13px; text-decoration:none;">Google Drive Fall 2 →</a>
+  </div>
+
+  <div class="zurueck-nav">
+    <a href="../../fall2/fall2.html" class="zurueck-btn">
+      <div class="zb-dir">← Zurück</div>
+      <div class="zb-titel">Fall 2 — Chronologie</div>
+    </a>
+    <a href="anlage-116-f2.html" class="zurueck-btn right">
+      <div class="zb-dir">Weiter →</div>
+      <div class="zb-titel">Anlage 116_F2 — Antrag gerichtliche Entscheidung</div>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <div style="color:#aaa; margin-bottom:10px; font-size:12px;">Verantwortlich: <strong style="color:#fff;">Dmitry Bagrash</strong>, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren · <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a></div>
+  <a href="../../impressum.html">Impressum</a>
+  <a href="../../datenschutz.html">Datenschutz</a>
+  <a href="../../index.html">Startseite</a>
+  <br><br>
+  <span style="font-size:11px; color:#555;">© Dmitry Bagrash — Alle Inhalte dürfen für journalistische und rechtliche Zwecke frei verwendet werden.</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="de" href="../../de/fall1/fall1.html">
+  <link rel="alternate" hreflang="ru" href="../../ru/fall1/fall1.html">
+  <link rel="alternate" hreflang="en" href="fall1.html">
+  <title>Case 1 – Criminal Case "Attempted Murder" | Dmitry Bagrash</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; font-size: 16px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #ccc; text-decoration: none; padding: 14px 12px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    nav ul li a.aktiv { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
+    .page-header { background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 60%, #1e3a5f 100%); color: #fff; padding: 50px 20px 40px; text-align: center; }
+    .page-header .badge { display: inline-block; background: #e63946; color: #fff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 2px; padding: 5px 14px; border-radius: 20px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-header h1 { font-size: 2em; font-weight: bold; margin-bottom: 12px; }
+    .page-header p { font-size: 1em; color: #aac4e8; max-width: 700px; margin: 0 auto 16px; }
+    .az-box { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 10px 20px; font-family: monospace; font-size: 13px; color: #aac4e8; }
+    .breadcrumb { background: #eee; padding: 10px 20px; font-family: Arial, sans-serif; font-size: 13px; color: #666; }
+    .breadcrumb a { color: #0f3460; text-decoration: none; }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+    .warnung { background: #fff3cd; border: 2px solid #e63946; border-radius: 6px; padding: 20px 24px; margin-bottom: 30px; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; }
+    .warnung .w-titel { font-weight: bold; color: #c0392b; font-size: 15px; margin-bottom: 8px; text-transform: uppercase; }
+    .fakten { background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 22px 26px; margin-bottom: 30px; }
+    .fakten table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .fakten table tr { border-bottom: 1px solid #eee; }
+    .fakten table td { padding: 8px 6px; vertical-align: top; }
+    .fakten table td:first-child { color: #666; font-family: Arial, sans-serif; font-size: 13px; width: 160px; }
+    .section { margin-bottom: 40px; }
+    .section h2 { font-size: 1.4em; color: #0d1b2a; border-bottom: 2px solid #e63946; padding-bottom: 8px; margin-bottom: 18px; }
+    .section p { margin-bottom: 14px; font-size: 15px; }
+    .hinweis-rot { background: #fde8e8; border-left: 4px solid #e63946; border-radius: 4px; padding: 14px 18px; margin: 16px 0; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; }
+    .hinweis-rot strong { color: #c0392b; }
+    .download-bereich { background: #1a1a2e; color: #fff; border-radius: 6px; padding: 24px 28px; margin: 30px 0; }
+    .download-bereich h3 { font-family: Arial, sans-serif; font-size: 14px; margin-bottom: 14px; color: #aac4e8; text-transform: uppercase; }
+    .download-btn { display: inline-block; background: #e63946; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 13px; margin: 4px 6px 4px 0; }
+    .download-btn.sekundaer { background: transparent; border: 1px solid #aac4e8; color: #aac4e8; }
+    .fall-navigation { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 24px; border-top: 2px solid #eee; flex-wrap: wrap; }
+    .fall-nav-btn { flex: 1 1 200px; padding: 14px 18px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; color: #333; background: #fff; }
+    .fall-nav-btn:hover { border-color: #e63946; }
+    .fall-nav-btn .richtung { font-size: 11px; color: #999; margin-bottom: 4px; }
+    .fall-nav-btn .titel { font-weight: bold; color: #c0392b; }
+    .fall-nav-btn.rechts { text-align: right; }
+    footer { background: #1a1a2e; color: #888; text-align: center; padding: 24px 20px; font-family: Arial, sans-serif; font-size: 13px; }
+    footer a { color: #aac4e8; text-decoration: none; margin: 0 10px; }
+    footer .verantwortlich { color: #aaa; margin-bottom: 10px; font-size: 12px; }
+      .anwalt-banner { background: linear-gradient(135deg, #c0392b, #e63946); color: #fff; padding: 14px 20px; position: sticky; top: 60px; z-index: 90; }
+    .anwalt-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .anwalt-inner strong { font-family: Arial, sans-serif; font-size: 14px; flex: 1; min-width: 200px; }
+    .anwalt-inner p { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.9; flex: 2; min-width: 200px; }
+    .anwalt-inner a { background: #fff; color: #c0392b; padding: 7px 14px; border-radius: 3px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .anwalt-inner a:hover { background: #ffe0e0; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Dmitry <span>Bagrash</span></a>
+    <ul>
+      <li><a href="../fall0/fall0.html">Case 0</a></li><li><a href="fall1.html" class="aktiv">Case 1</a></li><li><a href="../fall2/fall2.html">Case 2</a></li><li><a href="../fall3/fall3.html">Case 3</a></li><li><a href="../analyse/analyse.html">Analysis</a></li><li><a href="../verfahren/verfahren.html">Current Cases</a></li><li><a href="../presse/presse.html">Press</a></li><li><a href="../ueber-mich/ueber-mich.html">About</a></li>
+      <li><a href="../appell/appell.html">Appeal</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="../../de/fall1/fall1.html">🇩🇪 DE</a>
+      <a href="../../ru/fall1/fall1.html">🇷🇺 RU</a>
+      <a href="fall1.html" class="aktiv">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="../index.html">Home</a> › Case 1 – Criminal Case "Attempted Murder"</div>
+<div class="page-header">
+  <div class="badge">Case 1</div>
+  <h1>Criminal Case "Attempted Murder"</h1>
+  <p>Verdict Berlin Regional Court — Appeal — BGH Rulings — Constitutional Complaint</p>
+  <div class="az-box">Az. 522 Ks 5/23 | StA: 176 Js 4/22 | BGH: 5 StR 72/25</div>
+</div>
+<div class="container">
+
+<div class="warnung">
+  <div class="w-titel">⚠ Important Note</div>
+  The verdict of the Berlin Regional Court of 22.07.2024 is not final in the constitutional sense — on 30.07.2025 the court retroactively inserted a list of applied legal norms into the already final verdict, even though the appeal proceedings had already been concluded without this list. Bagrash has filed a constitutional complaint.
+</div>
+<div class="fakten">
+  <table>
+    <tr><td>Defendant</td><td>Dmitry Bagrash, born in Moscow, resident in Berlin since 1992</td></tr>
+    <tr><td>Charge</td><td>Attempted murder, attempted arson causing death, subsidy fraud (COVID), electricity theft</td></tr>
+    <tr><td>Verdict</td><td>22 July 2024 — 5 years and 4 months' imprisonment</td></tr>
+    <tr><td>Court</td><td>Berlin Regional Court I, 22nd Major Criminal Chamber</td></tr>
+    <tr><td>Presiding judge</td><td>VRiLG Groß</td></tr>
+    <tr><td>Prosecution</td><td>OStA Wachs, General Public Prosecutor's Office Berlin</td></tr>
+    <tr><td>BGH ruling</td><td>07.05.2025 — appeal dismissed (5th Criminal Senate)</td></tr>
+    <tr><td>Constitutional complaint</td><td>Filed with BVerfG (Az. 2 BvR 964/25)</td></tr>
+    <tr><td>Current location</td><td>JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren</td></tr>
+  </table>
+</div>
+<div class="section">
+  <h2>Key Contradictions: Facts vs. Verdict</h2>
+  <div class="hinweis-rot"><strong>DNA:</strong> The device bore DNA from three persons: Bagrash, an unknown man, and an unknown woman. These persons were never identified or investigated.</div>
+  <div class="hinweis-rot"><strong>Witness Basirov:</strong> Filmed the suspect — did <strong>not identify</strong> Bagrash as the perpetrator. The court held, without any expert opinion, that Bagrash appeared in the footage.</div>
+  <div class="hinweis-rot"><strong>Expert opinion:</strong> At the location (basement shaft, no air supply) the device was physically <strong>incapable of igniting</strong>. The matches had lain in the rain for 13 days.</div>
+  <div class="hinweis-rot"><strong>Retroactive verdict amendment 30.07.2025:</strong> More than a year after sentencing and after the BGH ruling, the court inserted an extensive list of legal norms — treating this as a mere "clerical correction". Bagrash has filed a further constitutional complaint.</div>
+  <div class="hinweis-rot"><strong>OSCE:</strong> At OSCE meetings in 2021 and 2022 the Russian delegation expressly named Unkremlin e.V. as a politically dangerous organisation — the court described Bagrash's activities as "insignificant".</div>
+</div>
+<div class="download-bereich">
+  <h3>📁 Google Drive — Case 1</h3>
+  <a href="https://drive.google.com/drive/folders/1yunZUZIwHaXoRi3Clu8jtBH34byI6PwL" target="_blank" class="download-btn">Case 1 (Google Drive)</a>
+  <a href="https://drive.google.com/file/d/11zbn0BScwQp_qGife3_XzgaF6tE0R5bW/view?usp=drivesdk" target="_blank" class="download-btn sekundaer">Verdict (PDF)</a>
+  <a href="https://drive.google.com/file/d/16JS-uYgHN5GUbTTEKTTBksbhk6FBPD5t/view?usp=drivesdk" target="_blank" class="download-btn sekundaer">BGH ruling 07.05.2025</a>
+</div>
+  <div class="fall-navigation">
+    <a href="../fall0/fall0.html" class="fall-nav-btn"><div class="richtung">← Back</div><div class="titel">Case 0 — Background</div></a>
+    <a href="../fall2/fall2.html" class="fall-nav-btn rechts"><div class="richtung">Next →</div><div class="titel">Case 2 — Suppression of Appeal</div></a>
+  </div>
+</div>
+<footer>
+  <div class="verantwortlich">Responsible: <strong style="color:#fff;">Dmitry Bagrash</strong>, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren · <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a></div>
+  <a href="../../de/impressum.html">Impressum</a><a href="../../de/datenschutz.html">Datenschutz</a><a href="../index.html">Home</a>
+</footer>
+</body>
+</html>
