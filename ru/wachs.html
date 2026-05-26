@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OStA Клаус Михаэль Вакс – документация. Главный обвинитель в деле Дмитрия Баграша. Парламентский следственный комитет по теракту на Брайтшайдплац: задокументированная «неточная передача информации».">
+  <title>OStA Клаус Михаэль Вакс | Дмитрий Баграш</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #bbb; text-decoration: none; padding: 14px 14px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    nav ul li a.aktiv { color: #fff; }
+    .lang-switch { display: flex; gap: 2px; padding: 0 14px; align-items: center; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a.aktiv, .lang-switch a:hover { background: #e63946; color: #fff; }
+    .page-header { background: linear-gradient(160deg, #0a0a1a, #1a1a2e, #0d2040); color: #fff; padding: 50px 20px 40px; }
+    .page-header .eyebrow { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #e63946; margin-bottom: 14px; }
+    .page-header h1 { font-size: 2.2em; font-weight: bold; line-height: 1.2; margin-bottom: 12px; }
+    .page-header h1 em { color: #e63946; font-style: normal; }
+    .page-header .subtitle { font-family: Arial, sans-serif; font-size: 14px; color: #aac4e8; max-width: 620px; line-height: 1.7; }
+    .facts-bar { display: flex; flex-wrap: wrap; border-top: 1px solid #333; margin-top: 28px; }
+    .fact { flex: 1; min-width: 180px; padding: 12px 18px; border-right: 1px solid #333; }
+    .fact:last-child { border-right: none; }
+    .fact-label { font-family: Arial, sans-serif; font-size: 10px; color: #777; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .fact-value { font-family: Arial, sans-serif; font-size: 13px; color: #ddd; line-height: 1.4; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 50px 0; }
+    section + section { border-top: 1px solid #eee; }
+    .section-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #e63946; margin-bottom: 8px; }
+    .section-title { font-size: 1.7em; color: #1a1a1a; margin-bottom: 20px; line-height: 1.3; }
+    p { margin-bottom: 1.1em; color: #333; }
+    p strong { color: #1a1a1a; }
+    p em { color: #666; font-style: italic; }
+    .breadcrumb { font-family: Arial, sans-serif; font-size: 13px; color: #999; padding: 14px 0 0; }
+    .breadcrumb a { color: #e63946; text-decoration: none; }
+    .breadcrumb span { margin: 0 6px; }
+    .highlight-box { background: #fff; border-left: 5px solid #e63946; padding: 20px 24px; margin: 20px 0; }
+    .highlight-box p { color: #333; margin: 0; }
+    .highlight-box .cite { font-family: Arial, sans-serif; font-size: 12px; color: #aaa; margin-top: 10px; display: block; }
+    .pattern-box { background: #1a1a2e; border: 1px solid #333; padding: 24px 28px; margin: 20px 0; border-radius: 4px; }
+    .pattern-box-title { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; color: #e63946; margin-bottom: 14px; }
+    .pattern-box p { color: #ccc; margin-bottom: 10px; }
+    .bullet-list { list-style: none; margin: 14px 0; }
+    .bullet-list li { padding: 8px 0 8px 20px; border-bottom: 1px solid #f0f0f0; position: relative; font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.6; }
+    .bullet-list li::before { content: '●'; position: absolute; left: 0; top: 8px; color: #e63946; font-size: 10px; }
+    .bullet-list li strong { color: #1a1a1a; }
+    .doc-list { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .doc-item { display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 12px 16px; text-decoration: none; color: inherit; transition: border-color 0.2s; }
+    .doc-item:hover { border-color: #e63946; }
+    .doc-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 3px; }
+    .doc-title { font-family: Arial, sans-serif; font-size: 13px; color: #333; }
+    .doc-arr { color: #e63946; }
+    .nav-pn { display: flex; justify-content: space-between; padding: 30px 0 10px; font-family: Arial, sans-serif; font-size: 13px; }
+    .nav-pn a { color: #e63946; text-decoration: none; }
+    footer { background: #0a0a1a; color: #666; padding: 40px 20px 30px; font-family: Arial, sans-serif; font-size: 13px; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .footer-col h4 { color: #aaa; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .footer-col a { display: block; color: #666; text-decoration: none; margin-bottom: 6px; }
+    .footer-col a:hover { color: #e63946; }
+    .footer-col p { color: #555; line-height: 1.6; font-size: 12px; }
+    .footer-bottom { border-top: 1px solid #222; padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #444; font-size: 12px; }
+    .footer-bottom a { color: #555; text-decoration: none; margin-left: 16px; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Дмитрий <span>Баграш</span></a>
+    <ul>
+      <li><a href="../fall0/fall0.html">Дело 0</a></li>
+      <li><a href="../fall1/fall1.html">Дело 1</a></li>
+      <li><a href="../fall2/fall2.html">Дело 2</a></li>
+      <li><a href="../fall3/fall3.html">Дело 3</a></li>
+      <li><a href="../analyse/analyse.html" class="aktiv">Анализ</a></li>
+      <li><a href="../verfahren/verfahren.html" style="color:#e63946;">🔴 Текущие дела</a></li>
+      <li><a href="../presse/presse.html">Пресса</a></li>
+      <li><a href="../ueber-mich/ueber-mich.html">Обо мне</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="../../de/fall4/wachs.html">🇩🇪 DE</a>
+      <a href="wachs.html" class="aktiv">🇷🇺 RU</a>
+      <a href="../../en/fall4/wachs.html">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+<div class="page-header">
+  <div class="eyebrow">Анализ / Дело 4 · Главный обвинитель</div>
+  <h1>OStA <em>Клаус Михаэль Вакс</em></h1>
+  <p class="subtitle">Документация стиля работы государственного обвинителя — на основании парламентского следственного отчёта (Drucksache 18/4000) и показаний под присягой из производства 522 Ks 5/23.</p>
+  <div class="facts-bar">
+    <div class="fact"><div class="fact-label">Должность</div><div class="fact-value">Оберштаацанвальт, Генеральная прокуратура Берлина</div></div>
+    <div class="fact"><div class="fact-label">Роль в деле Баграша</div><div class="fact-value">Главный обвинитель и архитектор стратегии расследования</div></div>
+    <div class="fact"><div class="fact-label">Парламентский отчёт</div><div class="fact-value">Drucksache 18/4000 — упоминается неоднократно</div></div>
+    <div class="fact"><div class="fact-label">Связь с Феоктистовым</div><div class="fact-value">Называние имени так и не расследовано</div></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="../index.html">Главная</a><span>›</span>
+    <a href="../analyse/analyse.html">Анализ</a><span>›</span>
+    <span>OStA Клаус Михаэль Вакс</span>
+  </div>
+
+  <section>
+    <div class="section-label">Введение</div>
+    <h2 class="section-title">Один и тот же прокурор — два производства</h2>
+    <p>Оберштаацанвальт Клаус Михаэль Вакс — одна из ключевых фигур Генеральной прокуратуры Берлина. Долгие годы он занимается делами в сфере политического экстремизма и исламистского терроризма и представлял берлинскую прокуратуру при расследовании обстоятельств теракта на Брайтшайдплац.</p>
+    <p>Именно тот прокурор, который в парламентском следственном отчёте по делу Аниса Амри задокументирован как источник <strong>«неточной передачи информации»</strong> и действовавший по принципу <em>«я исходил из того, что другие примут необходимые меры»</em>, был назначен главным обвинителем и фактическим архитектором всей следственной стратегии в моём деле.</p>
+    <p>Речь здесь идёт не о личной вражде с прокурором, а о <strong>задокументированном стиле работы</strong> государственного обвинителя, от которого напрямую зависит, служит ли расследование установлению истины или заранее определённой версии.</p>
+  </section>
+
+  <section>
+    <div class="section-label">Пункт 1 · Парламентский отчёт</div>
+    <h2 class="section-title">Что говорит отчёт по теракту на Брайтшайдплац о Ваксе</h2>
+    <p>После теракта на берлинском рождественском рынке (19 декабря 2016 года) Берлинский сенат учредил парламентский следственный комитет. Обширный отчёт (<strong>Drucksache 18/4000</strong>) упоминает имя Вакса неоднократно — отнюдь не в положительном контексте.</p>
+    <div class="highlight-box">
+      <p><strong>Страница 512 отчёта:</strong> Свидетель Вакс признал <em>«неточную передачу информации»</em>. Он пояснил, что вполне возможно, что он не разъяснил ответственным полицейским подразделениям, что те могут обращаться к нему в любое время — поскольку он <em>«исходил из того, что это само собой разумеется»</em>. На вопрос о том, формулировал ли он узкие определения чрезвычайных ситуаций, Вакс ответил, что не помнит этого.</p>
+      <span class="cite">Источник: Drucksache 18/4000, S. 512 — Abgeordnetenhaus Berlin</span>
+    </div>
+    <ul class="bullet-list">
+      <li>Вакс признаёт, что его <strong>указания могли быть неясными или допускать неверное толкование</strong>.</li>
+      <li>Он опирается на собственные предположения (<em>«я считал это само собой разумеющимся»</em>) вместо конкретно сформулированных, поддающихся проверке инструкций.</li>
+      <li>В ключевых вопросах государственных действий ссылается на <strong>провалы в памяти</strong>: «я уже не помню, говорил ли я это».</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">Пункт 2 · Ошибка в датировке</div>
+    <h2 class="section-title">Ошибочная датировка и принцип «я исходил из того, что…»</h2>
+    <p>На странице 517 отчёта описан ещё один характерный эпизод. Полицейский (K-1) зафиксировал, что <strong>1 августа 2016 года</strong> по телефону информировал Вакса о задержании Аниса Амри. Вакс пообещал составить по этому поводу служебную записку.</p>
+    <p>В материалах Генеральной прокуратуры соответствующая записка существует — однако датирована она <strong>3 августа 2016 года</strong>. На слушании в следственном комитете Вакс объяснил: он «вероятно, ошибся в дате».</p>
+    <div class="pattern-box">
+      <div class="pattern-box-title">Задокументированная закономерность поведения (Drucksache 18/4000)</div>
+      <p>Несмотря на сведения о поддельных документах Амри и его известном маршруте передвижения, Генеральная прокуратура не связалась с другими прокуратурами и не приняла собственных мер.</p>
+      <p>Вакс объяснил: он просто <em>«исходил из того»</em>, что берлинская полиция уже информировала ответственные органы, а южногерманские прокуратуры <em>«в любом случае примут необходимые меры»</em>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Пункт 3 · Моё дело</div>
+    <h2 class="section-title">Та же методология в деле Баграша</h2>
+    <ul class="bullet-list">
+      <li>Запрет полиции проводить дальнейшие допросы — хотя я добровольно передал пароли и предложил составить фотороботы.</li>
+      <li>Подавление <strong>«следа спецслужб»</strong>: возможность целенаправленной провокации была объявлена «неправдоподобной».</li>
+      <li>Активное воспрепятствование ведению ревизии: режим молчания, отказ в доступе к материалам дела, ненаправление ходатайств по инстанции.</li>
+      <li>Немедленная изоляция после вынесения приговора — без правового основания. <strong>116 дней</strong> без контакта с еврейской общиной.</li>
+    </ul>
+    <div class="highlight-box">
+      <p>Представьте ситуацию: иностранец, к тому же журналист, объявляет о намерении добиться независимого расследования деятельности OStA Вакса. Какова логика институциональной системы? Наиболее эффективно — полностью изолировать меня, а параллельно распространять дезинформацию.</p>
+      <span class="cite">Дмитрий Баграш, из документа «Inhalt mit Hinweis»</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Документы</div>
+    <h2 class="section-title">Источники и оригинальные документы</h2>
+    <div class="doc-list">
+      <a href="https://drive.google.com/file/d/1Na_7xTw2ll4Gw9mW1BAPlAAJtS5_LIxv/view" target="_blank" class="doc-item"><div><div class="doc-label">Парламентский отчёт</div><div class="doc-title">Следственный отчёт по Брайтшайдплацу (Drucksache 18/4000) — Вакс на стр. 512, 517</div></div><span class="doc-arr">↗</span></a>
+      <a href="https://drive.google.com/file/d/1Ts-ey1ERUQ1f9MJ7Xswm9xBnPouwQk6p/view" target="_blank" class="doc-item"><div><div class="doc-label">Предисловие о Ваксе</div><div class="doc-title">«Кто такой Клаус Михаэль Вакс?» — вводный документ</div></div><span class="doc-arr">↗</span></a>
+      <a href="taeuschung.html" class="doc-item"><div><div class="doc-label">Обман как modus operandi</div><div class="doc-title">Полные показания под присягой — все 6 обманов со всеми приложениями</div></div><span class="doc-arr">→</span></a>
+    </div>
+  </section>
+
+  <div class="nav-pn">
+    <a href="../analyse/analyse.html">← К анализу</a>
+    <a href="feoktistov.html">Досье Феоктистова →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Документация</h4>
+        <a href="../fall0/fall0.html">Дело 0</a><a href="../fall1/fall1.html">Дело 1</a>
+        <a href="../fall2/fall2.html">Дело 2</a><a href="../fall3/fall3.html">Дело 3</a>
+        <a href="../analyse/analyse.html">Анализ</a><a href="../verfahren/verfahren.html">Текущие дела</a>
+      </div>
+      <div class="footer-col"><h4>Дело 4 — Анализ</h4>
+        <a href="taeuschung.html">Обман как modus operandi</a>
+        <a href="wachs.html">OStA Клаус Михаэль Вакс</a>
+        <a href="feoktistov.html">Сергей Феоктистов</a>
+        <a href="../humor/humor.html">О процессе с юмором</a>
+      </div>
+      <div class="footer-col"><h4>Правовые сведения</h4>
+        <a href="../impressum.html">Impressum</a><a href="../datenschutz.html">Datenschutz</a>
+      </div>
+      <div class="footer-col"><h4>Ответственный</h4>
+        <p>Dmitry Bagrash · JVA Heidering<br>Ernst-Stargardt-Allee 1 · 14979 Großbeeren<br><br>
+        <a href="mailto:bagrash.presse@gmail.com" style="color:#e63946;">bagrash.presse@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Dmitry Bagrash — Все материалы могут свободно использоваться в журналистских и правовых целях.</span>
+      <div><a href="../impressum.html">Impressum</a><a href="../datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
