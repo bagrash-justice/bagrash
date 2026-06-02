@@ -513,6 +513,85 @@
     .anwalt-inner p { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.9; flex: 2; min-width: 200px; }
     .anwalt-inner a { background: #fff; color: #c0392b; padding: 7px 14px; border-radius: 3px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
     .anwalt-inner a:hover { background: #ffe0e0; }
+
+    /* VIDEO LEITMOTIV */
+    .video-leitmotiv {
+      background: #0a0a1a;
+      padding: 60px 20px 0;
+    }
+    .video-leitmotiv .container {
+      max-width: 900px;
+    }
+    .video-leitmotiv .section-label {
+      color: #e63946;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .video-leitmotiv h2 {
+      font-family: Georgia, serif;
+      font-size: 1.6em;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 28px;
+      line-height: 1.3;
+      font-weight: normal;
+    }
+    .video-leitmotiv h2 em {
+      color: #e63946;
+      font-style: normal;
+    }
+    .video-embed-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border: 1px solid #2a2d33;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(230,57,70,0.15);
+    }
+    .video-embed-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .video-statement {
+      background: #111;
+      border-top: 3px solid #e63946;
+      border-left: 1px solid #2a2d33;
+      border-right: 1px solid #2a2d33;
+      border-bottom: 1px solid #2a2d33;
+      padding: 18px 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+    .vs-date {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #e63946;
+      white-space: nowrap;
+      padding-top: 2px;
+      min-width: 80px;
+    }
+    .vs-divider {
+      width: 1px;
+      background: #2a2d33;
+      align-self: stretch;
+      flex-shrink: 0;
+    }
+    .vs-text {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #aaa;
+    }
+    .vs-text strong { color: #fff; font-weight: bold; }
+    @media (max-width: 600px) {
+      .video-statement { flex-direction: column; gap: 10px; }
+      .vs-divider { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -578,6 +657,33 @@
       <a href="verfahren/verfahren.html" class="btn-primary">🔴 Aktuelle Verfahren</a>
       <a href="fall1/fall1.html" class="btn-secondary">Zum Urteil und Revision</a>
       <a href="https://drive.google.com/drive/folders/1VgZ9fZZHuIgDzvAnis_b82EBTsPBdq7K?usp=drive_link" target="_blank" class="btn-secondary">Alle Dokumente (ZIP)</a>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO LEITMOTIV -->
+<div class="video-leitmotiv">
+  <div class="container">
+    <div class="section-label">02. Juni 2026 · Aus der Untersuchungshaft</div>
+    <h2>Dmitry Bagrash spricht direkt —<br><em>aufgenommen aus der Gefängniszelle</em></h2>
+    <div class="video-embed-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/7_CFqs_nWIw?rel=0&modestbranding=1&color=white"
+        title="Dmitry Bagrash — Erklärung aus der Untersuchungshaft, 2. Juni 2026"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-statement">
+      <div class="vs-date">02.06.2026</div>
+      <div class="vs-divider"></div>
+      <div class="vs-text">
+        Dieses Video wurde <strong>aus der Gefängniszelle</strong> aufgezeichnet.
+        Ich erkläre hiermit ausdrücklich: <strong>Ich habe keine Suizidabsichten.</strong>
+        In meiner Zelle befinden sich <strong>keine verbotenen Gegenstände</strong>.
+        Ich habe zu keinem Zeitpunkt gegen die Anstaltsordnung verstoßen und
+        war niemals im Besitz verbotener Substanzen.
+      </div>
     </div>
   </div>
 </div>
