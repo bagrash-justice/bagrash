@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bagrash-justice.github.io/bagrash/sitemap.xml
