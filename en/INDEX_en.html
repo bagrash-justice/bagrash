@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dmitry Bagrash – documentation of a judicial scandal in Berlin. Anti-Putin activist, chairman of Unkremlin e.V. Sentenced to 5 years 4 months. Verdict not final.">
+  <meta name="keywords" content="Dmitry Bagrash, Unkremlin, political persecution, Berlin, judicial scandal, FSB, Germany, human rights, ECHR">
+  <link rel="alternate" hreflang="de" href="../de/index.html">
+  <link rel="alternate" hreflang="ru" href="../ru/index.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <title>Dmitry Bagrash – Documentation of a Judicial Scandal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; font-size: 17px; line-height: 1.8; color: #1a1a1a; background: #f9f7f4; }
+    nav { background: #1a1a2e; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .nav-logo { color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; padding: 14px 16px; text-decoration: none; }
+    .nav-logo span { color: #e63946; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #bbb; text-decoration: none; padding: 14px 13px; font-family: Arial, sans-serif; font-size: 13px; transition: background 0.2s; }
+    nav ul li a:hover { background: #e63946; color: #fff; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; padding: 0 14px; }
+    .lang-switch a { color: #888; font-family: Arial, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; text-decoration: none; }
+    .lang-switch a:hover, .lang-switch a.aktiv { background: #e63946; color: #fff; }
+    .hero { background: linear-gradient(160deg, #0a0a1a 0%, #1a1a2e 40%, #0d2040 80%, #0a3060 100%); color: #fff; padding: 70px 20px 60px; text-align: center; }
+    .hero-eyebrow { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #e63946; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.4em; font-weight: bold; line-height: 1.2; margin-bottom: 16px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .hero h1 em { font-style: normal; color: #e63946; }
+    .hero-sub { font-size: 1.05em; color: #aac4e8; max-width: 640px; margin: 0 auto 36px; line-height: 1.7; }
+    .hero-fakten { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 36px; }
+    .hero-fakt { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 14px 20px; text-align: center; min-width: 130px; }
+    .hero-fakt .hf-zahl { font-size: 1.8em; font-weight: bold; color: #e63946; font-family: Arial, sans-serif; line-height: 1; }
+    .hero-fakt .hf-label { font-family: Arial, sans-serif; font-size: 11px; color: #aac4e8; margin-top: 4px; line-height: 1.4; }
+    .hero-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .btn-primary { display: inline-block; background: #e63946; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+    .btn-primary:hover { background: #c0392b; }
+    .btn-secondary { display: inline-block; background: transparent; color: #aac4e8; text-decoration: none; padding: 14px 28px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.3); font-family: Arial, sans-serif; font-size: 14px; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 60px 0; }
+    section + section { border-top: 1px solid #eee; }
+    .section-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #e63946; margin-bottom: 10px; }
+    .section-title { font-size: 1.8em; color: #1a1a1a; margin-bottom: 24px; }
+    .faelle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 20px; }
+    .fall-card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; text-decoration: none; color: inherit; transition: box-shadow 0.2s, border-color 0.2s; display: block; }
+    .fall-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #e63946; }
+    .fall-card .fc-nummer { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 8px; }
+    .fall-card .fc-titel { font-size: 16px; font-weight: bold; color: #1a1a1a; margin-bottom: 8px; }
+    .fall-card .fc-desc { font-family: Arial, sans-serif; font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+    .fall-card .fc-mehr { font-family: Arial, sans-serif; font-size: 12px; color: #e63946; }
+    .was-verweigert { background: #1a1a2e; color: #fff; border-radius: 8px; padding: 32px 36px; margin: 30px 0; }
+    .was-verweigert h3 { font-family: Arial, sans-serif; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #e63946; margin-bottom: 20px; }
+    .verweigert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .verweigert-item { border-left: 3px solid #e63946; padding-left: 14px; font-family: Arial, sans-serif; font-size: 14px; color: #ccc; line-height: 1.5; }
+    .verweigert-item strong { color: #fff; display: block; margin-bottom: 2px; }
+    .zitat-block { background: #fff; border-left: 5px solid #e63946; padding: 24px 28px; margin: 30px 0; font-style: italic; font-size: 1.05em; color: #333; line-height: 1.8; }
+    .zitat-block .zitat-autor { font-style: normal; font-family: Arial, sans-serif; font-size: 13px; color: #888; margin-top: 12px; }
+    .novaya-statya { background: #fff; border: 2px solid #e63946; border-radius: 8px; padding: 24px 28px; margin: 30px 0; }
+    .novaya-statya .ns-badge { display: inline-block; background: #e63946; color: #fff; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; padding: 3px 10px; border-radius: 10px; margin-bottom: 10px; }
+    .novaya-statya h3 { font-size: 1.1em; margin-bottom: 8px; }
+    .novaya-statya p { font-family: Arial, sans-serif; font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 12px; }
+    .novaya-statya a { color: #e63946; font-weight: bold; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px; }
+    .alle-docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 20px; }
+    .doc-btn { display: block; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 14px 16px; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; color: #333; transition: border-color 0.2s; text-align: center; }
+    .doc-btn:hover { border-color: #e63946; background: #fde8e8; color: #c0392b; }
+    .doc-btn .db-icon { font-size: 20px; display: block; margin-bottom: 6px; }
+    .presse-kontakt { background: #f0f4ff; border: 1px solid #c5cae9; border-radius: 6px; padding: 24px 28px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .presse-kontakt .pk-icon { font-size: 36px; }
+    .presse-kontakt .pk-text h4 { font-family: Arial, sans-serif; font-size: 15px; color: #1a1a2e; margin-bottom: 4px; }
+    .presse-kontakt .pk-text p { font-family: Arial, sans-serif; font-size: 13px; color: #555; line-height: 1.6; }
+    .presse-kontakt .pk-text a { color: #e63946; font-weight: bold; text-decoration: none; }
+    footer { background: #0a0a1a; color: #666; padding: 40px 20px 30px; font-family: Arial, sans-serif; font-size: 13px; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .footer-col h4 { color: #aaa; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .footer-col a { display: block; color: #666; text-decoration: none; margin-bottom: 6px; }
+    .footer-col a:hover { color: #e63946; }
+    .footer-col p { color: #555; line-height: 1.6; font-size: 12px; }
+    .footer-bottom { border-top: 1px solid #222; padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #444; font-size: 12px; }
+    .footer-bottom a { color: #555; text-decoration: none; margin-left: 16px; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.8em; } }
+      .anwalt-banner { background: linear-gradient(135deg, #c0392b, #e63946); color: #fff; padding: 14px 20px; position: sticky; top: 60px; z-index: 90; }
+    .anwalt-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .anwalt-inner strong { font-family: Arial, sans-serif; font-size: 14px; flex: 1; min-width: 200px; }
+    .anwalt-inner p { font-family: Arial, sans-serif; font-size: 12px; opacity: 0.9; flex: 2; min-width: 200px; }
+    .anwalt-inner a { background: #fff; color: #c0392b; padding: 7px 14px; border-radius: 3px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .anwalt-inner a:hover { background: #ffe0e0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Dmitry <span>Bagrash</span></a>
+    <ul>
+      <li><a href="fall0/fall0.html">Case 0</a></li>
+      <li><a href="fall1/fall1.html">Case 1</a></li>
+      <li><a href="fall2/fall2.html">Case 2</a></li>
+      <li><a href="fall3/fall3.html">Case 3</a></li>
+      <li><a href="analyse/analyse.html">Analysis</a></li>
+      <li><a href="verfahren/verfahren.html" style="color:#e63946;">🔴 Current Cases</a></li>
+      <li><a href="presse/presse.html">Press</a></li>
+      <li><a href="ueber-mich/ueber-mich.html">About</a></li>
+      <li><a href="appell/appell.html">Appeal</a></li>
+    </ul>
+    <div class="lang-switch">
+      <a href="../de/index.html">🇩🇪 DE</a>
+      <a href="../ru/index.html">🇷🇺 RU</a>
+      <a href="index.html" class="aktiv">🇬🇧 EN</a>
+    </div>
+  </div>
+</nav>
+
+<a href="lawyer.html" class="anwalt-banner" style="display:block;text-decoration:none;">
+  <div class="anwalt-inner">
+    <strong>⚖ Defense Attorney Urgently Sought — Outside Berlin</strong>
+    <p>Political prisoner, ECHR complaint filed, deportation threat. Unprecedented obstruction expected from Berlin prosecutors. Attorney must be based outside Berlin.</p>
+    <span style="background:#fff;color:#c0392b;padding:7px 14px;border-radius:3px;font-family:Arial,sans-serif;font-size:12px;font-weight:bold;white-space:nowrap;flex-shrink:0;">More details →</span>
+  </div>
+</a>
+
+<div class="hero">
+  <div class="hero-eyebrow">Documentation of a Judicial Scandal · Berlin, Germany</div>
+  <h1>Dmitry Bagrash —<br>Anti-Putin Activist in <em>Political Imprisonment</em></h1>
+  <p class="hero-sub">
+    Chairman of Unkremlin e.V., detained on 14 December 2022.
+    Sentenced to 5 years and 4 months — without legal norms cited in the verdict,
+    without access to case files, without free choice of defense counsel.
+    The verdict is not final in the constitutional sense.
+  </p>
+  <div class="hero-fakten">
+    <div class="hero-fakt"><div class="hf-zahl">5y 4m</div><div class="hf-label">Sentence<br>Berlin Court 22.07.2024</div></div>
+    <div class="hero-fakt"><div class="hf-zahl">116</div><div class="hf-label">Days without contact<br>with Jewish community</div></div>
+    <div class="hero-fakt"><div class="hf-zahl">10</div><div class="hf-label">Sworn affidavits<br>filed with BGH</div></div>
+    <div class="hero-fakt"><div class="hf-zahl">3</div><div class="hf-label">Hunger strikes as<br>last resort</div></div>
+    <div class="hero-fakt"><div class="hf-zahl">313</div><div class="hf-label">Pages ECHR<br>complaint Rule 39</div></div>
+  </div>
+  <div class="hero-buttons">
+    <a href="verfahren/verfahren.html" class="btn-primary">🔴 Current Cases</a>
+    <a href="fall1/fall1.html" class="btn-secondary">Verdict &amp; Appeal</a>
+  </div>
+</div>
+
+<!-- NEW ARTICLE -->
+<!-- ⚡ URGENT: HEARING 24.06.2026 -->
+<section style="background: linear-gradient(135deg, #1a0a0a 0%, #3d0f0f 100%); padding: 30px 0; border-top: 4px solid #e63946; border-bottom: 4px solid #e63946;">
+  <div class="container">
+    <div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
+      <div style="flex:0 0 auto;">
+        <div style="background:#e63946; color:#fff; font-family:Arial,sans-serif; font-size:11px; font-weight:bold; letter-spacing:0.15em; text-transform:uppercase; padding:6px 14px; border-radius:3px; margin-bottom:10px;">⚡ Urgent</div>
+        <div style="font-family:Arial,sans-serif; font-size:28px; font-weight:900; color:#fff; line-height:1.1;">24 June<br>2026</div>
+        <div style="font-family:Arial,sans-serif; font-size:13px; color:#e63946; margin-top:6px; font-weight:bold;">9:30 · Room A704/3</div>
+      </div>
+      <div style="flex:1; min-width:240px;">
+        <div style="font-family:Arial,sans-serif; font-size:17px; font-weight:bold; color:#fff; margin-bottom:10px;">Early Release Hearing — § 57 StGB (two-thirds rule)</div>
+        <div style="font-family:Arial,sans-serif; font-size:13px; color:#ccc; line-height:1.7; margin-bottom:12px;">
+          Berlin Regional Court I · Turmstraße 91 · Case 589 StVK 86/26<br>
+          The General Prosecutor's Office has opposed early release — its position was not provided to Bagrash (violation of Art. 103 Basic Law).<br>
+          Bagrash has formally requested press admission. The court has not yet decided.
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="verfahren/verfahren.html" style="display:inline-block; background:#e63946; color:#fff; padding:8px 18px; border-radius:4px; font-family:Arial,sans-serif; font-size:13px; font-weight:bold; text-decoration:none;">→ Current Cases</a>
+          <a href="fall2/fall2.html" style="display:inline-block; background:transparent; border:1px solid #e63946; color:#e63946; padding:8px 18px; border-radius:4px; font-family:Arial,sans-serif; font-size:13px; font-weight:bold; text-decoration:none;">Open Statement →</a>
+        </div>
+      </div>
+      <div style="flex:0 0 auto; font-family:Arial,sans-serif; font-size:12px; color:#888; text-align:right; min-width:160px;">
+        <div style="color:#e63946; font-weight:bold; margin-bottom:4px;">Press:</div>
+        Accreditation required<br>contact the court<br>Fax: 030 9014-5954
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🆕 VASILJEVA ARTICLE -->
+<section style="background:#fff; padding:40px 0;">
+  <div class="container">
+    <div class="novaya-statya">
+      <span class="ns-badge">🆕 New Publication — 12 May 2026</span>
+      <h3>«Dmitry Bagrash, or the story of how the FSB bent the entire German Ministry of Justice»</h3>
+      <p>Detailed investigative report by Elena Vasiljeva (blogger and activist, Finland). The author analyses the evidence, witness statements and expert opinions — and concludes that Dmitry Bagrash did not commit the crime. Key contradictions: the canister lay 13 days in the rain and was physically incapable of igniting (per the explosives expert); the phone attributed to Bagrash was used by Ukrainian refugees; the verdict initially contained no legal norms whatsoever; systematic isolation in solitary confinement.</p>
+      <p style="font-family:Arial,sans-serif; font-size:12px; color:#888; margin-bottom:8px;">Language: Russian · Source: evasiljeva.blogspot.com · 12.05.2026</p>
+      <a href="https://evasiljeva.blogspot.com/2026/05/blog-post_12.html" target="_blank">Read full article (in Russian) →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4 CASES -->
+<section>
+  <div class="container">
+    <div class="section-label">Documentation</div>
+    <h2 class="section-title">The Four Cases</h2>
+    <p style="margin-bottom:28px; font-family:Arial,sans-serif; font-size:14px; color:#555;">All original documents are available in Google Drive. No document has been altered.</p>
+    <div class="faelle-grid">
+      <a href="fall0/fall0.html" class="fall-card">
+        <div class="fc-nummer">Case 0</div>
+        <div class="fc-titel">Background of the Persecution</div>
+        <div class="fc-desc">Anti-Putin activism since 2020. Demonstration 17.09.2021. OSCE mentions. Police intervention ordered by OStA Raupach.</div>
+        <div class="fc-mehr">Read →</div>
+      </a>
+      <a href="fall1/fall1.html" class="fall-card">
+        <div class="fc-nummer">Case 1</div>
+        <div class="fc-titel">Criminal Case "Attempted Murder"</div>
+        <div class="fc-desc">Verdict Berlin Regional Court 22.07.2024 — without legal norms. BGH rulings. Retroactive verdict amendment 30.07.2025. Constitutional complaint.</div>
+        <div class="fc-mehr">Read →</div>
+      </a>
+      <a href="fall2/fall2.html" class="fall-card">
+        <div class="fc-nummer">Case 2</div>
+        <div class="fc-titel">Suppression of the Appeal</div>
+        <div class="fc-desc">57+ documented events. 10 sworn affidavits. Systematic refusal to accept documents. Hunger strike 05.05.2025.</div>
+        <div class="fc-mehr">Read →</div>
+      </a>
+      <a href="fall3/fall3.html" class="fall-card">
+        <div class="fc-nummer">Case 3</div>
+        <div class="fc-titel">Jewish Community &amp; Search for Lawyer</div>
+        <div class="fc-desc">116 days without contact with Jewish community. Violation of Art. 4 GG, Art. 9 ECHR. Access granted only on the last day of the appeal deadline.</div>
+        <div class="fc-mehr">Read →</div>
+      </a>
+      <a href="analyse/analyse.html#fall4" class="fall-card" style="border-color:#e63946;">
+        <div class="fc-nummer" style="color:#e63946;">Case 4 — New</div>
+        <div class="fc-titel">Analysis: Deception &amp; Denial of Justice</div>
+        <div class="fc-desc">Deception as modus operandi · OStA Klaus Michael Wachs · Feoktistov Dossier · About the Trial with Humor (DE/RU/EN) · Denial of access to justice</div>
+        <div class="fc-mehr">Read analysis →</div>
+      </a>
+    </div>
+
+    <div class="was-verweigert">
+      <h3>What is being denied to Dmitry Bagrash</h3>
+      <div class="verweigert-grid">
+        <div class="verweigert-item"><strong>Access to case files</strong>Despite repeated applications since December 2024 — no access to investigation or court files</div>
+        <div class="verweigert-item"><strong>Free choice of defense counsel</strong>Application from 17.12.2024 unresolved. De facto without lawyer for more than 15 months</div>
+        <div class="verweigert-item"><strong>Access to court clerk</strong>Urgent documents systematically not accepted — proven by 10 sworn affidavits</div>
+        <div class="verweigert-item"><strong>Postal correspondence</strong>Letters opened, delivered in replaced envelopes without stamps — violation of §§ 202, 206 StGB</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section style="background:#fff;">
+  <div class="container">
+    <div class="zitat-block">
+      "I am going on hunger strike in protest at the deliberate joint action of various judicial bodies — namely the detention facility, the court clerk, the presiding judge Groß, the Senate Department of Justice, and the Federal Court of Justice — which deprived me of the constitutionally and legally guaranteed possibility of submitting my supplementary grounds for appeal in time."
+      <div class="zitat-autor">— Dmitry Bagrash, 5 May 2025, JVA Moabit</div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section>
+  <div class="container">
+    <div class="section-label">Google Drive</div>
+    <h2 class="section-title">All Original Documents</h2>
+    <p style="font-family:Arial,sans-serif; font-size:14px; color:#555; margin-bottom:20px;">All documents are publicly accessible and may be downloaded. No document has been altered.</p>
+    <div class="alle-docs">
+      <a href="https://drive.google.com/drive/folders/1Xa0huX8XI53dmcw_s_xCZDR-ccTmE6zv" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Case 0</a>
+      <a href="https://drive.google.com/drive/folders/1yunZUZIwHaXoRi3Clu8jtBH34byI6PwL" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Case 1</a>
+      <a href="https://drive.google.com/drive/folders/1p3YlgETNeKZjFS7Pt--6_lc8ZQb0ypkl" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Case 2</a>
+      <a href="https://drive.google.com/drive/folders/1NmyIN5wdYi_4H88ELTGKC4iEnHv_UPoZ" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Case 3</a>
+      <a href="https://drive.google.com/drive/folders/1BStA_NPC3vNybGlsDMaWqzxzz6ZhX11u" target="_blank" class="doc-btn"><span class="db-icon">📁</span>Analysis</a>
+      <a href="../de/dokumente.html" class="doc-btn" style="border-color:#e63946; color:#e63946;"><span class="db-icon">📋</span>Document Index</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section style="background:#fff;">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">For Journalists, MPs and Human Rights Organisations</h2>
+    <div class="presse-kontakt">
+      <div class="pk-icon">📧</div>
+      <div class="pk-text">
+        <h4>Press and legal enquiries</h4>
+        <p>E-mail: <a href="mailto:bagrash.presse@gmail.com">bagrash.presse@gmail.com</a><br>
+        Press ID: <strong>2135610</strong><br>
+        Post: Dmitry Bagrash, JVA Heidering, Ernst-Stargardt-Allee 1, 14979 Großbeeren<br><br>
+        All content on this website may be freely used for journalistic and legal purposes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section style="background:#fff; padding:40px 0;">
+    <div class="container">
+      <div class="section-label">Case 4 — Analysis &amp; New Documents</div>
+      <h2 class="section-title">New pages</h2>
+      <div class="alle-docs" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <a href="taeuschung.html" class="doc-btn" style="border-color:#e63946;color:#e63946;"><span class="db-icon">📋</span>Deception as modus operandi</a>
+        <a href="wachs.html" class="doc-btn"><span class="db-icon">👤</span>OStA Klaus Michael Wachs</a>
+        <a href="feoktistov.html" class="doc-btn"><span class="db-icon">🔍</span>Feoktistov Dossier (DE/RU)</a>
+        <a href="humor.html" class="doc-btn"><span class="db-icon">😄</span>About the Trial with Humor (DE/RU/EN)</a>
+        <a href="verfahren/verfahren.html" class="doc-btn" style="border-color:#e63946;color:#e63946;"><span class="db-icon">🔴</span>Current Cases</a>
+      </div>
+    </div>
+  </section>
+
+<!-- BLOCKING NOTICE -->
+<section style="background:#1a1a1a; color:#ccc; padding:28px 20px; border-top:3px solid #e63946;">
+  <div class="container" style="max-width:900px; margin:0 auto; font-family:Arial,sans-serif; font-size:13px; line-height:1.8;">
+    <p>
+      <strong style="color:#fff;">⚠ Notice to visitors:</strong>
+      This website may be blocked at the request of the Berlin General Prosecutor's Office.
+      If you find that the site or the embedded videos are no longer accessible,
+      please search online for a mirror copy. One will be available within
+      <strong style="color:#e63946;">four hours at most</strong> of any takedown — including any removal of videos.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Documentation</h4>
+        <a href="fall0/fall0.html">Case 0 — Background</a>
+        <a href="fall1/fall1.html">Case 1 — Criminal Case</a>
+        <a href="fall2/fall2.html">Case 2 — Appeal</a>
+        <a href="fall3/fall3.html">Case 3 — Jewish Community</a>
+        <a href="analyse/analyse.html">Analysis — 10 Points</a>
+        <a href="verfahren/verfahren.html">Current Cases</a>
+      </div>
+      <div class="footer-col">
+        <h4>More Pages</h4>
+        <a href="presse/presse.html">Press</a>
+        <a href="ueber-mich/ueber-mich.html">About Dmitry Bagrash</a>
+        <a href="https://www.unkremlin.com" target="_blank">www.unkremlin.com</a>
+        <a href="https://www.youtube.com/@unkremlin" target="_blank">YouTube: Unkremlin</a>
+      </div>
+      <div class="footer-col">
+        <h4>Languages</h4>
+        <a href="../de/index.html">🇩🇪 Deutsch</a>
+        <a href="../ru/index.html">🇷🇺 Русский</a>
+        <a href="index.html">🇬🇧 English</a>
+      </div>
+      <div class="footer-col">
+        <h4>Responsible</h4>
+        <p>Dmitry Bagrash<br>JVA Heidering<br>Ernst-Stargardt-Allee 1<br>14979 Großbeeren<br><br>
+        <a href="mailto:bagrash.presse@gmail.com" style="color:#e63946;">bagrash.presse@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Dmitry Bagrash — All content may be freely used for journalistic and legal purposes.</span>
+      <div><a href="../de/impressum.html">Impressum</a><a href="../de/datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
