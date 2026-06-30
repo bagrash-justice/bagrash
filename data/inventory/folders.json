@@ -1,0 +1,41 @@
+{
+  "schema_version": "document-evidence-inventory-v0.2-folders",
+  "roots": [
+    {
+      "label": "FALL1_FOLDER_ID",
+      "case": "fall1",
+      "folder_id": "PASTE_FALL1_FOLDER_ID_HERE",
+      "required": true
+    },
+    {
+      "label": "FALL2_FOLDER_ID",
+      "case": "fall2",
+      "folder_id": "PASTE_FALL2_FOLDER_ID_HERE",
+      "required": true
+    },
+    {
+      "label": "FALL2_ANLAGEN_FOLDER_ID",
+      "case": "fall2",
+      "folder_id": "PASTE_FALL2_ANLAGEN_FOLDER_ID_HERE_OR_LEAVE_EMPTY",
+      "required": false
+    },
+    {
+      "label": "FALL3_FOLDER_ID",
+      "case": "fall3",
+      "folder_id": "PASTE_FALL3_FOLDER_ID_HERE",
+      "required": true
+    },
+    {
+      "label": "FALL3_ANLAGEN_FOLDER_ID",
+      "case": "fall3",
+      "folder_id": "PASTE_FALL3_ANLAGEN_FOLDER_ID_HERE_OR_LEAVE_EMPTY",
+      "required": false
+    },
+    {
+      "label": "FALL4_FOLDER_ID",
+      "case": "fall4",
+      "folder_id": "PASTE_FALL4_FOLDER_ID_HERE_OR_LEAVE_EMPTY",
+      "required": false
+    }
+  ]
+}

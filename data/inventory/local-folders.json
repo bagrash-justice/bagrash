@@ -1,0 +1,41 @@
+{
+  "schema_version": "document-evidence-inventory-v0.2-local-folders",
+  "roots": [
+    {
+      "label": "FALL1_LOCAL",
+      "case": "fall1",
+      "path": "PASTE_LOCAL_PATH_TO_FALL1_HERE",
+      "required": true
+    },
+    {
+      "label": "FALL2_LOCAL",
+      "case": "fall2",
+      "path": "PASTE_LOCAL_PATH_TO_FALL2_HERE",
+      "required": true
+    },
+    {
+      "label": "FALL2_ANLAGEN_LOCAL",
+      "case": "fall2",
+      "path": "PASTE_LOCAL_PATH_TO_FALL2_ANLAGEN_HERE_OR_LEAVE_EMPTY",
+      "required": false
+    },
+    {
+      "label": "FALL3_LOCAL",
+      "case": "fall3",
+      "path": "PASTE_LOCAL_PATH_TO_FALL3_HERE",
+      "required": true
+    },
+    {
+      "label": "FALL3_ANLAGEN_LOCAL",
+      "case": "fall3",
+      "path": "PASTE_LOCAL_PATH_TO_FALL3_ANLAGEN_HERE_OR_LEAVE_EMPTY",
+      "required": false
+    },
+    {
+      "label": "FALL4_LOCAL",
+      "case": "fall4",
+      "path": "PASTE_LOCAL_PATH_TO_FALL4_HERE_OR_LEAVE_EMPTY",
+      "required": false
+    }
+  ]
+}

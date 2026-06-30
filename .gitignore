@@ -1,0 +1,24 @@
+
+.DS_Store
+
+# macOS
+.DS_Store
+
+# Local inventory outputs - review before publishing
+data/inventory/raw-drive-inventory.json
+data/inventory/inventory-report.md
+data/inventory/*.csv
+
+# Local private inventory config
+data/inventory/folders.local.json
+
+# Node.js local dependencies
+node_modules/
+
+# Local inventory outputs
+data/inventory/local-raw-inventory.json
+data/inventory/local-inventory-report.md
+data/inventory/local-anlagen-index.md
+data/inventory/local-case-summary.md
+data/inventory/local-duplicates-review.md
+data/inventory/local-folders.local.json
