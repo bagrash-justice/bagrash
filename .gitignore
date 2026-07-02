@@ -25,4 +25,6 @@ data/inventory/local-document-classification-draft.md
 data/inventory/local-classification-quality-review.md
 data/inventory/local-manual-review-worksheet.md
 data/inventory/local-manual-review-decisions.md
+data/inventory/local-canonical-documents-draft.json
+data/inventory/local-canonical-documents-draft-report.md
 data/inventory/local-folders.local.json
